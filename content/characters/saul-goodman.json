@@ -17,11 +17,22 @@
   "portraitColor": "#d4a017",
   "organizationIds": ["hhmm"],
   "businessIds": ["saul-office"],
-  "relatedIds": ["walter-white", "jesse-pinkman", "mike-ehrmantraut", "kim-wexler", "saul-office", "bcs-chicanery"],
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "mike-ehrmantraut",
+    "kim-wexler",
+    "saul-office",
+    "bcs-chicanery"
+  ],
   "relationships": [
     { "targetId": "walter-white", "kind": "business", "label": "Client" },
     { "targetId": "jesse-pinkman", "kind": "business", "label": "Client" },
-    { "targetId": "mike-ehrmantraut", "kind": "partner", "label": "Fixer partner" },
+    {
+      "targetId": "mike-ehrmantraut",
+      "kind": "partner",
+      "label": "Fixer partner"
+    },
     { "targetId": "kim-wexler", "kind": "partner", "label": "Former partner" }
   ],
   "quoteIds": ["quote-better-call-saul"],

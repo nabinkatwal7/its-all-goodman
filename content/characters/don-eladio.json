@@ -2,14 +2,9 @@
   "type": "character",
   "tags": [],
   "nicknames": [],
-  "appearsIn": [
-    "breaking-bad",
-    "better-call-saul"
-  ],
+  "appearsIn": ["breaking-bad", "better-call-saul"],
   "aliases": [],
-  "organizationIds": [
-    "cartel"
-  ],
+  "organizationIds": ["cartel"],
   "businessIds": [],
   "crimes": [],
   "kills": [],
@@ -27,16 +22,9 @@
   "title": "Don Eladio Vuente",
   "name": "Don Eladio Vuente",
   "summary": "Cartel boss.",
-  "series": [
-    "breaking-bad",
-    "better-call-saul"
-  ],
+  "series": ["breaking-bad", "better-call-saul"],
   "status": "deceased",
   "occupation": "Cartel boss",
   "portraitColor": "#991b1b",
-  "relatedIds": [
-    "cartel",
-    "gustavo-fring",
-    "hector-salamanca"
-  ]
+  "relatedIds": ["cartel", "gustavo-fring", "hector-salamanca"]
 }

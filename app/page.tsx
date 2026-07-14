@@ -1,65 +1,150 @@
-import Image from "next/image";
+import Link from "next/link";
+import { UniverseGraph } from "@/components/graph/UniverseGraph";
+import { CharacterPortrait } from "@/components/Portrait";
+import { GlobalSearch } from "@/components/shell/GlobalSearch";
+import { buildUniverseGraph } from "@/lib/graph/buildGraph";
+import {
+  getRecentEntities,
+  getPopularCharacters,
+  getFeaturedEpisode,
+} from "@/lib/content/loader";
+import { entityHref } from "@/lib/schemas/entity";
+import { getAllSearchItems } from "@/lib/search/index";
+import { SERIES_LABELS } from "@/lib/utils";
 
-export default function Home() {
+const EXPLORE = [
+  { href: "/characters/walter-white", label: "Characters", icon: "👤" },
+  { href: "/timeline", label: "Timeline", icon: "📅" },
+  { href: "/episodes/breaking-bad/ozymandias", label: "Episode Guide", icon: "📺" },
+  { href: "/organizations/cartel", label: "Organizations", icon: "🏛" },
+  { href: "/businesses/los-pollos-hermanos", label: "Businesses", icon: "🏢" },
+  { href: "/locations", label: "Locations", icon: "📍" },
+  { href: "/deaths", label: "Deaths", icon: "💀" },
+  { href: "/relationships/walter-white", label: "Relationships", icon: "🔗" },
+  { href: "/drug-empire", label: "Drug Empire", icon: "⚗" },
+  { href: "/legal", label: "Legal World", icon: "⚖" },
+  { href: "/cartel", label: "Cartel", icon: "🌵" },
+  { href: "/graph", label: "Universe Graph", icon: "🕸" },
+];
+
+export default function HomePage() {
+  const searchItems = getAllSearchItems();
+  const recent = getRecentEntities(6);
+  const popular = getPopularCharacters(6);
+  const featured = getFeaturedEpisode();
+  const { nodes, edges } = buildUniverseGraph();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="space-y-12">
+      <section className="text-center">
+        <h1 className="text-5xl font-bold tracking-tight">
+          <span className="text-heisenberg">Breaking Bad</span> Universe
+        </h1>
+        <p className="mx-auto mt-4 max-w-xl text-muted">
+          A living knowledge graph — characters, episodes, timelines, locations,
+          and every connection in between.
+        </p>
+
+        <div className="mx-auto mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
+          <GlobalSearch items={searchItems} placeholder="Search Characters..." />
+          <GlobalSearch items={searchItems.filter((i) => i.type === "episode")} placeholder="Search Episodes..." />
+          <GlobalSearch items={searchItems.filter((i) => i.type === "quote")} placeholder="Search Quotes..." />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          {(["breaking-bad", "better-call-saul", "el-camino"] as const).map((s) => (
+            <Link
+              key={s}
+              href={s === "breaking-bad" ? "/characters/walter-white" : s === "better-call-saul" ? "/characters/saul-goodman" : "/episodes/el-camino/ec-el-camino"}
+              className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium transition-colors hover:border-heisenberg hover:text-heisenberg"
+            >
+              {SERIES_LABELS[s]}
+            </Link>
+          ))}
         </div>
-      </main>
+      </section>
+
+      <section>
+        <h2 className="mb-4 text-2xl font-bold">Explore</h2>
+        <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          {EXPLORE.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all hover:border-accent hover:shadow-md"
+            >
+              <span className="text-2xl">{item.icon}</span>
+              <span className="font-medium">{item.label}</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="grid gap-8 lg:grid-cols-3">
+        <section className="rounded-xl border border-border bg-card p-5">
+          <h2 className="mb-4 font-bold">Recent Discoveries</h2>
+          <ul className="space-y-2">
+            {recent.map((e) => (
+              <li key={e.id}>
+                <Link href={entityHref(e)} className="text-accent hover:underline">
+                  {e.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-border bg-card p-5">
+          <h2 className="mb-4 font-bold">Popular Characters</h2>
+          <ul className="space-y-3">
+            {popular.map((c) => (
+              <li key={c.id}>
+                <Link href={`/characters/${c.slug}`} className="flex items-center gap-3">
+                  <CharacterPortrait character={c} size="sm" />
+                  <span className="font-medium hover:text-accent">{c.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-border bg-card p-5">
+          <h2 className="mb-4 font-bold">Featured Episode</h2>
+          {featured && (
+            <Link href={entityHref(featured)} className="block">
+              <p className="text-2xl font-bold">{featured.title}</p>
+              <p className="text-sm text-muted">{featured.code}</p>
+              <p className="mt-2 line-clamp-3 text-sm">{featured.synopsis}</p>
+              {featured.imdbRating && (
+                <p className="mt-2 text-sm text-pollos">IMDb {featured.imdbRating}/10</p>
+              )}
+            </Link>
+          )}
+        </section>
+      </div>
+
+      <section>
+        <h2 className="mb-4 text-2xl font-bold">Interactive Universe Map</h2>
+        <UniverseGraph nodes={nodes.slice(0, 30)} edges={edges.slice(0, 40)} height={400} />
+        <Link href="/graph" className="mt-3 inline-block text-sm text-accent hover:underline">
+          Open full universe graph →
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="mb-4 text-2xl font-bold">Latest Added Content</h2>
+        <div className="flex flex-wrap gap-2">
+          {recent.map((e) => (
+            <Link
+              key={e.id}
+              href={entityHref(e)}
+              className="rounded-full border border-border px-3 py-1 text-sm hover:border-accent"
+            >
+              {e.title}
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
