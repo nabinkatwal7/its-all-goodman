@@ -198,6 +198,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
         {isHome ? <div className="relative">{children}</div> : <DesertHud>{children}</DesertHud>}
       </main>
 
+      <footer className="relative z-10 border-t border-border/20 bg-black/30 py-5 text-center backdrop-blur-sm">
         <p className="font-display text-sm tracking-[0.25em] text-muted">
           {isHome ? "THE DESERT REMEMBERS EVERYTHING" : "IT'S ALL GOOD MAN · 34.5199° N 105.8701° W"}
         </p>

@@ -65,8 +65,8 @@ export function HomePageClient({
     <div className="w-full">
       <ImmersiveHero searchItems={searchItems} />
 
-      <div className="mx-auto max-w-7xl space-y-20 px-4 pb-20">
-        <section>
+      <div className="mx-auto max-w-7xl space-y-20 px-4 pb-24">
+        <section className="desert-hud mx-auto max-w-2xl">
           <h2 className="font-display text-4xl tracking-wider text-heisenberg">
             WHO&apos;S IN THE GAME
           </h2>
@@ -76,7 +76,7 @@ export function HomePageClient({
           </div>
         </section>
 
-        <section>
+        <section className="desert-hud">
           <h2 className="font-display text-4xl tracking-wider">EXPLORE</h2>
           <p className="mt-1 text-sm text-muted">The connected universe — every node leads somewhere</p>
           <div className="mt-8">
@@ -122,7 +122,7 @@ export function HomePageClient({
           </div>
         </section>
 
-        <section>
+        <section className="desert-hud">
           <h2 className="font-display text-4xl tracking-wider">THE GRAPH</h2>
           <p className="mt-1 text-sm text-muted">Drag · zoom · click any node</p>
           <div className="universe-card mt-6 overflow-hidden rounded-lg">

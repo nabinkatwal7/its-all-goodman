@@ -36,7 +36,7 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
         onClick={onClose}
         aria-label="Close panel"
       />
-      <aside className="relative h-full w-full max-w-md overflow-auto border-l border-border bg-card p-6 shadow-2xl">
+      <aside className="desert-hud relative h-full w-full max-w-md overflow-auto p-6 shadow-2xl">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-sm font-medium text-muted">Side Panel</h2>
           <button type="button" onClick={onClose} className="rounded px-2 py-1 hover:bg-background">

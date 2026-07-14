@@ -8,11 +8,12 @@ export default function GraphPage() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">Universe Graph</h1>
-      <p className="mt-2 text-muted">
-        Obsidian-style knowledge graph. Click nodes to navigate. Zoom and pan freely.
+      <p className="font-display text-xs tracking-[0.4em] text-muted">NAVIGATE THE NETWORK</p>
+      <h1 className="font-display text-5xl tracking-wider text-heisenberg">UNIVERSE GRAPH</h1>
+      <p className="mt-3 max-w-lg text-muted">
+        Every node is a person, place, or moment. Click to travel. The desert connects them all.
       </p>
-      <div className="mt-6">
+      <div className="mt-8 overflow-hidden rounded-sm border border-border/40">
         <UniverseGraph nodes={nodes} edges={edges} height={700} />
       </div>
     </div>
