@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import { useState, type MouseEvent, type ReactNode } from "react";
-import { getEntityById } from "@/lib/content/loader";
 import { entityHref, type Entity } from "@/lib/schemas/entity";
-import { getNeighbors } from "@/lib/graph/getNeighbors";
 import { useUniverse } from "@/components/providers/UniverseProvider";
 import { Portrait, CharacterPortrait } from "@/components/Portrait";
 import { TYPE_LABELS, cn } from "@/lib/utils";
@@ -15,13 +13,19 @@ type EntityLinkProps = {
   className?: string;
   children?: ReactNode;
   showType?: boolean;
+  neighborTitles?: string[];
 };
 
-export function EntityLink({ entity, className, children, showType }: EntityLinkProps) {
+export function EntityLink({
+  entity,
+  className,
+  children,
+  showType,
+  neighborTitles = [],
+}: EntityLinkProps) {
   const { openSidePanel } = useUniverse();
   const [hover, setHover] = useState(false);
   const href = entityHref(entity);
-  const neighbors = getNeighbors(entity.id, 3);
 
   const handleClick = (e: MouseEvent) => {
     if (e.ctrlKey || e.metaKey) {
@@ -39,10 +43,7 @@ export function EntityLink({ entity, className, children, showType }: EntityLink
       <Link
         href={href}
         onClick={handleClick}
-        className={cn(
-          "text-accent underline-offset-2 hover:underline",
-          className,
-        )}
+        className={cn("text-accent underline-offset-2 hover:underline", className)}
       >
         {children ?? entity.title}
         {showType && (
@@ -69,14 +70,11 @@ export function EntityLink({ entity, className, children, showType }: EntityLink
           {entity.summary && (
             <p className="mt-2 line-clamp-2 text-xs text-muted">{entity.summary}</p>
           )}
-          {neighbors.length > 0 && (
+          {neighborTitles.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1">
-              {neighbors.slice(0, 3).map((n) => (
-                <span
-                  key={n.id}
-                  className="rounded bg-background px-1.5 py-0.5 text-xs"
-                >
-                  {n.title}
+              {neighborTitles.slice(0, 3).map((title) => (
+                <span key={title} className="rounded bg-background px-1.5 py-0.5 text-xs">
+                  {title}
                 </span>
               ))}
             </div>
@@ -86,10 +84,4 @@ export function EntityLink({ entity, className, children, showType }: EntityLink
       )}
     </span>
   );
-}
-
-export function EntityLinkById({ id, ...props }: { id: string } & Omit<EntityLinkProps, "entity">) {
-  const entity = getEntityById(id);
-  if (!entity) return <span className="text-muted">{id}</span>;
-  return <EntityLink entity={entity} {...props} />;
 }

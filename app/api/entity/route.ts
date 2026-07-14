@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAllEntities } from "@/lib/content/loader";
 import { entityHref } from "@/lib/schemas/entity";
+import { getNeighbors } from "@/lib/graph/getNeighbors";
 
 export function GET(request: NextRequest) {
   const path = request.nextUrl.searchParams.get("path");
@@ -13,5 +14,11 @@ export function GET(request: NextRequest) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
-  return NextResponse.json(entity);
+  const neighbors = getNeighbors(entity.id, 8).map((n) => ({
+    id: n.id,
+    title: n.title,
+    href: entityHref(n),
+  }));
+
+  return NextResponse.json({ entity, neighbors });
 }

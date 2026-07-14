@@ -2,9 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { EntityLinkById } from "@/components/EntityLink";
 import { Portrait, CharacterPortrait } from "@/components/Portrait";
-import { getNeighbors } from "@/lib/graph/getNeighbors";
 import type { Character, Entity } from "@/lib/schemas/entity";
 import { TYPE_LABELS } from "@/lib/utils";
 
@@ -15,15 +13,20 @@ type SidePanelProps = {
 
 export function SidePanel({ href, onClose }: SidePanelProps) {
   const [entity, setEntity] = useState<Entity | null>(null);
+  const [neighbors, setNeighbors] = useState<{ id: string; title: string; href: string }[]>([]);
 
   useEffect(() => {
     fetch(`/api/entity?path=${encodeURIComponent(href)}`)
       .then((r) => r.json())
-      .then(setEntity)
-      .catch(() => setEntity(null));
+      .then((data) => {
+        setEntity(data.entity ?? data);
+        setNeighbors(data.neighbors ?? []);
+      })
+      .catch(() => {
+        setEntity(null);
+        setNeighbors([]);
+      });
   }, [href]);
-
-  const neighbors = entity ? getNeighbors(entity.id, 8) : [];
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
@@ -36,11 +39,7 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
       <aside className="relative h-full w-full max-w-md overflow-auto border-l border-border bg-card p-6 shadow-2xl">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-sm font-medium text-muted">Side Panel</h2>
-          <button
-            type="button"
-            onClick={onClose}
-            className="rounded px-2 py-1 hover:bg-background"
-          >
+          <button type="button" onClick={onClose} className="rounded px-2 py-1 hover:bg-background">
             ✕
           </button>
         </div>
@@ -61,7 +60,7 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
               </div>
             </div>
 
-            {entity.summary && (
+            {"summary" in entity && entity.summary && (
               <p className="mt-4 text-sm leading-relaxed">{entity.summary}</p>
             )}
 
@@ -77,7 +76,9 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
                 <h4 className="mb-2 text-sm font-semibold">Connected to</h4>
                 <div className="flex flex-wrap gap-2">
                   {neighbors.map((n) => (
-                    <EntityLinkById key={n.id} id={n.id} />
+                    <Link key={n.id} href={n.href} className="text-sm text-accent hover:underline">
+                      {n.title}
+                    </Link>
                   ))}
                 </div>
               </div>
