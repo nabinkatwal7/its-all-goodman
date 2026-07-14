@@ -7,10 +7,6 @@
   "slug": "lily-of-the-valley",
   "title": "Lily of the Valley",
   "chemicalNotes": "Plant toxin Walt uses to poison Brock.",
-  "series": [
-    "breaking-bad"
-  ],
-  "relatedIds": [
-    "walter-white"
-  ]
+  "series": ["breaking-bad"],
+  "relatedIds": ["walter-white"]
 }

@@ -1,27 +1,68 @@
 @import "tailwindcss";
 
+/* ── Universe palettes ── */
 :root {
-  --background: #f5f0e6;
-  --foreground: #1a1a1a;
-  --heisenberg: #2d5016;
-  --pollos: #d4a017;
-  --desert: #c4a882;
-  --card: #ffffff;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --accent: #2d5016;
+  --background: #1a1208;
+  --foreground: #f5e6c8;
+  --heisenberg: #7cfc00;
+  --pollos: #f5c518;
+  --desert: #c4854c;
+  --card: rgba(20, 14, 8, 0.75);
+  --muted: #a89070;
+  --border: rgba(245, 197, 24, 0.15);
+  --accent: #7cfc00;
+  --glow: rgba(124, 252, 0, 0.35);
+  --hero-from: #2d1810;
+  --hero-via: #1a0f08;
+  --hero-to: #0a0604;
 }
 
 .dark {
-  --background: #0d0f0a;
-  --foreground: #e8e4dc;
-  --heisenberg: #4ade80;
-  --pollos: #fbbf24;
-  --desert: #78716c;
-  --card: #1a1f14;
-  --muted: #9ca3af;
-  --border: #2d3528;
-  --accent: #4ade80;
+  --background: #0a0604;
+  --foreground: #f5e6c8;
+  --heisenberg: #7cfc00;
+  --pollos: #f5c518;
+  --desert: #8b6914;
+  --card: rgba(20, 14, 8, 0.82);
+  --muted: #8a7355;
+  --border: rgba(245, 197, 24, 0.12);
+  --accent: #7cfc00;
+  --glow: rgba(124, 252, 0, 0.4);
+}
+
+/* Breaking Bad — toxic green desert */
+[data-universe="breaking-bad"] {
+  --accent: #7cfc00;
+  --heisenberg: #7cfc00;
+  --glow: rgba(124, 252, 0, 0.45);
+  --border: rgba(124, 252, 0, 0.18);
+  --hero-from: #1a2e0a;
+  --hero-via: #0d1806;
+  --hero-to: #050804;
+}
+
+/* Better Call Saul — warm gold strip-mall */
+[data-universe="better-call-saul"] {
+  --accent: #f5c518;
+  --heisenberg: #f5c518;
+  --glow: rgba(245, 197, 24, 0.45);
+  --border: rgba(245, 197, 24, 0.22);
+  --hero-from: #2e1f08;
+  --hero-via: #1a1206;
+  --hero-to: #0a0804;
+}
+
+/* El Camino / Gene — cold noir B&W */
+[data-universe="el-camino"] {
+  --accent: #d4d4d4;
+  --heisenberg: #e5e5e5;
+  --pollos: #a3a3a3;
+  --glow: rgba(255, 255, 255, 0.15);
+  --border: rgba(255, 255, 255, 0.1);
+  --foreground: #e5e5e5;
+  --hero-from: #1a1a1a;
+  --hero-via: #0f0f0f;
+  --hero-to: #050505;
 }
 
 @theme inline {
@@ -34,30 +75,124 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-bebas);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-bebas), Impact, sans-serif;
+  letter-spacing: 0.06em;
+}
+
+/* Film grain overlay */
+.film-grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 0.5s steps(1) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-2%, -2%); }
+  50% { transform: translate(2%, 2%); }
+  75% { transform: translate(-1%, 1%); }
+}
+
+/* Scanline (Gene mode) */
+.scanlines::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+}
+
+/* Heisenberg glitch text */
+.glitch {
+  position: relative;
+}
+.glitch:hover {
+  animation: glitch 0.4s ease;
+}
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #7cfc00, -2px 0 #f5c518; }
+  25% { text-shadow: -2px 0 #7cfc00, 2px 0 #f5c518; }
+  50% { text-shadow: 2px 2px #7cfc00, -2px -2px #f5c518; }
+  75% { text-shadow: -1px 1px #7cfc00, 1px -1px #f5c518; }
+  100% { text-shadow: none; }
+}
+
+/* Glowing cards */
+.universe-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.universe-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--glow), 0 8px 32px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+/* 3D tilt explore tile */
+.explore-tile {
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+/* Hero gradient mesh */
+.hero-mesh {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, var(--glow) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(245, 197, 24, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, var(--hero-from) 0%, var(--hero-via) 50%, var(--hero-to) 100%);
+}
+
+/* Periodic element badge (chemistry UI) */
+.element-badge {
+  font-family: var(--font-bebas), sans-serif;
+  border: 2px solid var(--accent);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px var(--glow);
 }
 
 .maplibregl-map {
   font-family: inherit;
+  border-radius: 12px;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: var(--card);
+  background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--desert);
-  border-radius: 4px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .film-grain { animation: none; }
+  .universe-card:hover { transform: none; }
 }

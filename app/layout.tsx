@@ -1,17 +1,19 @@
 import { UniverseProvider } from "@/components/providers/UniverseProvider";
 import { AppShell } from "@/components/shell/AppShell";
+import { FilmGrain } from "@/components/immersive/FilmGrain";
 import { getAllSearchItems } from "@/lib/search/index";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bebas = Bebas_Neue({
+  weight: "400",
+  variable: "--font-bebas",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s · Breaking Bad Universe",
   },
   description:
-    "A living knowledge graph of the Breaking Bad and Better Call Saul universe.",
+    "Interactive 3D knowledge graph of the Breaking Bad and Better Call Saul universe.",
 };
 
 export default function RootLayout({
@@ -34,10 +36,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${bebas.variable} ${dmSans.variable} h-full antialiased dark`}
+      data-universe="breaking-bad"
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
+        <FilmGrain />
         <UniverseProvider>
           <AppShell searchItems={searchItems}>{children}</AppShell>
         </UniverseProvider>

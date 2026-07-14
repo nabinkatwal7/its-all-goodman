@@ -3,6 +3,7 @@ import { EntityLink } from "@/components/EntityLink";
 import { EntityLinkById } from "@/components/EntityLinkById";
 import { getNeighbors } from "@/lib/graph/getNeighbors";
 import type { Entity } from "@/lib/schemas/entity";
+import { entityHref } from "@/lib/schemas/entity";
 import { TYPE_LABELS, cn } from "@/lib/utils";
 
 type EntityPageProps = {
@@ -57,12 +58,12 @@ export function EntityPage({ entity, children, sections = [] }: EntityPageProps)
             {neighbors.map((n) => (
               <Link
                 key={n.id}
-                href={`#`}
+                href={entityHref(n)}
                 className={cn(
                   "group rounded-lg border border-border p-4 transition-colors hover:border-accent hover:bg-background",
                 )}
               >
-                <EntityLink entity={n} className="font-medium no-underline group-hover:underline" />
+                <span className="font-medium group-hover:text-accent">{n.title}</span>
                 <p className="mt-1 text-xs text-muted">{TYPE_LABELS[n.type]}</p>
               </Link>
             ))}
@@ -98,4 +99,4 @@ export function DataGrid({ items }: { items: { label: string; value: React.React
   );
 }
 
-export { EntityLinkById };
+export { EntityLinkById } from "@/components/EntityLinkById";

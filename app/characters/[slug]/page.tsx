@@ -10,10 +10,12 @@ import {
   RelationshipMiniGraph,
   FavoriteButton,
 } from "@/components/character/CharacterSections";
+import { OutfitGallery } from "@/components/character/OutfitGallery";
 import { UniverseGraph } from "@/components/graph/UniverseGraph";
 import { buildUniverseGraph } from "@/lib/graph/buildGraph";
 import { getCharacter, getEntitiesByType } from "@/lib/content/loader";
 import { getBiography } from "@/lib/content/biography";
+import { jsonLdForEntity } from "@/lib/seo/jsonld";
 import { SERIES_LABELS } from "@/lib/utils";
 import { VisitTracker } from "@/components/VisitTracker";
 
@@ -42,6 +44,10 @@ export default async function CharacterPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdForEntity(character)) }}
+      />
       <VisitTracker entityId={character.id} />
 
       <section className="mb-8 flex flex-wrap items-start gap-6">
@@ -205,6 +211,10 @@ export default async function CharacterPage({
           <CharacterEvolutionSlider character={character} />
         </Section>
       )}
+
+      <Section title="Outfit Gallery">
+        <OutfitGallery character={character} />
+      </Section>
 
       {character.familyIds.length > 0 && (
         <Section title="Family Tree">

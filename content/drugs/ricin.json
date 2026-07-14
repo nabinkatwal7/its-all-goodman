@@ -7,11 +7,6 @@
   "slug": "ricin",
   "title": "Ricin",
   "chemicalNotes": "Protein toxin from castor beans. Walt and Jesse manufacture small doses.",
-  "series": [
-    "breaking-bad"
-  ],
-  "relatedIds": [
-    "walter-white",
-    "weapon-ricin"
-  ]
+  "series": ["breaking-bad"],
+  "relatedIds": ["walter-white", "weapon-ricin"]
 }

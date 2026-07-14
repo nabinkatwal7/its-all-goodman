@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Breaking Bad Universe
 
-## Getting Started
+A living knowledge graph for the Breaking Bad / Better Call Saul / El Camino universe.
 
-First, run the development server:
+## Features
+
+- **Knowledge graph** — characters, episodes, locations, orgs, and cross-links
+- **Universe graph** — Obsidian-style interactive graph (React Flow)
+- **Timeline explorer** — horizontal scroll from 1958 to Gene
+- **Location map** — MapLibre + OpenStreetMap pins for Albuquerque
+- **Deep profiles** — Walt-level character pages with stats, kills, evolution slider
+- **Databases** — quotes, deaths, vehicles, weapons, drugs, objects, symbolism
+- **Compare & stats** — side-by-side character comparison, dashboard
+- **Achievements** — localStorage badges for exploration
+- **Spoiler mode** — season-by-season cutoff
+- **Side panel** — Ctrl+Click any link to browse without leaving the page
+
+## Stack
+
+Next.js 16 · TypeScript · Tailwind CSS · Zod · React Flow · MapLibre · Fuse.js · Framer Motion
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Entity data lives in `content/` as typed JSON. Edit or add files, then rebuild.
 
-## Learn More
+```bash
+node scripts/seed-content.mjs   # regenerate sample content
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Biographies: `content/biographies/*.md`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/           # routes
+components/    # UI, graph, shell
+content/       # JSON entity data
+lib/schemas/   # Zod validation
+lib/graph/     # graph builder
+lib/search/    # Fuse index
+```

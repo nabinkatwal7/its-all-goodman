@@ -13,9 +13,13 @@ import type { SpoilerLevel } from "@/lib/spoiler";
 
 type NavEntry = { href: string; title: string };
 
+export type UniverseMode = "breaking-bad" | "better-call-saul" | "el-camino";
+
 type UniverseContextValue = {
   theme: "light" | "dark";
   toggleTheme: () => void;
+  universe: UniverseMode;
+  setUniverse: (u: UniverseMode) => void;
   spoilerLevel: SpoilerLevel;
   setSpoilerLevel: (level: SpoilerLevel) => void;
   favorites: string[];
@@ -60,6 +64,7 @@ export function UniverseProvider({ children }: { children: ReactNode }) {
   const [achievements, setAchievements] = useState<Record<string, boolean>>({});
   const [watchedBB, setWatchedBBState] = useState(false);
   const [watchedBCS, setWatchedBCSState] = useState(false);
+  const [universe, setUniverseState] = useState<UniverseMode>("breaking-bad");
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -70,14 +75,17 @@ export function UniverseProvider({ children }: { children: ReactNode }) {
     setAchievements(loadJson("bbu-achievements", {}));
     setWatchedBBState(loadJson("bbu-watched-bb", false));
     setWatchedBCSState(loadJson("bbu-watched-bcs", false));
+    setUniverseState(loadJson<UniverseMode>("bbu-universe", "breaking-bad"));
     setHydrated(true);
   }, []);
 
   useEffect(() => {
     if (!hydrated) return;
     document.documentElement.classList.toggle("dark", theme === "dark");
+    document.documentElement.dataset.universe = universe;
+    document.body.classList.toggle("scanlines", universe === "el-camino");
     localStorage.setItem("bbu-theme", JSON.stringify(theme));
-  }, [theme, hydrated]);
+  }, [theme, universe, hydrated]);
 
   const persist = useCallback((key: string, value: unknown) => {
     localStorage.setItem(key, JSON.stringify(value));
@@ -180,10 +188,20 @@ export function UniverseProvider({ children }: { children: ReactNode }) {
     [persist, unlockAchievement],
   );
 
+  const setUniverse = useCallback(
+    (u: UniverseMode) => {
+      setUniverseState(u);
+      persist("bbu-universe", u);
+    },
+    [persist],
+  );
+
   const value = useMemo(
     () => ({
       theme,
       toggleTheme,
+      universe,
+      setUniverse,
       spoilerLevel,
       setSpoilerLevel,
       favorites,
@@ -207,6 +225,8 @@ export function UniverseProvider({ children }: { children: ReactNode }) {
     [
       theme,
       toggleTheme,
+      universe,
+      setUniverse,
       spoilerLevel,
       setSpoilerLevel,
       favorites,
