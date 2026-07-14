@@ -1,0 +1,23 @@
+{
+  "id": "mike-ehrmantraut",
+  "type": "character",
+  "slug": "mike-ehrmantraut",
+  "title": "Mike Ehrmantraut",
+  "name": "Mike Ehrmantraut",
+  "summary": "Former Philadelphia cop turned fixer and enforcer.",
+  "series": ["breaking-bad", "better-call-saul"],
+  "tags": ["fixer"],
+  "status": "deceased",
+  "occupation": "Private investigator / Fixer",
+  "appearsIn": ["breaking-bad", "better-call-saul"],
+  "portraitColor": "#475569",
+  "organizationIds": ["gus-empire"],
+  "relatedIds": ["saul-goodman", "gustavo-fring", "walter-white", "jesse-pinkman"],
+  "relationships": [
+    { "targetId": "gustavo-fring", "kind": "employer", "label": "Employer" },
+    { "targetId": "saul-goodman", "kind": "partner", "label": "Associate" },
+    { "targetId": "walter-white", "kind": "rival", "label": "Reluctant colleague" }
+  ],
+  "stats": { "kills": 50, "intelligence": 8, "combat": 9, "leadership": 7 },
+  "addedAt": "2026-07-14"
+}

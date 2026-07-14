@@ -1,0 +1,38 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "aliases": [],
+  "organizationIds": [],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "marie-schrader",
+  "slug": "marie-schrader",
+  "title": "Marie Schrader",
+  "name": "Marie Schrader",
+  "summary": "Hank wife, purple obsession.",
+  "series": [
+    "breaking-bad"
+  ],
+  "status": "alive",
+  "occupation": "Radiologist",
+  "portraitColor": "#9333ea",
+  "relatedIds": [
+    "hank-schrader",
+    "skyler-white",
+    "symbol-purple"
+  ]
+}

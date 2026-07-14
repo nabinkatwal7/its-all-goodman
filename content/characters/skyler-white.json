@@ -1,0 +1,44 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "aliases": [],
+  "organizationIds": [],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "family",
+      "label": "Husband"
+    }
+  ],
+  "addedAt": "2026-07-13",
+  "id": "skyler-white",
+  "slug": "skyler-white",
+  "title": "Skyler White",
+  "name": "Skyler White",
+  "summary": "Walter wife who becomes complicit in laundering.",
+  "series": [
+    "breaking-bad"
+  ],
+  "status": "alive",
+  "occupation": "Bookkeeper",
+  "portraitColor": "#6366f1",
+  "relatedIds": [
+    "walter-white",
+    "hank-schrader",
+    "a1a-car-wash"
+  ]
+}

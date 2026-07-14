@@ -1,0 +1,21 @@
+{
+  "id": "kim-wexler",
+  "type": "character",
+  "slug": "kim-wexler",
+  "title": "Kim Wexler",
+  "name": "Kim Wexler",
+  "summary": "Ambitious attorney and Jimmy's moral compass.",
+  "series": ["better-call-saul"],
+  "tags": ["protagonist", "lawyer"],
+  "status": "alive",
+  "occupation": "Attorney",
+  "appearsIn": ["better-call-saul"],
+  "portraitColor": "#ec4899",
+  "organizationIds": ["hhmm", "schweikart-cokely"],
+  "relatedIds": ["saul-goodman", "hhmm", "bcs-chicanery"],
+  "relationships": [
+    { "targetId": "saul-goodman", "kind": "partner", "label": "Partner and love interest" }
+  ],
+  "stats": { "intelligence": 9, "manipulation": 6, "leadership": 7 },
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hank-schrader",
+  "type": "character",
+  "slug": "hank-schrader",
+  "title": "Hank Schrader",
+  "name": "Hank Schrader",
+  "summary": "DEA agent obsessed with catching Heisenberg.",
+  "series": ["breaking-bad"],
+  "tags": ["dea", "law-enforcement"],
+  "status": "deceased",
+  "occupation": "DEA Special Agent",
+  "appearsIn": ["breaking-bad"],
+  "portraitColor": "#1e40af",
+  "organizationIds": ["dea"],
+  "relatedIds": ["walter-white", "skyler-white", "dea", "ozymandias", "death-hank-schrader"],
+  "relationships": [
+    { "targetId": "walter-white", "kind": "family", "label": "Brother-in-law" },
+    { "targetId": "walter-white", "kind": "rival", "label": "Heisenberg hunter" }
+  ],
+  "stats": { "intelligence": 8, "combat": 8, "leadership": 7 },
+  "addedAt": "2026-07-14"
+}

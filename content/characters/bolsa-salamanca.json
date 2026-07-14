@@ -1,0 +1,42 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "aliases": [],
+  "organizationIds": [
+    "cartel"
+  ],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "bolsa-salamanca",
+  "slug": "bolsa-salamanca",
+  "title": "Juan Bolsa",
+  "name": "Juan Bolsa",
+  "summary": "Cartel lieutenant.",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "status": "deceased",
+  "occupation": "Cartel lieutenant",
+  "portraitColor": "#7f1d1d",
+  "relatedIds": [
+    "cartel",
+    "don-eladio",
+    "hector-salamanca"
+  ]
+}

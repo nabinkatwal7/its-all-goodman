@@ -1,0 +1,42 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "aliases": [],
+  "organizationIds": [
+    "cartel"
+  ],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "hector-salamanca",
+  "slug": "hector-salamanca",
+  "title": "Hector Salamanca",
+  "name": "Hector Salamanca",
+  "summary": "Wheelchair-bound Salamanca patriarch.",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "status": "deceased",
+  "occupation": "Cartel capo",
+  "portraitColor": "#b91c1c",
+  "relatedIds": [
+    "cartel",
+    "gustavo-fring",
+    "object-hector-bell"
+  ]
+}

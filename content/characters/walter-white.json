@@ -1,0 +1,72 @@
+{
+  "id": "walter-white",
+  "type": "character",
+  "slug": "walter-white",
+  "title": "Walter White",
+  "name": "Walter White",
+  "summary": "High school chemistry teacher turned meth kingpin Heisenberg.",
+  "series": ["breaking-bad"],
+  "tags": ["protagonist", "antagonist", "heisenberg"],
+  "nicknames": ["Heisenberg", "Walt", "Mr. Lambert"],
+  "status": "deceased",
+  "occupation": "Chemistry teacher / Meth manufacturer",
+  "appearsIn": ["breaking-bad"],
+  "firstAppearance": "bb-pilot",
+  "lastAppearance": "bb-felina",
+  "age": 52,
+  "residence": "Albuquerque, New Mexico",
+  "portraitColor": "#2d5016",
+  "aliases": ["Heisenberg", "Mr. Lambert", "Mr. White", "Walt"],
+  "organizationIds": ["dea", "gus-empire"],
+  "businessIds": ["a1a-car-wash", "gray-matter", "vamonos-pest"],
+  "crimes": ["Money laundering", "Manufacturing", "Poisoning", "Murder", "Kidnapping"],
+  "relatedIds": ["jesse-pinkman", "skyler-white", "saul-goodman", "mike-ehrmantraut", "gustavo-fring", "hank-schrader", "superlab", "a1a-car-wash", "ozymandias", "quote-i-am-the-one-who-knocks", "death-hank-schrader"],
+  "relationships": [
+    { "targetId": "jesse-pinkman", "kind": "partner", "label": "Cooking partner" },
+    { "targetId": "skyler-white", "kind": "family", "label": "Wife" },
+    { "targetId": "saul-goodman", "kind": "business", "label": "Lawyer" },
+    { "targetId": "mike-ehrmantraut", "kind": "rival", "label": "Associate" },
+    { "targetId": "gustavo-fring", "kind": "rival", "label": "Employer turned enemy" },
+    { "targetId": "hank-schrader", "kind": "family", "label": "Brother-in-law" }
+  ],
+  "kills": [
+    { "victimId": "krazy-8", "method": "Strangulation", "episodeId": "bb-pilot", "reason": "Self-defense" },
+    { "victimId": "gustavo-fring", "method": "Explosion", "episodeId": "bb-face-off", "reason": "Empire takeover" }
+  ],
+  "quoteIds": ["quote-i-am-the-one-who-knocks", "quote-say-my-name"],
+  "episodeIds": ["bb-pilot", "ozymandias", "bb-felina"],
+  "trivia": [
+    "Walter's 99.1% pure blue meth became his signature.",
+    "The name Heisenberg references physicist Werner Heisenberg and uncertainty.",
+    "His birthday is September 7, 1958."
+  ],
+  "stats": {
+    "kills": 200,
+    "moneyEarned": 80000000,
+    "netWorth": 80000000,
+    "intelligence": 10,
+    "manipulation": 9,
+    "chemistry": 10,
+    "combat": 4,
+    "leadership": 8
+  },
+  "lifeEvents": [
+    { "year": 1958, "label": "Born in Albuquerque" },
+    { "year": 1985, "label": "Co-founds Gray Matter", "entityId": "gray-matter" },
+    { "year": 2008, "label": "Cancer diagnosis" },
+    { "year": 2008, "label": "Begins cooking meth", "entityId": "jesse-pinkman" },
+    { "year": 2009, "label": "Partners with Gus Fring", "entityId": "gustavo-fring" },
+    { "year": 2010, "label": "Empire at peak" },
+    { "year": 2010, "label": "Death at meth lab", "entityId": "superlab" }
+  ],
+  "evolutionStages": [
+    { "label": "Teacher", "description": "Mild-mannered chemistry teacher", "color": "#94a3b8" },
+    { "label": "Cook", "description": "Street-level manufacturer", "color": "#64748b" },
+    { "label": "Distributor", "description": "Regional supplier", "color": "#2d5016" },
+    { "label": "Kingpin", "description": "Heisenberg empire", "color": "#14532d" }
+  ],
+  "familyIds": ["skyler-white", "hank-schrader"],
+  "biographyMdx": "walter-white",
+  "spoilerMaxSeason": { "breaking-bad": 5 },
+  "addedAt": "2026-07-14"
+}

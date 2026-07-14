@@ -1,0 +1,40 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "aliases": [],
+  "organizationIds": [
+    "cartel"
+  ],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "nacho-varga",
+  "slug": "nacho-varga",
+  "title": "Ignacio Nacho Varga",
+  "name": "Ignacio Nacho Varga",
+  "summary": "Salamanca associate.",
+  "series": [
+    "better-call-saul"
+  ],
+  "status": "deceased",
+  "occupation": "Cartel associate",
+  "portraitColor": "#f97316",
+  "relatedIds": [
+    "lalo-salamanca",
+    "gustavo-fring",
+    "cartel"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "aliases": [],
+  "organizationIds": [
+    "hhmm"
+  ],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "howard-hamlin",
+  "slug": "howard-hamlin",
+  "title": "Howard Hamlin",
+  "name": "Howard Hamlin",
+  "summary": "HHM managing partner.",
+  "series": [
+    "better-call-saul"
+  ],
+  "status": "deceased",
+  "occupation": "Attorney",
+  "portraitColor": "#0284c7",
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "hhmm"
+  ]
+}

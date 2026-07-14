@@ -1,0 +1,37 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "aliases": [],
+  "organizationIds": [],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "krazy-8",
+  "slug": "krazy-8",
+  "title": "Krazy-8",
+  "name": "Domingo Krazy-8 Molina",
+  "summary": "First major victim of Walter White.",
+  "series": [
+    "breaking-bad"
+  ],
+  "status": "deceased",
+  "occupation": "Dealer",
+  "portraitColor": "#78716c",
+  "relatedIds": [
+    "walter-white",
+    "bb-pilot"
+  ]
+}

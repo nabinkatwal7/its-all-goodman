@@ -1,0 +1,42 @@
+{
+  "id": "saul-goodman",
+  "type": "character",
+  "slug": "saul-goodman",
+  "title": "Saul Goodman",
+  "name": "Saul Goodman",
+  "summary": "Criminal lawyer whose real name is James McGill. Better call Saul!",
+  "series": ["breaking-bad", "better-call-saul"],
+  "tags": ["protagonist", "lawyer"],
+  "nicknames": ["Saul", "Slippin' Jimmy", "Gene Takavic"],
+  "status": "alive",
+  "occupation": "Criminal defense attorney",
+  "appearsIn": ["breaking-bad", "better-call-saul"],
+  "firstAppearance": "bb-better-call-saul",
+  "age": 48,
+  "residence": "Albuquerque, New Mexico",
+  "portraitColor": "#d4a017",
+  "organizationIds": ["hhmm"],
+  "businessIds": ["saul-office"],
+  "relatedIds": ["walter-white", "jesse-pinkman", "mike-ehrmantraut", "kim-wexler", "saul-office", "bcs-chicanery"],
+  "relationships": [
+    { "targetId": "walter-white", "kind": "business", "label": "Client" },
+    { "targetId": "jesse-pinkman", "kind": "business", "label": "Client" },
+    { "targetId": "mike-ehrmantraut", "kind": "partner", "label": "Fixer partner" },
+    { "targetId": "kim-wexler", "kind": "partner", "label": "Former partner" }
+  ],
+  "quoteIds": ["quote-better-call-saul"],
+  "episodeIds": ["bcs-chicanery", "ozymandias"],
+  "stats": { "intelligence": 8, "manipulation": 9, "leadership": 6 },
+  "lifeEvents": [
+    { "year": 1960, "label": "Born James McGill" },
+    { "year": 2002, "label": "Passes bar exam" },
+    { "year": 2008, "label": "Becomes Saul Goodman" },
+    { "year": 2010, "label": "Goes into hiding as Gene" }
+  ],
+  "evolutionStages": [
+    { "label": "Jimmy", "color": "#fbbf24" },
+    { "label": "Saul", "color": "#d97706" },
+    { "label": "Gene", "color": "#78716c" }
+  ],
+  "addedAt": "2026-07-14"
+}

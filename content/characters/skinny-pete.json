@@ -1,0 +1,38 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad",
+    "el-camino"
+  ],
+  "aliases": [],
+  "organizationIds": [],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "skinny-pete",
+  "slug": "skinny-pete",
+  "title": "Skinny Pete",
+  "name": "Skinny Pete",
+  "summary": "Jesse loyal friend.",
+  "series": [
+    "breaking-bad",
+    "el-camino"
+  ],
+  "status": "alive",
+  "occupation": "Dealer",
+  "portraitColor": "#16a34a",
+  "relatedIds": [
+    "jesse-pinkman"
+  ]
+}

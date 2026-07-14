@@ -1,0 +1,61 @@
+{
+  "id": "jesse-pinkman",
+  "type": "character",
+  "slug": "jesse-pinkman",
+  "title": "Jesse Pinkman",
+  "name": "Jesse Pinkman",
+  "summary": "Small-time dealer who becomes Walt's partner and conscience.",
+  "series": ["breaking-bad", "el-camino"],
+  "tags": ["protagonist"],
+  "nicknames": ["Cap'n Cook", "Jesse"],
+  "status": "alive",
+  "occupation": "Meth cook / Dealer",
+  "appearsIn": ["breaking-bad", "el-camino"],
+  "firstAppearance": "bb-pilot",
+  "age": 25,
+  "residence": "Albuquerque, New Mexico",
+  "portraitColor": "#eab308",
+  "organizationIds": ["gus-empire"],
+  "businessIds": ["vamonos-pest"],
+  "crimes": ["Manufacturing", "Distribution"],
+  "relatedIds": [
+    "walter-white",
+    "saul-goodman",
+    "mike-ehrmantraut",
+    "gustavo-fring",
+    "rv",
+    "superlab"
+  ],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "partner",
+      "label": "Cooking partner"
+    },
+    { "targetId": "saul-goodman", "kind": "business", "label": "Lawyer" },
+    { "targetId": "mike-ehrmantraut", "kind": "friend", "label": "Mentor" },
+    { "targetId": "gustavo-fring", "kind": "employer", "label": "Employer" }
+  ],
+  "quoteIds": ["quote-yo-mr-white"],
+  "episodeIds": ["bb-pilot", "ozymandias"],
+  "stats": {
+    "kills": 2,
+    "intelligence": 5,
+    "manipulation": 4,
+    "chemistry": 7,
+    "combat": 5,
+    "leadership": 4
+  },
+  "lifeEvents": [
+    { "year": 1984, "label": "Born" },
+    { "year": 2008, "label": "Partners with Walt" },
+    { "year": 2010, "label": "Escapes empire" }
+  ],
+  "evolutionStages": [
+    { "label": "Dealer", "color": "#eab308" },
+    { "label": "Partner", "color": "#ca8a04" },
+    { "label": "Prisoner", "color": "#713f12" },
+    { "label": "Free", "color": "#fef08a" }
+  ],
+  "addedAt": "2026-07-14"
+}

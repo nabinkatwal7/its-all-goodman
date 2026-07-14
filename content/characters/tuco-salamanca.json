@@ -1,0 +1,40 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "aliases": [],
+  "organizationIds": [
+    "cartel"
+  ],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "tuco-salamanca",
+  "slug": "tuco-salamanca",
+  "title": "Tuco Salamanca",
+  "name": "Tuco Salamanca",
+  "summary": "Unhinged cartel distributor.",
+  "series": [
+    "breaking-bad"
+  ],
+  "status": "deceased",
+  "occupation": "Drug distributor",
+  "portraitColor": "#ef4444",
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "cartel"
+  ]
+}

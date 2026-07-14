@@ -1,0 +1,37 @@
+{
+  "type": "character",
+  "tags": [],
+  "nicknames": [],
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "aliases": [],
+  "organizationIds": [],
+  "businessIds": [],
+  "crimes": [],
+  "kills": [],
+  "quoteIds": [],
+  "episodeIds": [],
+  "mentionedInEpisodeIds": [],
+  "trivia": [],
+  "lifeEvents": [],
+  "evolutionStages": [],
+  "familyIds": [],
+  "relationships": [],
+  "addedAt": "2026-07-13",
+  "id": "jack-welker",
+  "slug": "jack-welker",
+  "title": "Jack Welker",
+  "name": "Jack Welker",
+  "summary": "Neo-Nazi gang leader.",
+  "series": [
+    "breaking-bad"
+  ],
+  "status": "deceased",
+  "occupation": "Gang leader",
+  "portraitColor": "#1f2937",
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman"
+  ]
+}

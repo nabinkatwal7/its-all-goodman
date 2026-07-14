@@ -1,0 +1,42 @@
+{
+  "id": "gustavo-fring",
+  "type": "character",
+  "slug": "gustavo-fring",
+  "title": "Gustavo Fring",
+  "name": "Gustavo Fring",
+  "summary": "Chilean-born fast food mogul and drug kingpin.",
+  "series": ["breaking-bad", "better-call-saul"],
+  "tags": ["antagonist", "kingpin"],
+  "nicknames": ["Gus"],
+  "status": "deceased",
+  "occupation": "Los Pollos Hermanos owner / Drug distributor",
+  "appearsIn": ["breaking-bad", "better-call-saul"],
+  "firstAppearance": "bb-mandala",
+  "age": 54,
+  "residence": "Albuquerque, New Mexico",
+  "portraitColor": "#eab308",
+  "organizationIds": ["gus-empire", "cartel"],
+  "businessIds": ["los-pollos-hermanos"],
+  "crimes": ["Distribution", "Murder", "Money laundering"],
+  "relatedIds": ["walter-white", "mike-ehrmantraut", "lalo-salamanca", "los-pollos-hermanos", "superlab", "cartel"],
+  "relationships": [
+    { "targetId": "walter-white", "kind": "rival", "label": "Cook turned enemy" },
+    { "targetId": "mike-ehrmantraut", "kind": "employee", "label": "Security chief" },
+    { "targetId": "lalo-salamanca", "kind": "enemy", "label": "Cartel rival" }
+  ],
+  "kills": [
+    { "victimId": "victor", "method": "Box cutter", "episodeId": "bb-box-cutter", "reason": "Loose end" }
+  ],
+  "stats": { "kills": 30, "netWorth": 500000000, "intelligence": 10, "manipulation": 10, "leadership": 10, "combat": 6 },
+  "lifeEvents": [
+    { "year": 1958, "label": "Born in Chile" },
+    { "year": 1989, "label": "Opens Los Pollos Hermanos" },
+    { "year": 2009, "label": "Builds superlab" },
+    { "year": 2010, "label": "Killed by Walt's bomb" }
+  ],
+  "evolutionStages": [
+    { "label": "Entrepreneur", "color": "#eab308" },
+    { "label": "Kingpin", "color": "#ca8a04" }
+  ],
+  "addedAt": "2026-07-14"
+}

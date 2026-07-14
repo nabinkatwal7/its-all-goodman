@@ -1,0 +1,22 @@
+{
+  "id": "lalo-salamanca",
+  "type": "character",
+  "slug": "lalo-salamanca",
+  "title": "Eduardo \"Lalo\" Salamanca",
+  "name": "Eduardo \"Lalo\" Salamanca",
+  "summary": "Charming and lethal Salamanca cartel lieutenant.",
+  "series": ["better-call-saul"],
+  "tags": ["antagonist", "cartel"],
+  "status": "deceased",
+  "occupation": "Cartel lieutenant",
+  "appearsIn": ["better-call-saul"],
+  "portraitColor": "#dc2626",
+  "organizationIds": ["cartel"],
+  "relatedIds": ["gustavo-fring", "cartel", "saul-goodman"],
+  "relationships": [
+    { "targetId": "gustavo-fring", "kind": "enemy", "label": "Cartel vs Gus" },
+    { "targetId": "saul-goodman", "kind": "business", "label": "Client" }
+  ],
+  "stats": { "kills": 20, "intelligence": 8, "manipulation": 8, "combat": 9 },
+  "addedAt": "2026-07-14"
+}
