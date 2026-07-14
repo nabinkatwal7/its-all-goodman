@@ -1,0 +1,21 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "chuck-house",
+  "slug": "chuck-house",
+  "title": "Chuck McGill House",
+  "lat": 35.0965,
+  "lng": -106.6682,
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "chuck-mcgill"
+  ],
+  "relatedIds": [
+    "chuck-mcgill"
+  ]
+}

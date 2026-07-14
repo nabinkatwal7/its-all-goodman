@@ -1,0 +1,30 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "hhmm-loc",
+  "slug": "hhmm",
+  "title": "Hamlin Hamlin McGill",
+  "summary": "Prestigious ABQ law firm offices.",
+  "lat": 35.0848,
+  "lng": -106.6511,
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "chuck-mcgill",
+    "howard-hamlin"
+  ],
+  "organizationIds": [
+    "hhmm"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "chuck-mcgill"
+  ]
+}

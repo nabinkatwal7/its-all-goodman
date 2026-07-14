@@ -1,0 +1,36 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bb-box-cutter",
+  "slug": "bb-box-cutter",
+  "title": "Box Cutter",
+  "code": "S04E01",
+  "season": 4,
+  "episodeNumber": 1,
+  "runtime": 46,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "gustavo-fring",
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "superlab"
+  ],
+  "addedAt": "2026-07-11"
+}

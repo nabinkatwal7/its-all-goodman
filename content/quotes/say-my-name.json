@@ -1,0 +1,20 @@
+{
+  "type": "quote",
+  "id": "quote-say-my-name",
+  "slug": "say-my-name",
+  "title": "Say my name.",
+  "text": "Say my name.",
+  "speakerId": "walter-white",
+  "episodeId": "bb-gliding-over-all",
+  "context": "Walt demands recognition from Declan.",
+  "tags": [
+    "iconic"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

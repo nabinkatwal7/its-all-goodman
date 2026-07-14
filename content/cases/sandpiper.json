@@ -1,0 +1,24 @@
+{
+  "type": "case",
+  "tags": [],
+  "addedAt": "2026-07-14",
+  "id": "case-sandpiper",
+  "slug": "sandpiper",
+  "title": "Sandpiper Crossing Class Action",
+  "clientIds": [
+    "elderly-clients"
+  ],
+  "lawyerIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "outcome": "HHM takes over case from Jimmy",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "hhmm"
+  ]
+}

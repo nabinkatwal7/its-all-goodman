@@ -1,0 +1,21 @@
+{
+  "type": "weapon",
+  "tags": [],
+  "addedAt": "2026-07-14",
+  "id": "weapon-box-cutter",
+  "slug": "box-cutter",
+  "title": "Box Cutter",
+  "usageHistory": [
+    "Gus kills Victor"
+  ],
+  "episodeIds": [
+    "bb-box-cutter"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "bb-box-cutter"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "event",
+  "tags": [],
+  "series": [
+    "breaking-bad"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "event-train-heist",
+  "slug": "train-heist",
+  "title": "Train Heist",
+  "year": 2010,
+  "participantIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "todd-alquist"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman"
+  ]
+}

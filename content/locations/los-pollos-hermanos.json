@@ -1,0 +1,27 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "los-pollos-hermanos",
+  "slug": "los-pollos-hermanos",
+  "title": "Los Pollos Hermanos",
+  "summary": "Gus fast food front.",
+  "lat": 35.1109,
+  "lng": -106.6101,
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "gustavo-fring"
+  ],
+  "organizationIds": [
+    "gus-empire"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "gus-empire"
+  ]
+}

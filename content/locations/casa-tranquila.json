@@ -1,0 +1,23 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "casa-tranquila",
+  "slug": "casa-tranquila",
+  "title": "Casa Tranquila",
+  "lat": 35.0612,
+  "lng": -106.7123,
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "hector-salamanca"
+  ],
+  "relatedIds": [
+    "hector-salamanca",
+    "object-hector-bell"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "symbol",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "symbol-pink",
+  "slug": "pink",
+  "title": "Pink",
+  "color": "#ec4899",
+  "appearances": [
+    "Pink teddy bear",
+    "Breast cancer awareness"
+  ],
+  "relatedIds": [
+    "pink-teddy-bear"
+  ]
+}

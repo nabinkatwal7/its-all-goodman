@@ -1,0 +1,20 @@
+{
+  "type": "quote",
+  "id": "quote-better-call-saul",
+  "slug": "better-call-saul",
+  "title": "Better call Saul!",
+  "text": "Better call Saul!",
+  "speakerId": "saul-goodman",
+  "episodeId": "bcs-hero",
+  "tags": [
+    "funny",
+    "iconic"
+  ],
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "saul-goodman"
+  ],
+  "addedAt": "2026-07-14"
+}

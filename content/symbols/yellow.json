@@ -1,0 +1,21 @@
+{
+  "type": "symbol",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "symbol-yellow",
+  "slug": "yellow",
+  "title": "Yellow",
+  "color": "#eab308",
+  "appearances": [
+    "Los Pollos Hermanos branding",
+    "Jesse wardrobe"
+  ],
+  "relatedIds": [
+    "los-pollos-hermanos",
+    "gustavo-fring"
+  ]
+}

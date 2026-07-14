@@ -1,0 +1,36 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [
+    "bb-box-cutter",
+    "ozymandias"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "superlab",
+  "slug": "superlab",
+  "title": "Superlab",
+  "summary": "Gus Fring underground meth lab under laundry.",
+  "lat": 35.0844,
+  "lng": -106.6504,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "gustavo-fring"
+  ],
+  "organizationIds": [
+    "gus-empire"
+  ],
+  "history": [
+    "Built by Gus for 99% pure production"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "walter-white",
+    "jesse-pinkman",
+    "gus-empire"
+  ]
+}

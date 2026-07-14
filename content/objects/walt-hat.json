@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "tags": [],
+  "timelineEvents": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "object-walt-hat",
+  "slug": "walt-hat",
+  "title": "Heisenberg Pork Pie Hat",
+  "symbolism": "Transformation into Heisenberg",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white"
+  ]
+}

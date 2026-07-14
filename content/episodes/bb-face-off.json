@@ -1,0 +1,40 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bb-face-off",
+  "slug": "bb-face-off",
+  "title": "Face Off",
+  "code": "S04E13",
+  "season": 4,
+  "episodeNumber": 13,
+  "runtime": 51,
+  "synopsis": "Walt eliminates Gus with a wheelchair bomb.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "gustavo-fring",
+    "jesse-pinkman",
+    "hector-salamanca"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "walter-white",
+    "gustavo-fring",
+    "hector-salamanca"
+  ],
+  "addedAt": "2026-07-12"
+}

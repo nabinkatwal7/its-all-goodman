@@ -1,0 +1,20 @@
+{
+  "type": "quote",
+  "id": "quote-chicanery",
+  "slug": "chicanery",
+  "title": "Chicanery monologue",
+  "text": "He did it all for the recognition.",
+  "speakerId": "saul-goodman",
+  "episodeId": "bcs-chicanery",
+  "tags": [
+    "emotional"
+  ],
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "bcs-chicanery"
+  ],
+  "addedAt": "2026-07-14"
+}

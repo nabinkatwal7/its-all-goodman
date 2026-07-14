@@ -1,0 +1,22 @@
+{
+  "type": "weapon",
+  "tags": [],
+  "addedAt": "2026-07-14",
+  "id": "weapon-m60",
+  "slug": "m60",
+  "title": "M60 Machine Gun",
+  "usageHistory": [
+    "Walt mows down Jack's gang in Felina"
+  ],
+  "episodeIds": [
+    "bb-felina"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "bb-felina",
+    "jack-welker"
+  ]
+}

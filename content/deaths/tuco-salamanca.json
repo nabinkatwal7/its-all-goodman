@@ -1,0 +1,19 @@
+{
+  "type": "death",
+  "accidental": false,
+  "suicide": false,
+  "tags": [],
+  "addedAt": "2026-07-14",
+  "id": "death-tuco",
+  "slug": "tuco-salamanca",
+  "title": "Death of Tuco Salamanca",
+  "victimId": "tuco-salamanca",
+  "episodeId": "bb-mandala",
+  "method": "Gunshot",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "tuco-salamanca"
+  ]
+}

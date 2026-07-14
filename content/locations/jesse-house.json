@@ -1,0 +1,21 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "jesse-house",
+  "slug": "jesse-house",
+  "title": "Jesse Pinkman House",
+  "lat": 35.1022,
+  "lng": -106.5891,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "jesse-pinkman"
+  ],
+  "relatedIds": [
+    "jesse-pinkman"
+  ]
+}

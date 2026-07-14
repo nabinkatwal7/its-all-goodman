@@ -1,0 +1,24 @@
+{
+  "type": "death",
+  "accidental": false,
+  "suicide": false,
+  "tags": [
+    "explosion"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "death-gus-fring",
+  "slug": "gus-fring",
+  "title": "Death of Gustavo Fring",
+  "victimId": "gustavo-fring",
+  "killerId": "walter-white",
+  "episodeId": "bb-face-off",
+  "method": "Explosion",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "walter-white",
+    "bb-face-off"
+  ]
+}

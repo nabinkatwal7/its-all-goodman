@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "tags": [
+    "easter-egg"
+  ],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "egg-pink-bear",
+  "slug": "pink-bear-foreshadow",
+  "title": "Pink Bear Foreshadowing",
+  "summary": "Half-burned pink teddy bear appears before plane crash reveal.",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "pink-teddy-bear"
+  ]
+}

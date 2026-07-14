@@ -1,0 +1,40 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bb-felina",
+  "slug": "bb-felina",
+  "title": "Felina",
+  "code": "S05E16",
+  "season": 5,
+  "episodeNumber": 16,
+  "runtime": 56,
+  "synopsis": "Walt returns to Albuquerque for a final reckoning.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "jack-welker",
+    "lydia-rodarte-quayle"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "weapon-m60"
+  ],
+  "addedAt": "2026-07-12"
+}

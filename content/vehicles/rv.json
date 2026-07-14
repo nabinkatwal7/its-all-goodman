@@ -1,0 +1,24 @@
+{
+  "type": "vehicle",
+  "tags": [],
+  "episodeIds": [
+    "bb-pilot"
+  ],
+  "history": [
+    "Mobile meth lab",
+    "Buried in desert"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "rv",
+  "slug": "rv",
+  "title": "The RV",
+  "ownerId": "jesse-pinkman",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "jesse-pinkman",
+    "walter-white",
+    "bb-pilot"
+  ]
+}

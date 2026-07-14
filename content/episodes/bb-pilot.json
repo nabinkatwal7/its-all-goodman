@@ -1,0 +1,63 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [
+    "desert-spot"
+  ],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [
+    {
+      "timestamp": "00:00",
+      "label": "Birthday breakfast"
+    },
+    {
+      "timestamp": "15:00",
+      "label": "Cancer diagnosis"
+    },
+    {
+      "timestamp": "35:00",
+      "label": "Desert cook"
+    },
+    {
+      "timestamp": "50:00",
+      "label": "RV crash"
+    }
+  ],
+  "consequences": [],
+  "id": "bb-pilot",
+  "slug": "bb-pilot",
+  "title": "Pilot",
+  "code": "S01E01",
+  "season": 1,
+  "episodeNumber": 1,
+  "runtime": 58,
+  "director": "Vince Gilligan",
+  "writer": "Vince Gilligan",
+  "imdbRating": 8.2,
+  "synopsis": "Diagnosed with cancer, Walter White partners with former student Jesse Pinkman to cook meth.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "skyler-white",
+    "hank-schrader"
+  ],
+  "timelineYear": 2008,
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "rv",
+    "krazy-8"
+  ],
+  "addedAt": "2026-07-14"
+}

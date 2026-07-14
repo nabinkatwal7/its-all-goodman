@@ -1,0 +1,23 @@
+{
+  "type": "organization",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "businessIds": [],
+  "eventIds": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "davis-main",
+  "slug": "davis-main",
+  "title": "Davis & Main",
+  "memberIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ]
+}

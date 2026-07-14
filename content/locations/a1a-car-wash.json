@@ -1,0 +1,24 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "a1a-car-wash",
+  "slug": "a1a-car-wash",
+  "title": "A1A Car Wash",
+  "summary": "White family car wash used for laundering.",
+  "lat": 35.0875,
+  "lng": -106.5342,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "skyler-white"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "skyler-white"
+  ]
+}

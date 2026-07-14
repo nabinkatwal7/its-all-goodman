@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { entitySchema, type Entity } from "@/lib/schemas/entity";
+import { entitySchema, type Entity, type Character, type Episode } from "@/lib/schemas/entity";
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
 
@@ -92,16 +92,12 @@ export function getPopularCharacters(limit = 6): Character[] {
   const chars = getEntitiesByType("character");
   return [...chars]
     .sort((a, b) => b.relatedIds.length - a.relatedIds.length)
-    .slice(0, limit) as Character[];
+    .slice(0, limit);
 }
-
-import type { Character } from "@/lib/schemas/entity";
 
 export function getFeaturedEpisode(): Episode | undefined {
   return getEntitiesByType("episode").find((e) => e.slug === "ozymandias");
 }
-
-import type { Episode } from "@/lib/schemas/entity";
 
 export function getRandomEntity(): Entity {
   const all = getAllEntities();

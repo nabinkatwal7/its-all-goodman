@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "tags": [],
+  "timelineEvents": [],
+  "episodeIds": [
+    "ozymandias"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "pink-teddy-bear",
+  "slug": "pink-teddy-bear",
+  "title": "Pink Teddy Bear",
+  "meaning": "Foreshadowing of Wayfarer 515 crash",
+  "symbolism": "Loss of innocence, consequences of Walt actions",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "ozymandias",
+    "symbol-pink"
+  ]
+}

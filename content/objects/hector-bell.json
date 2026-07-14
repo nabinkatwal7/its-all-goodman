@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "tags": [],
+  "timelineEvents": [],
+  "episodeIds": [
+    "bb-face-off"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "object-hector-bell",
+  "slug": "hector-bell",
+  "title": "Hector's Bell",
+  "meaning": "Communication device after stroke",
+  "symbolism": "Patience and revenge",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "hector-salamanca",
+    "bb-face-off"
+  ]
+}

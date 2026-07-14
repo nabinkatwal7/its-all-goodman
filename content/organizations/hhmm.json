@@ -1,0 +1,34 @@
+{
+  "type": "organization",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "businessIds": [],
+  "eventIds": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "hhmm",
+  "slug": "hhmm",
+  "title": "Hamlin Hamlin McGill",
+  "summary": "Albuquerque law firm.",
+  "memberIds": [
+    "chuck-mcgill",
+    "howard-hamlin",
+    "kim-wexler",
+    "saul-goodman"
+  ],
+  "locationIds": [
+    "hhmm-loc"
+  ],
+  "history": [
+    "Founded by Chuck and Howard"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "chuck-mcgill",
+    "howard-hamlin"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "death",
+  "accidental": false,
+  "suicide": false,
+  "tags": [
+    "gun"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "death-steve-gomez",
+  "slug": "steve-gomez",
+  "title": "Death of Steve Gomez",
+  "victimId": "steve-gomez",
+  "killerId": "jack-welker",
+  "episodeId": "ozymandias",
+  "method": "Gunshot",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "ozymandias"
+  ]
+}

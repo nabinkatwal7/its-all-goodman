@@ -1,0 +1,24 @@
+{
+  "type": "business",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "summary": "",
+  "employeeIds": [],
+  "ownerIds": [
+    "walter-white"
+  ],
+  "history": [
+    "Walt sold his share for $5000"
+  ],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "gray-matter",
+  "slug": "gray-matter",
+  "title": "Gray Matter Technologies",
+  "relatedIds": [
+    "walter-white"
+  ]
+}

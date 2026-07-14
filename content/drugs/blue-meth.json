@@ -1,0 +1,19 @@
+{
+  "type": "drug",
+  "tags": [],
+  "episodeIds": [
+    "bb-pilot"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "blue-meth",
+  "slug": "blue-meth",
+  "title": "Blue Sky Meth",
+  "chemicalNotes": "99.1% pure crystalline methamphetamine. Blue tint from P2P process.",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman"
+  ]
+}

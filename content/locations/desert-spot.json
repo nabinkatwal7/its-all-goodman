@@ -1,0 +1,28 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [
+    "ozymandias"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "desert-spot",
+  "slug": "desert-spot",
+  "title": "Tohajiilee Desert",
+  "summary": "Remote desert where pivotal confrontations occur.",
+  "lat": 35.5,
+  "lng": -107,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "hank-schrader",
+    "jesse-pinkman"
+  ],
+  "relatedIds": [
+    "ozymandias",
+    "walter-white",
+    "hank-schrader"
+  ]
+}

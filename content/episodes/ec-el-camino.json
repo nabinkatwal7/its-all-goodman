@@ -1,0 +1,37 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "ec-el-camino",
+  "slug": "ec-el-camino",
+  "title": "El Camino: A Breaking Bad Movie",
+  "code": "Film",
+  "season": 0,
+  "episodeNumber": 0,
+  "runtime": 122,
+  "synopsis": "Jesse Pinkman escapes captivity.",
+  "series": [
+    "el-camino"
+  ],
+  "characterIds": [
+    "jesse-pinkman",
+    "badger",
+    "skinny-pete"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-09"
+}

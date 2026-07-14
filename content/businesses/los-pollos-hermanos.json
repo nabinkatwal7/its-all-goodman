@@ -1,0 +1,25 @@
+{
+  "type": "business",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "summary": "",
+  "employeeIds": [],
+  "ownerIds": [
+    "gustavo-fring"
+  ],
+  "history": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "los-pollos-hermanos-biz",
+  "slug": "los-pollos-hermanos",
+  "title": "Los Pollos Hermanos",
+  "locationId": "los-pollos-hermanos",
+  "relatedIds": [
+    "gustavo-fring",
+    "los-pollos-hermanos",
+    "gus-empire"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bb-gliding-over-all",
+  "slug": "bb-gliding-over-all",
+  "title": "Gliding Over All",
+  "code": "S05E08",
+  "season": 5,
+  "episodeNumber": 8,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "mike-ehrmantraut",
+    "lydia-rodarte-quayle"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "mike-ehrmantraut"
+  ],
+  "addedAt": "2026-07-10"
+}

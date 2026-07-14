@@ -1,0 +1,25 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "dea-office",
+  "slug": "dea-office",
+  "title": "DEA Albuquerque Office",
+  "lat": 35.0844,
+  "lng": -106.6504,
+  "series": [
+    "breaking-bad"
+  ],
+  "organizationIds": [
+    "dea"
+  ],
+  "characterIds": [
+    "hank-schrader"
+  ],
+  "relatedIds": [
+    "dea",
+    "hank-schrader"
+  ]
+}

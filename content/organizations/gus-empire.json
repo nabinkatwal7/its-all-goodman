@@ -1,0 +1,37 @@
+{
+  "type": "organization",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "businessIds": [
+    "los-pollos-hermanos-biz"
+  ],
+  "eventIds": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "gus-empire",
+  "slug": "gus-empire",
+  "title": "Gus Fring Empire",
+  "summary": "Los Pollos distribution network.",
+  "memberIds": [
+    "gustavo-fring",
+    "mike-ehrmantraut",
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "locationIds": [
+    "superlab",
+    "los-pollos-hermanos"
+  ],
+  "history": [
+    "Built over 20 years"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "mike-ehrmantraut",
+    "superlab",
+    "los-pollos-hermanos"
+  ]
+}

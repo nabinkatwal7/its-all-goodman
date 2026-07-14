@@ -1,0 +1,61 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [
+    "hhmm"
+  ],
+  "quoteIds": [
+    "quote-chicanery"
+  ],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [
+    {
+      "timestamp": "00:00",
+      "label": "Hearing begins"
+    },
+    {
+      "timestamp": "20:00",
+      "label": "Jimmy cross-examination"
+    },
+    {
+      "timestamp": "40:00",
+      "label": "Chicanery monologue"
+    }
+  ],
+  "consequences": [],
+  "id": "bcs-chicanery",
+  "slug": "bcs-chicanery",
+  "title": "Chicanery",
+  "code": "S03E05",
+  "season": 3,
+  "episodeNumber": 5,
+  "runtime": 47,
+  "director": "Daniel Sackheim",
+  "writer": "Gordon Smith",
+  "imdbRating": 9.5,
+  "synopsis": "Jimmy cross-examines Chuck in a devastating malpractice hearing.",
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "chuck-mcgill",
+    "kim-wexler",
+    "howard-hamlin"
+  ],
+  "timelineYear": 2003,
+  "relatedIds": [
+    "saul-goodman",
+    "chuck-mcgill",
+    "kim-wexler",
+    "hhmm"
+  ],
+  "addedAt": "2026-07-14"
+}

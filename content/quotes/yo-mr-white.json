@@ -1,0 +1,19 @@
+{
+  "type": "quote",
+  "id": "quote-yo-mr-white",
+  "slug": "yo-mr-white",
+  "title": "Yo, Mr. White!",
+  "text": "Yo, Mr. White!",
+  "speakerId": "jesse-pinkman",
+  "episodeId": "bb-pilot",
+  "tags": [
+    "funny"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-14"
+}

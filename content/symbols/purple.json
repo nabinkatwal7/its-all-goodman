@@ -1,0 +1,18 @@
+{
+  "type": "symbol",
+  "tags": [],
+  "series": [
+    "breaking-bad"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "symbol-purple",
+  "slug": "purple",
+  "title": "Purple",
+  "color": "#9333ea",
+  "appearances": [
+    "Marie Schrader wardrobe and home decor"
+  ],
+  "relatedIds": [
+    "marie-schrader"
+  ]
+}

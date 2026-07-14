@@ -1,0 +1,34 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bb-crawl-space",
+  "slug": "bb-crawl-space",
+  "title": "Crawl Space",
+  "code": "S04E11",
+  "season": 4,
+  "episodeNumber": 11,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "skyler-white"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "skyler-white"
+  ],
+  "addedAt": "2026-07-10"
+}

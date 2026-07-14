@@ -1,0 +1,29 @@
+{
+  "type": "organization",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "businessIds": [],
+  "eventIds": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "dea",
+  "slug": "dea",
+  "title": "Drug Enforcement Administration",
+  "summary": "Federal agency hunting Heisenberg.",
+  "memberIds": [
+    "hank-schrader"
+  ],
+  "locationIds": [
+    "dea-office"
+  ],
+  "history": [
+    "Hank leads Heisenberg investigation"
+  ],
+  "relatedIds": [
+    "hank-schrader",
+    "dea-office"
+  ]
+}

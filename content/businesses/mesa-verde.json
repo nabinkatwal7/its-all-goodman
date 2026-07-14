@@ -1,0 +1,20 @@
+{
+  "type": "business",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "summary": "",
+  "employeeIds": [],
+  "ownerIds": [],
+  "history": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "mesa-verde",
+  "slug": "mesa-verde",
+  "title": "Mesa Verde",
+  "relatedIds": [
+    "kim-wexler"
+  ]
+}

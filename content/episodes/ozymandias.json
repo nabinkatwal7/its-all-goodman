@@ -1,0 +1,92 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [
+    "death-hank-schrader",
+    "death-steve-gomez"
+  ],
+  "locationIds": [
+    "desert-spot"
+  ],
+  "quoteIds": [
+    "quote-i-am-the-one-who-knocks"
+  ],
+  "objectIds": [
+    "pink-teddy-bear"
+  ],
+  "references": [
+    "Shelley poem Ozymandias"
+  ],
+  "callbacks": [
+    "To'hajiilee shootout setup"
+  ],
+  "foreshadowing": [
+    "Walt buried money"
+  ],
+  "continuity": [
+    "Hank finally catches Heisenberg"
+  ],
+  "behindTheScenes": [
+    "Rian Johnson directed this acclaimed episode"
+  ],
+  "bestScenes": [
+    "Hank arrest",
+    "Hank death",
+    "Holly kidnapping"
+  ],
+  "sceneTimeline": [
+    {
+      "timestamp": "00:00",
+      "label": "Train robbery aftermath"
+    },
+    {
+      "timestamp": "12:00",
+      "label": "Desert confrontation"
+    },
+    {
+      "timestamp": "25:00",
+      "label": "Hank dies"
+    },
+    {
+      "timestamp": "35:00",
+      "label": "Family fight"
+    },
+    {
+      "timestamp": "42:00",
+      "label": "Kidnapping Holly"
+    }
+  ],
+  "consequences": [
+    "Walt goes on the run",
+    "Jesse enslaved by neo-Nazis"
+  ],
+  "id": "ozymandias",
+  "slug": "ozymandias",
+  "title": "Ozymandias",
+  "code": "S05E14",
+  "season": 5,
+  "episodeNumber": 14,
+  "runtime": 47,
+  "director": "Rian Johnson",
+  "writer": "Vince Gilligan",
+  "imdbRating": 10,
+  "synopsis": "Hank discovers Walt is Heisenberg. Everything collapses in the desert.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "hank-schrader",
+    "jack-welker",
+    "marie-schrader"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "walter-white",
+    "hank-schrader",
+    "jesse-pinkman",
+    "death-hank-schrader"
+  ],
+  "addedAt": "2026-07-14"
+}

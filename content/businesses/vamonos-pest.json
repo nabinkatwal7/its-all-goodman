@@ -1,0 +1,25 @@
+{
+  "type": "business",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "summary": "",
+  "employeeIds": [
+    "jesse-pinkman"
+  ],
+  "ownerIds": [
+    "saul-goodman"
+  ],
+  "history": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "vamonos-pest",
+  "slug": "vamonos-pest",
+  "title": "Vamonos Pest",
+  "relatedIds": [
+    "saul-goodman",
+    "jesse-pinkman"
+  ]
+}

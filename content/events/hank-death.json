@@ -1,0 +1,22 @@
+{
+  "type": "event",
+  "tags": [],
+  "series": [
+    "breaking-bad"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "event-hank-death",
+  "slug": "hank-death",
+  "title": "Hank Schrader Killed",
+  "year": 2010,
+  "participantIds": [
+    "hank-schrader",
+    "jack-welker",
+    "walter-white"
+  ],
+  "episodeId": "ozymandias",
+  "relatedIds": [
+    "death-hank-schrader",
+    "ozymandias"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "death",
+  "accidental": false,
+  "suicide": false,
+  "tags": [
+    "gun"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "death-hank-schrader",
+  "slug": "hank-schrader",
+  "title": "Death of Hank Schrader",
+  "victimId": "hank-schrader",
+  "killerId": "jack-welker",
+  "episodeId": "ozymandias",
+  "method": "Gunshot",
+  "reason": "Executed by neo-Nazis",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "hank-schrader",
+    "jack-welker",
+    "ozymandias"
+  ]
+}

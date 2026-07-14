@@ -1,0 +1,35 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bcs-bad-choice-road",
+  "slug": "bcs-bad-choice-road",
+  "title": "Bad Choice Road",
+  "code": "S05E09",
+  "season": 5,
+  "episodeNumber": 9,
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "lalo-salamanca",
+    "gustavo-fring",
+    "mike-ehrmantraut"
+  ],
+  "relatedIds": [
+    "lalo-salamanca",
+    "gustavo-fring"
+  ],
+  "addedAt": "2026-07-11"
+}

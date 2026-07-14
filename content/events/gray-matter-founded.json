@@ -1,0 +1,19 @@
+{
+  "type": "event",
+  "tags": [],
+  "series": [
+    "breaking-bad"
+  ],
+  "addedAt": "2026-07-14",
+  "id": "event-gray-matter",
+  "slug": "gray-matter-founded",
+  "title": "Gray Matter Founded",
+  "year": 1985,
+  "participantIds": [
+    "walter-white"
+  ],
+  "relatedIds": [
+    "gray-matter",
+    "walter-white"
+  ]
+}

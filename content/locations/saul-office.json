@@ -1,0 +1,23 @@
+{
+  "type": "location",
+  "tags": [],
+  "eventIds": [],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "saul-office",
+  "slug": "saul-office",
+  "title": "Saul Goodman Office",
+  "summary": "Strip mall law office.",
+  "lat": 35.1189,
+  "lng": -106.6064,
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman"
+  ],
+  "relatedIds": [
+    "saul-goodman"
+  ]
+}

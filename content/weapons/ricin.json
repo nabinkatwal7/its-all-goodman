@@ -1,0 +1,21 @@
+{
+  "type": "weapon",
+  "tags": [],
+  "addedAt": "2026-07-14",
+  "id": "weapon-ricin",
+  "slug": "ricin",
+  "title": "Ricin",
+  "usageHistory": [
+    "Walt poisons Lydia"
+  ],
+  "episodeIds": [
+    "bb-felina"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "lydia-rodarte-quayle"
+  ]
+}

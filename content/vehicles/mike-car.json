@@ -1,0 +1,18 @@
+{
+  "type": "vehicle",
+  "tags": [],
+  "episodeIds": [],
+  "history": [],
+  "addedAt": "2026-07-14",
+  "id": "mike-car",
+  "slug": "mike-car",
+  "title": "Mike's Chrysler",
+  "ownerId": "mike-ehrmantraut",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "mike-ehrmantraut"
+  ]
+}

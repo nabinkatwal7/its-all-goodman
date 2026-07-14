@@ -1,0 +1,26 @@
+{
+  "type": "business",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "summary": "",
+  "employeeIds": [],
+  "ownerIds": [
+    "skyler-white",
+    "walter-white"
+  ],
+  "history": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "a1a-car-wash-biz",
+  "slug": "a1a-car-wash",
+  "title": "A1A Car Wash",
+  "locationId": "a1a-car-wash",
+  "relatedIds": [
+    "walter-white",
+    "skyler-white",
+    "a1a-car-wash"
+  ]
+}

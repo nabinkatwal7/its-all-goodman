@@ -1,0 +1,33 @@
+{
+  "type": "episode",
+  "tags": [],
+  "deathIds": [],
+  "locationIds": [],
+  "quoteIds": [],
+  "objectIds": [],
+  "references": [],
+  "callbacks": [],
+  "foreshadowing": [],
+  "continuity": [],
+  "behindTheScenes": [],
+  "bestScenes": [],
+  "sceneTimeline": [],
+  "consequences": [],
+  "id": "bcs-hero",
+  "slug": "bcs-hero",
+  "title": "Hero",
+  "code": "S01E04",
+  "season": 1,
+  "episodeNumber": 4,
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "saul-office"
+  ],
+  "addedAt": "2026-07-11"
+}

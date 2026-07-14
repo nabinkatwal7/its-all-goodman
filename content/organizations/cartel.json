@@ -1,0 +1,33 @@
+{
+  "type": "organization",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "businessIds": [],
+  "eventIds": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "cartel",
+  "slug": "cartel",
+  "title": "Juarez Cartel",
+  "summary": "Salamanca-dominated cartel.",
+  "memberIds": [
+    "don-eladio",
+    "bolsa-salamanca",
+    "hector-salamanca",
+    "tuco-salamanca",
+    "lalo-salamanca",
+    "the-twins"
+  ],
+  "history": [
+    "Rival to Gus empire"
+  ],
+  "relatedIds": [
+    "don-eladio",
+    "hector-salamanca",
+    "lalo-salamanca",
+    "gustavo-fring"
+  ]
+}

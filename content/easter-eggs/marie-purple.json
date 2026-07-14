@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "tags": [
+    "easter-egg"
+  ],
+  "episodeIds": [],
+  "addedAt": "2026-07-14",
+  "id": "egg-color-marie",
+  "slug": "marie-purple",
+  "title": "Marie Purple Motif",
+  "summary": "Marie wears purple in nearly every scene.",
+  "relatedIds": [
+    "marie-schrader",
+    "symbol-purple"
+  ]
+}

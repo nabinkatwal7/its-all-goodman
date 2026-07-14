@@ -1,0 +1,24 @@
+{
+  "type": "business",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "summary": "",
+  "employeeIds": [],
+  "ownerIds": [
+    "saul-goodman"
+  ],
+  "history": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "saul-office-biz",
+  "slug": "saul-office",
+  "title": "Saul Goodman Law Office",
+  "locationId": "saul-office",
+  "relatedIds": [
+    "saul-goodman",
+    "saul-office"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "quote",
+  "id": "quote-i-am-the-one-who-knocks",
+  "slug": "i-am-the-one-who-knocks",
+  "title": "I am the one who knocks.",
+  "text": "I am the one who knocks.",
+  "speakerId": "walter-white",
+  "episodeId": "ozymandias",
+  "context": "Walt confronts Skyler about danger.",
+  "tags": [
+    "dark",
+    "iconic"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "ozymandias"
+  ],
+  "addedAt": "2026-07-14"
+}

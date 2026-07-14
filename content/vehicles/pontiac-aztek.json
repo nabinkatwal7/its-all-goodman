@@ -1,0 +1,19 @@
+{
+  "type": "vehicle",
+  "tags": [],
+  "episodeIds": [
+    "bb-pilot"
+  ],
+  "history": [],
+  "addedAt": "2026-07-14",
+  "id": "pontiac-aztek",
+  "slug": "pontiac-aztek",
+  "title": "Pontiac Aztek",
+  "ownerId": "walter-white",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "organization",
+  "tags": [],
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "businessIds": [],
+  "eventIds": [],
+  "timelineEvents": [],
+  "addedAt": "2026-07-14",
+  "id": "schweikart-cokely",
+  "slug": "schweikart-cokely",
+  "title": "Schweikart & Cokely",
+  "memberIds": [
+    "kim-wexler"
+  ],
+  "relatedIds": [
+    "kim-wexler"
+  ]
+}
