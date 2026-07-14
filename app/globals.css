@@ -1,68 +1,55 @@
 @import "tailwindcss";
 
-/* ── Universe palettes ── */
+/* ── Desert base ── */
 :root {
-  --background: #1a1208;
+  --background: transparent;
   --foreground: #f5e6c8;
   --heisenberg: #7cfc00;
   --pollos: #f5c518;
   --desert: #c4854c;
-  --card: rgba(20, 14, 8, 0.75);
+  --card: rgba(12, 8, 4, 0.72);
   --muted: #a89070;
-  --border: rgba(245, 197, 24, 0.15);
+  --border: rgba(196, 133, 76, 0.25);
   --accent: #7cfc00;
   --glow: rgba(124, 252, 0, 0.35);
-  --hero-from: #2d1810;
-  --hero-via: #1a0f08;
-  --hero-to: #0a0604;
+  --hero-from: transparent;
+  --hero-via: transparent;
+  --hero-to: transparent;
+  --sand-light: #c4956a;
+  --sun-color: #ff8844;
 }
 
 .dark {
-  --background: #0a0604;
+  --background: transparent;
   --foreground: #f5e6c8;
-  --heisenberg: #7cfc00;
-  --pollos: #f5c518;
-  --desert: #8b6914;
-  --card: rgba(20, 14, 8, 0.82);
+  --card: rgba(10, 6, 3, 0.78);
   --muted: #8a7355;
-  --border: rgba(245, 197, 24, 0.12);
-  --accent: #7cfc00;
-  --glow: rgba(124, 252, 0, 0.4);
 }
 
-/* Breaking Bad — toxic green desert */
 [data-universe="breaking-bad"] {
   --accent: #7cfc00;
   --heisenberg: #7cfc00;
   --glow: rgba(124, 252, 0, 0.45);
-  --border: rgba(124, 252, 0, 0.18);
-  --hero-from: #1a2e0a;
-  --hero-via: #0d1806;
-  --hero-to: #050804;
+  --border: rgba(124, 252, 0, 0.2);
+  --sun-color: #ff6622;
 }
 
-/* Better Call Saul — warm gold strip-mall */
 [data-universe="better-call-saul"] {
   --accent: #f5c518;
   --heisenberg: #f5c518;
   --glow: rgba(245, 197, 24, 0.45);
-  --border: rgba(245, 197, 24, 0.22);
-  --hero-from: #2e1f08;
-  --hero-via: #1a1206;
-  --hero-to: #0a0804;
+  --border: rgba(245, 197, 24, 0.25);
+  --sun-color: #ffaa33;
 }
 
-/* El Camino / Gene — cold noir B&W */
 [data-universe="el-camino"] {
   --accent: #d4d4d4;
   --heisenberg: #e5e5e5;
   --pollos: #a3a3a3;
-  --glow: rgba(255, 255, 255, 0.15);
-  --border: rgba(255, 255, 255, 0.1);
+  --glow: rgba(255, 255, 255, 0.12);
+  --border: rgba(255, 255, 255, 0.12);
   --foreground: #e5e5e5;
-  --hero-from: #1a1a1a;
-  --hero-via: #0f0f0f;
-  --hero-to: #050505;
+  --sun-color: #cccccc;
 }
 
 @theme inline {
@@ -79,8 +66,8 @@
   --font-display: var(--font-bebas);
 }
 
-body {
-  background: var(--background);
+html, body {
+  background: #0a0604;
   color: var(--foreground);
   font-family: var(--font-dm-sans), system-ui, sans-serif;
   overflow-x: hidden;
@@ -88,16 +75,148 @@ body {
 
 .font-display {
   font-family: var(--font-bebas), Impact, sans-serif;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 
-/* Film grain overlay */
+/* Static fallback when reduced motion */
+.desert-fallback {
+  background:
+    radial-gradient(ellipse 100% 60% at 50% 100%, #5c3d1e 0%, transparent 70%),
+    linear-gradient(180deg, #1a0f08 0%, #3d2817 40%, #9a7348 100%);
+}
+
+/* ── Overlays ── */
+.desert-sun {
+  pointer-events: none;
+  position: fixed;
+  top: 8%;
+  right: 18%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--sun-color) 0%, transparent 70%);
+  opacity: 0.35;
+  z-index: 0;
+  filter: blur(8px);
+  animation: sun-pulse 6s ease-in-out infinite;
+}
+
+@keyframes sun-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(1.05); }
+}
+
+.heat-shimmer {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.06;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 200, 100, 0.03) 2px,
+    rgba(255, 200, 100, 0.03) 4px
+  );
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(0) skewX(-2deg); }
+  100% { transform: translateX(20px) skewX(-2deg); }
+}
+
+.desert-vignette {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.desert-highway {
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  z-index: 1;
+  background: #2a2018;
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.5);
+}
+.desert-highway::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  background: repeating-linear-gradient(
+    90deg,
+    #f5c518 0px,
+    #f5c518 30px,
+    transparent 30px,
+    transparent 60px
+  );
+  opacity: 0.5;
+  animation: road-scroll 2s linear infinite;
+}
+
+@keyframes road-scroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 0; }
+}
+
+.desert-dust-css {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, rgba(212, 165, 116, 0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 60%, rgba(212, 165, 116, 0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 30%, rgba(212, 165, 116, 0.35) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 80%, rgba(212, 165, 116, 0.25) 0%, transparent 100%);
+  animation: dust-drift 20s linear infinite;
+}
+
+@keyframes dust-drift {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-40px); }
+}
+
+.tumbleweed {
+  pointer-events: none;
+  position: fixed;
+  bottom: 12%;
+  z-index: 3;
+  color: #8b6914;
+  animation: tumble 28s linear infinite;
+}
+
+@keyframes tumble {
+  0% { left: -5%; transform: rotate(0deg); }
+  100% { left: 105%; transform: rotate(720deg); }
+}
+
+.coords-hud {
+  pointer-events: none;
+  position: fixed;
+  bottom: 14px;
+  left: 16px;
+  z-index: 30;
+}
+
+/* Film grain */
 .film-grain {
   pointer-events: none;
   position: fixed;
   inset: 0;
   z-index: 9998;
-  opacity: 0.04;
+  opacity: 0.05;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: grain 0.5s steps(1) infinite;
 }
@@ -109,7 +228,6 @@ body {
   75% { transform: translate(-1%, 1%); }
 }
 
-/* Scanline (Gene mode) */
 .scanlines::after {
   content: "";
   pointer-events: none;
@@ -125,74 +243,86 @@ body {
   );
 }
 
-/* Heisenberg glitch text */
-.glitch {
-  position: relative;
-}
 .glitch:hover {
   animation: glitch 0.4s ease;
 }
 @keyframes glitch {
   0% { text-shadow: 2px 0 #7cfc00, -2px 0 #f5c518; }
-  25% { text-shadow: -2px 0 #7cfc00, 2px 0 #f5c518; }
-  50% { text-shadow: 2px 2px #7cfc00, -2px -2px #f5c518; }
-  75% { text-shadow: -1px 1px #7cfc00, 1px -1px #f5c518; }
+  50% { text-shadow: -2px 2px #7cfc00, 2px -2px #f5c518; }
   100% { text-shadow: none; }
 }
 
-/* Glowing cards */
+/* HUD panels — content floats over desert */
+.desert-hud {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px) saturate(1.2);
+  border-radius: 2px;
+  padding: 1.5rem 2rem;
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.desert-hud-full {
+  min-height: calc(100vh - 8rem);
+}
+
+.desert-hud-corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: var(--accent);
+  opacity: 0.6;
+}
+.desert-hud-tl { top: 6px; left: 6px; border-top: 2px solid; border-left: 2px solid; }
+.desert-hud-tr { top: 6px; right: 6px; border-top: 2px solid; border-right: 2px solid; }
+.desert-hud-bl { bottom: 6px; left: 6px; border-bottom: 2px solid; border-left: 2px solid; }
+.desert-hud-br { bottom: 6px; right: 6px; border-bottom: 2px solid; border-right: 2px solid; }
+
 .universe-card {
   background: var(--card);
   border: 1px solid var(--border);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 .universe-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 24px var(--glow), 0 8px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 28px var(--glow), 0 8px 32px rgba(0, 0, 0, 0.5);
   transform: translateY(-3px);
 }
 
-/* 3D tilt explore tile */
 .explore-tile {
   transform-style: preserve-3d;
   perspective: 800px;
 }
 
-/* Hero gradient mesh */
 .hero-mesh {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, var(--glow) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(245, 197, 24, 0.08) 0%, transparent 50%),
-    linear-gradient(180deg, var(--hero-from) 0%, var(--hero-via) 50%, var(--hero-to) 100%);
+  background: transparent;
 }
 
-/* Periodic element badge (chemistry UI) */
 .element-badge {
   font-family: var(--font-bebas), sans-serif;
   border: 2px solid var(--accent);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
   box-shadow: inset 0 0 20px var(--glow);
+  backdrop-filter: blur(8px);
 }
 
 .maplibregl-map {
   font-family: inherit;
-  border-radius: 12px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--desert);
-  border-radius: 3px;
-}
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--desert); border-radius: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .film-grain { animation: none; }
+  .film-grain, .heat-shimmer, .tumbleweed, .desert-dust-css, .desert-highway::after, .desert-sun {
+    animation: none;
+  }
   .universe-card:hover { transform: none; }
 }

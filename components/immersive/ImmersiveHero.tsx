@@ -1,17 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { GlobalSearch } from "@/components/shell/GlobalSearch";
 import { useUniverse } from "@/components/providers/UniverseProvider";
 import type { SearchResult } from "@/lib/search/index";
 import { SERIES_LABELS } from "@/lib/utils";
-
-const UniverseScene = dynamic(
-  () => import("@/components/immersive/UniverseScene").then((m) => m.UniverseScene),
-  { ssr: false },
-);
 
 type HeroProps = {
   searchItems: SearchResult[];
@@ -21,31 +15,29 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
   const { universe, setUniverse } = useUniverse();
 
   const series = [
-    { id: "breaking-bad" as const, href: "/characters/walter-white", label: "Breaking Bad", symbol: "Br" },
-    { id: "better-call-saul" as const, href: "/characters/saul-goodman", label: "Better Call Saul", symbol: "Sa" },
-    { id: "el-camino" as const, href: "/episodes/el-camino/ec-el-camino", label: "El Camino", symbol: "Ec" },
+    { id: "breaking-bad" as const, href: "/characters/walter-white", label: "Breaking Bad", symbol: "Br", num: "35" },
+    { id: "better-call-saul" as const, href: "/characters/saul-goodman", label: "Better Call Saul", symbol: "Sa", num: "79" },
+    { id: "el-camino" as const, href: "/episodes/el-camino/ec-el-camino", label: "El Camino", symbol: "Ec", num: "99" },
   ];
 
   return (
-    <section className="relative -mx-4 -mt-6 mb-16 overflow-hidden hero-mesh min-h-[85vh] flex flex-col items-center justify-center px-4">
-      <UniverseScene />
-
+    <section className="relative -mx-4 -mt-6 mb-16 flex min-h-[92vh] flex-col items-center justify-center px-4">
       <div className="relative z-10 w-full max-w-4xl text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="font-display text-sm tracking-[0.3em] text-pollos uppercase"
+          className="font-display text-sm tracking-[0.4em] text-pollos uppercase"
         >
-          Albuquerque · New Mexico
+          Tohajiilee · New Mexico · 5,312 ft
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1 }}
-          className="font-display mt-4 text-6xl leading-none sm:text-8xl md:text-9xl"
+          className="font-display mt-4 text-6xl leading-[0.9] sm:text-8xl md:text-[9rem]"
         >
-          <span className="glitch text-heisenberg">BREAKING</span>
+          <span className="glitch text-heisenberg drop-shadow-[0_0_30px_var(--glow)]">BREAKING</span>
           <br />
           <span className="text-foreground">BAD</span>
           <span className="text-pollos"> · </span>
@@ -56,10 +48,9 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="mx-auto mt-6 max-w-lg text-muted"
+          className="mx-auto mt-6 max-w-md text-muted"
         >
-          Enter the graph. Every character, episode, and connection —
-          from the desert cook to Slippin&apos; Jimmy.
+          You are standing in the desert. Every path leads deeper into the story.
         </motion.p>
 
         <motion.div
@@ -68,26 +59,27 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
           transition={{ delay: 0.4 }}
           className="mx-auto mt-8 max-w-xl"
         >
-          <GlobalSearch items={searchItems} placeholder="Say my name... search the universe" />
+          <GlobalSearch items={searchItems} placeholder="Say my name..." />
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-8 flex flex-wrap justify-center gap-4"
+          className="mt-10 flex flex-wrap justify-center gap-5"
         >
           {series.map((s) => (
             <button
               key={s.id}
               type="button"
               onClick={() => setUniverse(s.id)}
-              className={`element-badge flex h-16 w-16 flex-col items-center justify-center rounded-sm transition-all ${
-                universe === s.id ? "scale-110 ring-2 ring-accent" : "opacity-70 hover:opacity-100"
+              className={`element-badge flex h-[72px] w-[72px] flex-col items-center justify-center transition-all ${
+                universe === s.id ? "scale-110 ring-2 ring-accent" : "opacity-60 hover:opacity-100"
               }`}
             >
-              <span className="text-[10px] text-muted">{s.symbol}</span>
-              <span className="text-lg text-accent">{s.symbol === "Br" ? "35" : s.symbol === "Sa" ? "79" : "99"}</span>
+              <span className="self-start pl-1 text-[9px] text-muted">{s.symbol}</span>
+              <span className="text-2xl text-accent">{s.num}</span>
+              <span className="text-[8px] text-muted">{s.label.split(" ")[0]}</span>
             </button>
           ))}
         </motion.div>
@@ -96,7 +88,7 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="mt-6 flex flex-wrap justify-center gap-3"
+          className="mt-8 flex flex-wrap justify-center gap-3"
         >
           {series.map((s) => (
             <Link
@@ -105,8 +97,8 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
               onMouseEnter={() => setUniverse(s.id)}
               className={`rounded-sm border px-5 py-2 font-display text-lg tracking-wider transition-all ${
                 universe === s.id
-                  ? "border-accent bg-accent/10 text-accent"
-                  : "border-border text-muted hover:border-pollos hover:text-pollos"
+                  ? "border-accent bg-accent/10 text-accent shadow-[0_0_20px_var(--glow)]"
+                  : "border-border/50 text-muted hover:border-pollos hover:text-pollos"
               }`}
             >
               {SERIES_LABELS[s.id]}
@@ -114,13 +106,13 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
           ))}
         </motion.div>
 
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="mt-12 text-muted"
+        <motion.p
+          animate={{ y: [0, 8, 0], opacity: [0.4, 1, 0.4] }}
+          transition={{ repeat: Infinity, duration: 2.5 }}
+          className="mt-16 font-display text-sm tracking-[0.3em] text-muted"
         >
-          ↓ explore
-        </motion.div>
+          SCROLL INTO THE DESERT
+        </motion.p>
       </div>
     </section>
   );
