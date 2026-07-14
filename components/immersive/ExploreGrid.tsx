@@ -107,7 +107,7 @@ export function FloatingCharacterOrbit({
             >
               {c.name.split(" ").map((w) => w[0]).join("").slice(0, 2)}
             </div>
-            <p className="mt-1 text-center text-xs font-medium">{c.name.split(" ")[0]}</p>
+            <p className="text-readable mt-1 text-center text-xs font-medium">{c.name.split(" ")[0]}</p>
           </Link>
         );
       })}

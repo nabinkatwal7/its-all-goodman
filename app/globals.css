@@ -1,55 +1,53 @@
 @import "tailwindcss";
 
-/* ── Desert base ── */
+/* ── Readable desert palette ── */
 :root {
-  --background: transparent;
-  --foreground: #f5e6c8;
-  --heisenberg: #7cfc00;
-  --pollos: #f5c518;
+  --background: #0c0804;
+  --foreground: #fff8eb;
+  --foreground-soft: #e8dcc8;
+  --heisenberg: #9dff4d;
+  --pollos: #ffd54a;
   --desert: #c4854c;
-  --card: rgba(12, 8, 4, 0.72);
-  --muted: #a89070;
-  --border: rgba(196, 133, 76, 0.25);
-  --accent: #7cfc00;
-  --glow: rgba(124, 252, 0, 0.35);
-  --hero-from: transparent;
-  --hero-via: transparent;
-  --hero-to: transparent;
-  --sand-light: #c4956a;
+  --surface: #161008;
+  --surface-solid: #120c06;
+  --card: rgba(18, 12, 6, 0.96);
+  --muted: #b8a88a;
+  --border: rgba(255, 220, 160, 0.18);
+  --accent: #9dff4d;
+  --glow: rgba(157, 255, 77, 0.35);
   --sun-color: #ff8844;
+  --text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 24px rgba(0, 0, 0, 0.6);
 }
 
 .dark {
-  --background: transparent;
-  --foreground: #f5e6c8;
-  --card: rgba(10, 6, 3, 0.78);
-  --muted: #8a7355;
+  --background: #0c0804;
+  --foreground: #fff8eb;
+  --card: rgba(18, 12, 6, 0.96);
+  --muted: #b8a88a;
 }
 
 [data-universe="breaking-bad"] {
-  --accent: #7cfc00;
-  --heisenberg: #7cfc00;
-  --glow: rgba(124, 252, 0, 0.45);
-  --border: rgba(124, 252, 0, 0.2);
-  --sun-color: #ff6622;
+  --accent: #9dff4d;
+  --heisenberg: #9dff4d;
+  --glow: rgba(157, 255, 77, 0.4);
+  --border: rgba(157, 255, 77, 0.22);
 }
 
 [data-universe="better-call-saul"] {
-  --accent: #f5c518;
-  --heisenberg: #f5c518;
-  --glow: rgba(245, 197, 24, 0.45);
-  --border: rgba(245, 197, 24, 0.25);
-  --sun-color: #ffaa33;
+  --accent: #ffd54a;
+  --heisenberg: #ffd54a;
+  --glow: rgba(255, 213, 74, 0.35);
+  --border: rgba(255, 213, 74, 0.25);
 }
 
 [data-universe="el-camino"] {
-  --accent: #d4d4d4;
-  --heisenberg: #e5e5e5;
-  --pollos: #a3a3a3;
-  --glow: rgba(255, 255, 255, 0.12);
-  --border: rgba(255, 255, 255, 0.12);
-  --foreground: #e5e5e5;
-  --sun-color: #cccccc;
+  --accent: #f0f0f0;
+  --heisenberg: #ffffff;
+  --pollos: #c0c0c0;
+  --glow: rgba(255, 255, 255, 0.15);
+  --border: rgba(255, 255, 255, 0.2);
+  --foreground: #f5f5f5;
+  --muted: #b0b0b0;
 }
 
 @theme inline {
@@ -62,48 +60,84 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-accent: var(--accent);
+  --color-surface: var(--surface);
   --font-sans: var(--font-dm-sans);
   --font-display: var(--font-bebas);
 }
 
 html, body {
-  background: #0a0604;
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-display {
   font-family: var(--font-bebas), Impact, sans-serif;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
 
-/* Static fallback when reduced motion */
+/* Legibility helpers */
+.text-readable {
+  color: var(--foreground-soft);
+  text-shadow: var(--text-shadow);
+}
+
+.text-hero {
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 1),
+    0 0 40px rgba(0, 0, 0, 0.8),
+    0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+.label-caps {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--pollos);
+  font-size: 0.75rem;
+}
+
+/* Content zone — dims desert behind readable UI */
+.content-scrim {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  background:
+    linear-gradient(180deg, rgba(8, 5, 2, 0.55) 0%, rgba(8, 5, 2, 0.75) 35%, rgba(8, 5, 2, 0.88) 70%, rgba(8, 5, 2, 0.92) 100%);
+}
+
+.desert-canvas-dim {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: rgba(8, 5, 2, 0.35);
+}
+
 .desert-fallback {
   background:
     radial-gradient(ellipse 100% 60% at 50% 100%, #5c3d1e 0%, transparent 70%),
     linear-gradient(180deg, #1a0f08 0%, #3d2817 40%, #9a7348 100%);
 }
 
-/* ── Overlays ── */
+/* Decorative — toned down so they don't fight text */
 .desert-sun {
   pointer-events: none;
   position: fixed;
-  top: 8%;
-  right: 18%;
-  width: 120px;
-  height: 120px;
+  top: 6%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: radial-gradient(circle, var(--sun-color) 0%, transparent 70%);
-  opacity: 0.35;
+  opacity: 0.2;
   z-index: 0;
-  filter: blur(8px);
-  animation: sun-pulse 6s ease-in-out infinite;
-}
-
-@keyframes sun-pulse {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 0.45; transform: scale(1.05); }
+  filter: blur(12px);
 }
 
 .heat-shimmer {
@@ -111,20 +145,7 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: 1;
-  opacity: 0.06;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 2px,
-    rgba(255, 200, 100, 0.03) 2px,
-    rgba(255, 200, 100, 0.03) 4px
-  );
-  animation: shimmer 4s linear infinite;
-}
-
-@keyframes shimmer {
-  0% { transform: translateX(0) skewX(-2deg); }
-  100% { transform: translateX(20px) skewX(-2deg); }
+  opacity: 0.03;
 }
 
 .desert-vignette {
@@ -132,7 +153,7 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: 2;
-  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.65) 100%);
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .desert-highway {
@@ -141,33 +162,10 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 8px;
-  z-index: 1;
-  background: #2a2018;
-  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.5);
-}
-.desert-highway::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  transform: translateY(-50%);
-  background: repeating-linear-gradient(
-    90deg,
-    #f5c518 0px,
-    #f5c518 30px,
-    transparent 30px,
-    transparent 60px
-  );
-  opacity: 0.5;
-  animation: road-scroll 2s linear infinite;
-}
-
-@keyframes road-scroll {
-  0% { background-position: 0 0; }
-  100% { background-position: 60px 0; }
+  height: 6px;
+  z-index: 4;
+  background: #1a1208;
+  opacity: 0.8;
 }
 
 .desert-dust-css {
@@ -175,26 +173,17 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: 1;
-  background-image:
-    radial-gradient(1px 1px at 10% 20%, rgba(212, 165, 116, 0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 30% 60%, rgba(212, 165, 116, 0.3) 0%, transparent 100%),
-    radial-gradient(1px 1px at 70% 30%, rgba(212, 165, 116, 0.35) 0%, transparent 100%),
-    radial-gradient(1px 1px at 90% 80%, rgba(212, 165, 116, 0.25) 0%, transparent 100%);
-  animation: dust-drift 20s linear infinite;
-}
-
-@keyframes dust-drift {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-40px); }
+  opacity: 0.35;
 }
 
 .tumbleweed {
   pointer-events: none;
   position: fixed;
-  bottom: 12%;
-  z-index: 3;
-  color: #8b6914;
-  animation: tumble 28s linear infinite;
+  bottom: 8%;
+  z-index: 2;
+  color: #6b5010;
+  opacity: 0.25;
+  animation: tumble 32s linear infinite;
 }
 
 @keyframes tumble {
@@ -205,27 +194,20 @@ html, body {
 .coords-hud {
   pointer-events: none;
   position: fixed;
-  bottom: 14px;
+  bottom: 12px;
   left: 16px;
-  z-index: 30;
+  z-index: 35;
+  color: var(--muted);
+  opacity: 0.7;
+  text-shadow: 0 1px 2px #000;
 }
 
-/* Film grain */
 .film-grain {
   pointer-events: none;
   position: fixed;
   inset: 0;
   z-index: 9998;
-  opacity: 0.05;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation: grain 0.5s steps(1) infinite;
-}
-
-@keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(-2%, -2%); }
-  50% { transform: translate(2%, 2%); }
-  75% { transform: translate(-1%, 1%); }
+  opacity: 0.025;
 }
 
 .scanlines::after {
@@ -234,95 +216,178 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: 9997;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.08) 2px,
-    rgba(0, 0, 0, 0.08) 4px
-  );
+  opacity: 0.04;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px);
+}
+
+/* ── Hero dossier panel ── */
+.hero-panel {
+  background: linear-gradient(165deg, rgba(22, 16, 8, 0.97) 0%, rgba(12, 8, 4, 0.98) 100%);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+}
+
+.hero-panel::before {
+  content: "DEA FIELD FILE · ALBUQUERQUE SECTOR · EYES ONLY";
+  display: block;
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 0.65rem;
+  color: var(--accent);
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── HUD dossier panels ── */
+.desert-hud {
+  position: relative;
+  background: linear-gradient(180deg, rgba(22, 16, 8, 0.98) 0%, rgba(14, 10, 6, 0.99) 100%);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+}
+
+.desert-hud-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1.25rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  color: var(--accent);
+}
+
+.desert-hud-body {
+  padding: 1.75rem 2rem 2rem;
+  color: var(--foreground-soft);
+}
+
+.desert-hud-body h1,
+.desert-hud-body h2,
+.desert-hud-body h3 {
+  color: var(--foreground);
+}
+
+.desert-hud-body p,
+.desert-hud-body li,
+.desert-hud-body td,
+.desert-hud-body dd {
+  color: var(--foreground-soft);
+}
+
+.desert-hud-stamp {
+  font-size: 0.65rem;
+  color: var(--pollos);
+  border: 1px solid var(--pollos);
+  padding: 0.15rem 0.5rem;
+  opacity: 0.9;
+  transform: rotate(-2deg);
+}
+
+.desert-hud-corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: var(--accent);
+  opacity: 0.8;
+  z-index: 2;
+}
+.desert-hud-tl { top: 8px; left: 8px; border-top: 2px solid; border-left: 2px solid; }
+.desert-hud-tr { top: 8px; right: 8px; border-top: 2px solid; border-right: 2px solid; }
+.desert-hud-bl { bottom: 8px; left: 8px; border-bottom: 2px solid; border-left: 2px solid; }
+.desert-hud-br { bottom: 8px; right: 8px; border-bottom: 2px solid; border-right: 2px solid; }
+
+.universe-card {
+  background: rgba(22, 16, 8, 0.95);
+  border: 1px solid var(--border);
+  color: var(--foreground-soft);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.universe-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--glow), 0 12px 40px rgba(0, 0, 0, 0.55);
+  transform: translateY(-2px);
+}
+
+.universe-card h2,
+.universe-card h3 {
+  color: var(--foreground);
+}
+
+/* Form controls — always readable */
+.input-field {
+  width: 100%;
+  background: var(--surface-solid);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  outline: none;
+  font-size: 0.9375rem;
+}
+.input-field::placeholder {
+  color: var(--muted);
+}
+.input-field:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--glow);
+}
+
+/* Links */
+a.text-accent,
+.text-accent {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Header bar */
+.shell-header {
+  background: rgba(12, 8, 4, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.element-badge {
+  font-family: var(--font-bebas), sans-serif;
+  border: 2px solid var(--accent);
+  background: var(--surface-solid);
+  color: var(--foreground);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 .glitch:hover {
   animation: glitch 0.4s ease;
 }
 @keyframes glitch {
-  0% { text-shadow: 2px 0 #7cfc00, -2px 0 #f5c518; }
-  50% { text-shadow: -2px 2px #7cfc00, 2px -2px #f5c518; }
-  100% { text-shadow: none; }
+  0% { text-shadow: 2px 0 #9dff4d, -2px 0 #ffd54a, 0 2px 8px #000; }
+  50% { text-shadow: -2px 2px #9dff4d, 2px -2px #ffd54a, 0 2px 8px #000; }
+  100% { text-shadow: 0 2px 8px rgba(0,0,0,1); }
 }
 
-/* HUD panels — content floats over desert */
-.desert-hud {
-  position: relative;
-  background: var(--card);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(16px) saturate(1.2);
-  border-radius: 2px;
-  padding: 1.5rem 2rem;
-  box-shadow:
-    0 0 40px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-}
-
-.desert-hud-full {
-  min-height: calc(100vh - 8rem);
-}
-
-.desert-hud-corner {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-color: var(--accent);
-  opacity: 0.6;
-}
-.desert-hud-tl { top: 6px; left: 6px; border-top: 2px solid; border-left: 2px solid; }
-.desert-hud-tr { top: 6px; right: 6px; border-top: 2px solid; border-right: 2px solid; }
-.desert-hud-bl { bottom: 6px; left: 6px; border-bottom: 2px solid; border-left: 2px solid; }
-.desert-hud-br { bottom: 6px; right: 6px; border-bottom: 2px solid; border-right: 2px solid; }
-
-.universe-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(14px);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-.universe-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 28px var(--glow), 0 8px 32px rgba(0, 0, 0, 0.5);
-  transform: translateY(-3px);
-}
-
-.explore-tile {
-  transform-style: preserve-3d;
-  perspective: 800px;
-}
-
-.hero-mesh {
-  background: transparent;
-}
-
-.element-badge {
-  font-family: var(--font-bebas), sans-serif;
-  border: 2px solid var(--accent);
-  background: rgba(0, 0, 0, 0.55);
-  box-shadow: inset 0 0 20px var(--glow);
-  backdrop-filter: blur(8px);
-}
+.explore-tile { transform-style: preserve-3d; perspective: 800px; }
 
 .maplibregl-map {
   font-family: inherit;
-  border-radius: 2px;
   border: 1px solid var(--border);
 }
 
-::-webkit-scrollbar { width: 5px; height: 5px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--desert); border-radius: 2px; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--desert); border-radius: 3px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .film-grain, .heat-shimmer, .tumbleweed, .desert-dust-css, .desert-highway::after, .desert-sun {
-    animation: none;
-  }
+  .tumbleweed { animation: none; }
   .universe-card:hover { transform: none; }
 }

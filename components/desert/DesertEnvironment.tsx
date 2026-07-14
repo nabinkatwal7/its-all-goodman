@@ -12,15 +12,15 @@ const SKY: Record<
 > = {
   "breaking-bad": {
     sun: [1, 0.06, -0.4],
-    fog: "#3d2817",
-    sand: "#9a7348",
-    ambient: 0.35,
+    fog: "#2a1810",
+    sand: "#7a5a38",
+    ambient: 0.22,
   },
   "better-call-saul": {
     sun: [0.8, 0.12, -0.3],
-    fog: "#5c3d1e",
-    sand: "#c4956a",
-    ambient: 0.45,
+    fog: "#3d2817",
+    sand: "#a07850",
+    ambient: 0.28,
   },
   "el-camino": {
     sun: [0.3, 0.2, -0.5],
@@ -132,7 +132,7 @@ function DustCloud({ count = 400, color }: { count?: number; color: string }) {
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
-      <pointsMaterial size={0.06} color={color} transparent opacity={0.35} sizeAttenuation />
+      <pointsMaterial size={0.06} color={color} transparent opacity={0.18} sizeAttenuation />
     </points>
   );
 }

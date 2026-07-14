@@ -21,99 +21,72 @@ export function ImmersiveHero({ searchItems }: HeroProps) {
   ];
 
   return (
-    <section className="relative -mx-4 -mt-6 mb-16 flex min-h-[92vh] flex-col items-center justify-center px-4">
-      <div className="relative z-10 w-full max-w-4xl text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="font-display text-sm tracking-[0.4em] text-pollos uppercase"
-        >
-          Tohajiilee · New Mexico · 5,312 ft
-        </motion.p>
+    <section className="relative -mx-4 -mt-6 mb-12 flex min-h-[88vh] flex-col items-center justify-center px-4 py-12">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="hero-panel relative z-10 w-full max-w-3xl rounded-sm px-6 py-10 sm:px-10 sm:py-12"
+      >
+        <p className="label-caps text-center">Tohajiilee · New Mexico · 5,312 ft</p>
 
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.1 }}
-          className="font-display mt-4 text-6xl leading-[0.9] sm:text-8xl md:text-[9rem]"
-        >
-          <span className="glitch text-heisenberg drop-shadow-[0_0_30px_var(--glow)]">BREAKING</span>
+        <h1 className="text-hero font-display mt-6 text-center text-5xl leading-[0.95] sm:text-7xl md:text-8xl">
+          <span className="glitch text-heisenberg">BREAKING</span>
           <br />
           <span className="text-foreground">BAD</span>
           <span className="text-pollos"> · </span>
           <span className="text-pollos">UNIVERSE</span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="mx-auto mt-6 max-w-md text-muted"
-        >
-          You are standing in the desert. Every path leads deeper into the story.
-        </motion.p>
+        <p className="text-readable mx-auto mt-6 max-w-md text-center text-base sm:text-lg">
+          You are standing in the desert. Pick a path — every connection is a story waiting to break bad.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="mx-auto mt-8 max-w-xl"
-        >
+        <div className="mx-auto mt-8 max-w-lg">
           <GlobalSearch items={searchItems} placeholder="Say my name..." />
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-10 flex flex-wrap justify-center gap-5"
-        >
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
           {series.map((s) => (
             <button
               key={s.id}
               type="button"
               onClick={() => setUniverse(s.id)}
-              className={`element-badge flex h-[72px] w-[72px] flex-col items-center justify-center transition-all ${
-                universe === s.id ? "scale-110 ring-2 ring-accent" : "opacity-60 hover:opacity-100"
+              className={`element-badge flex h-[76px] w-[76px] flex-col items-center justify-center transition-all ${
+                universe === s.id ? "scale-105 ring-2 ring-accent" : "opacity-80 hover:opacity-100"
               }`}
             >
-              <span className="self-start pl-1 text-[9px] text-muted">{s.symbol}</span>
+              <span className="self-start pl-1.5 text-[9px] text-muted">{s.symbol}</span>
               <span className="text-2xl text-accent">{s.num}</span>
-              <span className="text-[8px] text-muted">{s.label.split(" ")[0]}</span>
+              <span className="text-[9px] text-muted">{s.label.split(" ")[0]}</span>
             </button>
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="mt-8 flex flex-wrap justify-center gap-3"
-        >
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           {series.map((s) => (
             <Link
               key={s.href}
               href={s.href}
               onMouseEnter={() => setUniverse(s.id)}
-              className={`rounded-sm border px-5 py-2 font-display text-lg tracking-wider transition-all ${
+              className={`rounded-sm border px-5 py-2.5 font-display text-lg tracking-wider transition-all ${
                 universe === s.id
-                  ? "border-accent bg-accent/10 text-accent shadow-[0_0_20px_var(--glow)]"
-                  : "border-border/50 text-muted hover:border-pollos hover:text-pollos"
+                  ? "border-accent bg-accent/15 text-accent"
+                  : "border-border bg-surface-solid text-foreground-soft hover:border-pollos hover:text-pollos"
               }`}
             >
               {SERIES_LABELS[s.id]}
             </Link>
           ))}
-        </motion.div>
+        </div>
+      </motion.div>
 
-        <motion.p
-          animate={{ y: [0, 8, 0], opacity: [0.4, 1, 0.4] }}
-          transition={{ repeat: Infinity, duration: 2.5 }}
-          className="mt-16 font-display text-sm tracking-[0.3em] text-muted"
-        >
-          SCROLL INTO THE DESERT
-        </motion.p>
-      </div>
+      <motion.p
+        animate={{ y: [0, 6, 0] }}
+        transition={{ repeat: Infinity, duration: 2.5 }}
+        className="label-caps relative z-10 mt-10 opacity-70"
+      >
+        Scroll to explore
+      </motion.p>
     </section>
   );
 }

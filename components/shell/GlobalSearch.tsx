@@ -49,14 +49,10 @@ export function GlobalSearch({ items, placeholder = "Search the universe...", co
         }}
         onFocus={() => setOpen(true)}
         placeholder={placeholder}
-        className={
-          compact
-            ? "w-full rounded-sm border border-border bg-background/60 px-3 py-1.5 text-sm outline-none placeholder:text-muted focus:border-accent focus:shadow-[0_0_12px_var(--glow)]"
-            : "w-full rounded-sm border border-border bg-background/60 px-4 py-3 outline-none placeholder:text-muted focus:border-accent focus:shadow-[0_0_16px_var(--glow)]"
-        }
+        className={`input-field ${compact ? "px-3 py-2 text-sm" : "px-4 py-3 text-base"}`}
       />
       {open && results.length > 0 && (
-        <ul className="absolute left-0 right-0 top-full z-50 mt-1 max-h-80 overflow-auto rounded-sm border border-border bg-card/95 shadow-[0_8px_32px_rgba(0,0,0,0.5)] backdrop-blur-md">
+        <ul className="absolute left-0 right-0 top-full z-50 mt-1 max-h-80 overflow-auto rounded-sm border border-border bg-[#120c06] shadow-2xl">
           {results.map((r) => (
             <li key={r.id}>
               <Link
@@ -65,9 +61,9 @@ export function GlobalSearch({ items, placeholder = "Search the universe...", co
                   setOpen(false);
                   setQuery("");
                 }}
-                className="flex items-center justify-between px-4 py-2 hover:bg-background"
+                className="flex items-center justify-between px-4 py-2.5 text-foreground hover:bg-surface"
               >
-                <span>{r.title}</span>
+                <span className="font-medium">{r.title}</span>
                 <span className="text-xs text-muted">{TYPE_LABELS[r.type]}</span>
               </Link>
             </li>

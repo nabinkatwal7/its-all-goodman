@@ -65,14 +65,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
       <DesertWorld />
       <DesertOverlays />
 
-      <header
-        className={cn(
-          "sticky top-0 z-40 transition-all",
-          isHome
-            ? "border-b border-transparent bg-gradient-to-b from-black/40 to-transparent"
-            : "border-b border-border/30 bg-black/30 backdrop-blur-md",
-        )}
-      >
+      <header className="shell-header sticky top-0 z-40">
         <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3">
           <Link href="/" className="font-display shrink-0 text-2xl tracking-wider">
             <span className="text-heisenberg">BB</span>
@@ -112,7 +105,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
             <select
               value={universe}
               onChange={(e) => setUniverse(e.target.value as typeof universe)}
-              className="hidden rounded border border-border/50 bg-black/40 px-2 py-1 font-display text-sm tracking-wide sm:block"
+              className="input-field hidden px-2 py-1 font-display text-sm tracking-wide sm:block"
             >
               <option value="breaking-bad">Breaking Bad</option>
               <option value="better-call-saul">Better Call Saul</option>
@@ -122,7 +115,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
             <select
               value={spoilerLevel}
               onChange={(e) => setSpoilerLevel(e.target.value as typeof spoilerLevel)}
-              className="max-w-[90px] rounded border border-border/50 bg-black/40 px-1 py-1 text-[10px] sm:max-w-none sm:text-xs"
+              className="input-field max-w-[90px] px-1 py-1 text-[10px] sm:max-w-none sm:text-xs"
             >
               {SPOILER_LEVELS.map((l) => (
                 <option key={l.value} value={l.value}>
@@ -159,7 +152,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
         </nav>
 
         {menuOpen && (
-          <nav className="border-t border-border/30 bg-black/50 px-4 py-3 md:hidden">
+          <nav className="border-t border-border bg-surface-solid px-4 py-3 md:hidden">
             <div className="mb-3">
               <GlobalSearch items={searchItems} compact />
             </div>
@@ -180,7 +173,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
       </header>
 
       {navHistory.length > 1 && !isHome && (
-        <div className="relative z-10 border-b border-border/20 bg-black/20 px-4 py-1 backdrop-blur-sm">
+        <div className="relative z-10 border-b border-border bg-surface-solid/90 px-4 py-1.5">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-1 text-xs text-muted">
             {navHistory.slice(-5).map((entry, i) => (
               <span key={`${entry.href}-${i}`} className="flex items-center gap-1">
@@ -198,7 +191,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
         {isHome ? <div className="relative">{children}</div> : <DesertHud>{children}</DesertHud>}
       </main>
 
-      <footer className="relative z-10 border-t border-border/20 bg-black/30 py-5 text-center backdrop-blur-sm">
+      <footer className="relative z-10 border-t border-border bg-surface-solid/95 py-5 text-center">
         <p className="font-display text-sm tracking-[0.25em] text-muted">
           {isHome ? "THE DESERT REMEMBERS EVERYTHING" : "IT'S ALL GOOD MAN · 34.5199° N 105.8701° W"}
         </p>

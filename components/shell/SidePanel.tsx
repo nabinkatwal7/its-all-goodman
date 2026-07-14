@@ -36,13 +36,14 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
         onClick={onClose}
         aria-label="Close panel"
       />
-      <aside className="desert-hud relative h-full w-full max-w-md overflow-auto p-6 shadow-2xl">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-sm font-medium text-muted">Side Panel</h2>
-          <button type="button" onClick={onClose} className="rounded px-2 py-1 hover:bg-background">
+      <aside className="desert-hud relative h-full w-full max-w-md overflow-auto shadow-2xl">
+        <div className="desert-hud-header">
+          <span>QUICK VIEW · FIELD DOSSIER</span>
+          <button type="button" onClick={onClose} className="text-foreground hover:text-accent">
             ✕
           </button>
         </div>
+        <div className="desert-hud-body">
 
         {!entity ? (
           <p className="text-muted">Loading...</p>
@@ -61,7 +62,7 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
             </div>
 
             {"summary" in entity && entity.summary && (
-              <p className="mt-4 text-sm leading-relaxed">{entity.summary}</p>
+              <p className="text-readable mt-4 text-sm leading-relaxed">{entity.summary}</p>
             )}
 
             <Link
@@ -85,6 +86,7 @@ export function SidePanel({ href, onClose }: SidePanelProps) {
             )}
           </>
         )}
+        </div>
       </aside>
     </div>
   );
