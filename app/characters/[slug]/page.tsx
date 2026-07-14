@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CharacterPortrait } from "@/components/Portrait";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { Section, DataGrid } from "@/components/EntityPage";
 import {
   CharacterEvolutionSlider,

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { getEntitiesByType } from "@/lib/content/loader";
 
 export async function generateStaticParams() {

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { Section } from "@/components/EntityPage";
 import { getBusiness, getEntitiesByType } from "@/lib/content/loader";
 import { VisitTracker } from "@/components/VisitTracker";

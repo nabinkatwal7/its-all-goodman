@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { Section } from "@/components/EntityPage";
 import { getEntitiesByType } from "@/lib/content/loader";
 

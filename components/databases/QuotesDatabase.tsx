@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { entityHref, type Quote } from "@/lib/schemas/entity";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { useMemo, useState } from "react";
 
 export function QuotesDatabase({ quotes }: { quotes: Quote[] }) {

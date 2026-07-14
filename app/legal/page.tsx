@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { getEntitiesByType } from "@/lib/content/loader";
 
 export const metadata = { title: "Legal World" };

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { entityHref, type Death } from "@/lib/schemas/entity";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { useState } from "react";
 
 export function DeathsDatabase({ deaths }: { deaths: Death[] }) {

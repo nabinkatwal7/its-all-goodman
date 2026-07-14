@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { EntityLinkById } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { Section, DataGrid } from "@/components/EntityPage";
 import { getEpisode, getEntitiesByType } from "@/lib/content/loader";
 import { SERIES_LABELS } from "@/lib/utils";

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { EntityLink, EntityLinkById } from "@/components/EntityLink";
+import { EntityLink } from "@/components/EntityLink";
+import { EntityLinkById } from "@/components/EntityLinkById";
 import { getNeighbors } from "@/lib/graph/getNeighbors";
 import type { Entity } from "@/lib/schemas/entity";
 import { TYPE_LABELS, cn } from "@/lib/utils";
