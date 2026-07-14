@@ -312,7 +312,5 @@ export function entityHref(entity: Entity): string {
       return `/events/${entity.slug}`;
     case "case":
       return `/legal/${entity.slug}`;
-    default:
-      return `/entity/${entity.slug}`;
   }
 }

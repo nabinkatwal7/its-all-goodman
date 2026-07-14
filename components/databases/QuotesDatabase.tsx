@@ -1,11 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { entityHref, type Quote } from "@/lib/schemas/entity";
-import { EntityLinkById } from "@/components/EntityLinkById";
 import { useMemo, useState } from "react";
 
-export function QuotesDatabase({ quotes }: { quotes: Quote[] }) {
+type QuoteRow = {
+  id: string;
+  href: string;
+  text: string;
+  context?: string;
+  tags: string[];
+  speaker: { title: string; href: string };
+  episode: { title: string; href: string };
+};
+
+export function QuotesDatabase({ quotes }: { quotes: QuoteRow[] }) {
   const [query, setQuery] = useState("");
   const [tag, setTag] = useState("");
 
@@ -42,7 +50,9 @@ export function QuotesDatabase({ quotes }: { quotes: Quote[] }) {
           <li key={q.id} className="rounded-xl border border-border bg-card p-5">
             <blockquote className="text-lg font-medium">&ldquo;{q.text}&rdquo;</blockquote>
             <p className="mt-2 text-sm text-muted">
-              <EntityLinkById id={q.speakerId} /> · <EntityLinkById id={q.episodeId} />
+              <Link href={q.speaker.href} className="text-accent hover:underline">{q.speaker.title}</Link>
+              {" · "}
+              <Link href={q.episode.href} className="text-accent hover:underline">{q.episode.title}</Link>
             </p>
             {q.context && <p className="mt-2 text-sm">{q.context}</p>}
             <div className="mt-2 flex gap-2">
@@ -50,7 +60,7 @@ export function QuotesDatabase({ quotes }: { quotes: Quote[] }) {
                 <span key={t} className="rounded bg-background px-2 py-0.5 text-xs">{t}</span>
               ))}
             </div>
-            <Link href={entityHref(q)} className="mt-2 inline-block text-xs text-accent">Detail →</Link>
+            <Link href={q.href} className="mt-2 inline-block text-xs text-accent">Detail →</Link>
           </li>
         ))}
       </ul>

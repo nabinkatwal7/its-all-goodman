@@ -13,7 +13,7 @@ import {
 import "@xyflow/react/dist/style.css";
 import { useRouter } from "next/navigation";
 import { useCallback, useMemo } from "react";
-import { getTypeColor } from "@/lib/graph/buildGraph";
+import { getTypeColor } from "@/lib/graph/colors";
 
 type UniverseGraphProps = {
   nodes: Node[];

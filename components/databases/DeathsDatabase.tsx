@@ -1,14 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { entityHref, type Death } from "@/lib/schemas/entity";
-import { EntityLinkById } from "@/components/EntityLinkById";
 import { useState } from "react";
 
-export function DeathsDatabase({ deaths }: { deaths: Death[] }) {
+type DeathRow = {
+  id: string;
+  href: string;
+  title: string;
+  method: string;
+  killer?: { title: string; href: string };
+  episode: { title: string; href: string };
+};
+
+export function DeathsDatabase({ deaths }: { deaths: DeathRow[] }) {
   const [method, setMethod] = useState("");
   const methods = [...new Set(deaths.map((d) => d.method))].sort();
-
   const filtered = deaths.filter((d) => !method || d.method === method);
 
   return (
@@ -30,10 +36,10 @@ export function DeathsDatabase({ deaths }: { deaths: Death[] }) {
         <tbody>
           {filtered.map((d) => (
             <tr key={d.id} className="border-b border-border/50">
-              <td className="py-2"><Link href={entityHref(d)} className="hover:text-accent">{d.title}</Link></td>
-              <td>{d.killerId ? <EntityLinkById id={d.killerId} /> : "—"}</td>
+              <td className="py-2"><Link href={d.href} className="hover:text-accent">{d.title}</Link></td>
+              <td>{d.killer ? <Link href={d.killer.href} className="text-accent hover:underline">{d.killer.title}</Link> : "—"}</td>
               <td>{d.method}</td>
-              <td><EntityLinkById id={d.episodeId} /></td>
+              <td><Link href={d.episode.href} className="text-accent hover:underline">{d.episode.title}</Link></td>
             </tr>
           ))}
         </tbody>

@@ -1,3 +1,4 @@
+import "server-only";
 import fs from "fs";
 import path from "path";
 import { entitySchema, type Entity, type Character, type Episode } from "@/lib/schemas/entity";
