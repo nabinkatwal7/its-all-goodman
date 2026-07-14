@@ -1,0 +1,28 @@
+{
+  "id": "lalo-guard",
+  "type": "character",
+  "slug": "lalo-guard",
+  "title": "Mateo",
+  "name": "Mateo",
+  "summary": "Cartel gunman in Lalo's war with Gus.",
+  "series": [
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "portraitColor": "#742a2a",
+  "relatedIds": [
+    "lalo-salamanca",
+    "gustavo-fring",
+    "mike-ehrmantraut"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

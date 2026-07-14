@@ -1,0 +1,25 @@
+{
+  "id": "death-jane-margolis",
+  "type": "death",
+  "slug": "jane-margolis",
+  "title": "Death of Jane Margolis",
+  "victimId": "jane-margolis",
+  "killerId": "walter-white",
+  "episodeId": "bb-phoenix",
+  "method": "Choked on vomit — Walt did not intervene",
+  "reason": "Prevented Jesse from leaving; protected secret",
+  "tags": [
+    "tragic",
+    "pivotal"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "jane-margolis",
+    "walter-white",
+    "jesse-pinkman",
+    "bb-phoenix"
+  ],
+  "addedAt": "2026-07-14"
+}

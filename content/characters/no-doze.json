@@ -1,0 +1,26 @@
+{
+  "id": "no-doze",
+  "type": "character",
+  "slug": "no-doze",
+  "title": "No-Doze",
+  "name": "No-Doze",
+  "summary": "Tuco's crew. Beaten to death by Tuco.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#2d3748",
+  "relatedIds": [
+    "tuco-salamanca"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

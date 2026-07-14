@@ -1,0 +1,20 @@
+{
+  "id": "event-desert-money-burial",
+  "type": "event",
+  "slug": "desert-money-burial",
+  "title": "Desert Money Burial",
+  "summary": "Walt buries $80M in barrels in To'hajiilee.",
+  "year": 2010,
+  "locationId": "tohajiilee",
+  "participantIds": [
+    "walter-white",
+    "hank-schrader"
+  ],
+  "episodeId": "bb-buried",
+  "relatedIds": [
+    "desert-spot",
+    "walter-white",
+    "bb-buried"
+  ],
+  "addedAt": "2026-07-14"
+}

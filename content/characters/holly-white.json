@@ -1,0 +1,40 @@
+{
+  "id": "holly-white",
+  "type": "character",
+  "slug": "holly-white",
+  "title": "Holly White",
+  "name": "Holly White",
+  "summary": "Walt and Skyler's infant daughter.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#fbb6ce",
+  "relatedIds": [
+    "walter-white",
+    "skyler-white",
+    "walter-jr",
+    "ozymandias"
+  ],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "family",
+      "label": "Father"
+    },
+    {
+      "targetId": "skyler-white",
+      "kind": "family",
+      "label": "Mother"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

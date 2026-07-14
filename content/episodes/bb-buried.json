@@ -1,0 +1,28 @@
+{
+  "type": "episode",
+  "id": "bb-buried",
+  "slug": "bb-buried",
+  "title": "Buried",
+  "code": "S05E10",
+  "season": 5,
+  "episodeNumber": 10,
+  "synopsis": "Walt buries money in the desert. Lydia on the toilet.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "lydia-rodarte-quayle",
+    "hank-schrader"
+  ],
+  "locationIds": [
+    "desert-spot"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "desert-spot",
+    "walter-white",
+    "lydia-rodarte-quayle"
+  ],
+  "addedAt": "2026-07-14"
+}

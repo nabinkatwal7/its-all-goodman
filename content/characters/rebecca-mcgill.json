@@ -1,0 +1,33 @@
+{
+  "id": "rebecca-mcgill",
+  "type": "character",
+  "slug": "rebecca-mcgill",
+  "title": "Rebecca McGill",
+  "name": "Rebecca McGill",
+  "summary": "Chuck McGill's ex-wife.",
+  "series": [
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "portraitColor": "#667eea",
+  "relatedIds": [
+    "chuck-mcgill",
+    "kim-wexler"
+  ],
+  "relationships": [
+    {
+      "targetId": "chuck-mcgill",
+      "kind": "family",
+      "label": "Ex-husband"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "elliott-schwartz",
+  "type": "character",
+  "slug": "elliott-schwartz",
+  "title": "Elliott Schwartz",
+  "name": "Elliott Schwartz",
+  "summary": "Gray Matter co-founder. Walt's former partner who got rich without him.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "CEO Gray Matter Technologies",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#3182ce",
+  "relatedIds": [
+    "walter-white",
+    "gretchen-schwartz",
+    "gray-matter"
+  ],
+  "relationships": [
+    {
+      "targetId": "gretchen-schwartz",
+      "kind": "partner",
+      "label": "Spouse"
+    },
+    {
+      "targetId": "walter-white",
+      "kind": "rival",
+      "label": "Former partner"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

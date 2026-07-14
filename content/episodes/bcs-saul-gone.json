@@ -1,0 +1,26 @@
+{
+  "type": "episode",
+  "id": "bcs-saul-gone",
+  "slug": "bcs-saul-gone",
+  "title": "Saul Gone",
+  "code": "S06E13",
+  "season": 6,
+  "episodeNumber": 13,
+  "synopsis": "Gene captured. 86 years. 'It was all good, man.'",
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "quoteIds": [
+    "quote-better-call-saul"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "saul-goodman",
+    "quote-better-call-saul"
+  ],
+  "addedAt": "2026-07-14"
+}

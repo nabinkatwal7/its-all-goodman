@@ -1,0 +1,19 @@
+{
+  "id": "challenger",
+  "type": "vehicle",
+  "slug": "dodge-challenger",
+  "title": "Dodge Challenger",
+  "summary": "Walt buys for Walt Jr. 'It's not pink.'",
+  "ownerId": "walter-jr",
+  "series": [
+    "breaking-bad"
+  ],
+  "episodeIds": [
+    "bb-cornered"
+  ],
+  "relatedIds": [
+    "walter-jr",
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "lyle",
+  "type": "character",
+  "slug": "lyle",
+  "title": "Lyle",
+  "name": "Lyle",
+  "summary": "Los Pollos Hermanos employee. Manager under Gus.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#ffd54a",
+  "relatedIds": [
+    "gustavo-fring",
+    "los-pollos-hermanos"
+  ],
+  "relationships": [
+    {
+      "targetId": "gustavo-fring",
+      "kind": "employee",
+      "label": "Boss"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

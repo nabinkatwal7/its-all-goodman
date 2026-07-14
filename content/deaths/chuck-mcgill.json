@@ -1,0 +1,19 @@
+{
+  "id": "death-chuck-mcgill",
+  "type": "death",
+  "slug": "chuck-mcgill",
+  "title": "Death of Chuck McGill",
+  "victimId": "chuck-mcgill",
+  "episodeId": "bcs-klick",
+  "method": "Electrical fire / suicide",
+  "suicide": true,
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "chuck-mcgill",
+    "saul-goodman",
+    "bcs-klick"
+  ],
+  "addedAt": "2026-07-14"
+}

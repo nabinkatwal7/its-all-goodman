@@ -1,0 +1,43 @@
+{
+  "id": "walter-jr",
+  "type": "character",
+  "slug": "walter-jr",
+  "title": "Walter White Jr.",
+  "name": "Walter White Jr.",
+  "summary": "Walt and Skyler's son. Cerebral palsy. PF Chang's enthusiast.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [
+    "Flynn"
+  ],
+  "status": "alive",
+  "occupation": "Student",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#4299e1",
+  "relatedIds": [
+    "walter-white",
+    "skyler-white",
+    "hank-schrader",
+    "marie-schrader"
+  ],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "family",
+      "label": "Father"
+    },
+    {
+      "targetId": "skyler-white",
+      "kind": "family",
+      "label": "Mother"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

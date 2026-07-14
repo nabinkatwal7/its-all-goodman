@@ -1,0 +1,18 @@
+{
+  "id": "quote-box-cutter",
+  "type": "quote",
+  "slug": "box-cutter-speech",
+  "title": "Box cutter monologue",
+  "text": "If you try to interfere, this becomes a much simpler matter.",
+  "speakerId": "gustavo-fring",
+  "episodeId": "bb-box-cutter",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "victor",
+    "bb-box-cutter"
+  ],
+  "addedAt": "2026-07-14"
+}

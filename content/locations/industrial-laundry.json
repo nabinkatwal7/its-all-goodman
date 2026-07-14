@@ -1,0 +1,28 @@
+{
+  "id": "industrial-laundry",
+  "type": "location",
+  "slug": "industrial-laundry",
+  "title": "Industrial Laundry",
+  "summary": "Front for Gus's superlab. Lavandería Brillante.",
+  "lat": 35.058,
+  "lng": -106.715,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "gustavo-fring",
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "organizationIds": [
+    "gus-empire"
+  ],
+  "relatedIds": [
+    "superlab",
+    "gustavo-fring"
+  ],
+  "history": [
+    "Tunnel entrance hidden in industrial machines"
+  ],
+  "addedAt": "2026-07-14"
+}

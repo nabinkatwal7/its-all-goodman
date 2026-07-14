@@ -1,0 +1,22 @@
+{
+  "id": "case-kettlemans",
+  "type": "case",
+  "slug": "kettlemans",
+  "title": "Kettelman Embezzlement",
+  "summary": "Jimmy's first big con case.",
+  "clientIds": [
+    "saul-goodman"
+  ],
+  "lawyerIds": [
+    "saul-goodman"
+  ],
+  "outcome": "Resolved with money return",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "bcs-uno"
+  ],
+  "addedAt": "2026-07-14"
+}

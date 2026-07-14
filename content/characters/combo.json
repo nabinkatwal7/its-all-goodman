@@ -1,0 +1,34 @@
+{
+  "id": "combo",
+  "type": "character",
+  "slug": "combo",
+  "title": "Combo Ortega",
+  "name": "Combo Ortega",
+  "summary": "Jesse's friend and street dealer. Killed by Tomas.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#38a169",
+  "relatedIds": [
+    "jesse-pinkman",
+    "badger",
+    "skinny-pete"
+  ],
+  "relationships": [
+    {
+      "targetId": "jesse-pinkman",
+      "kind": "friend",
+      "label": "Friend"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "death-gale-boetticher",
+  "type": "death",
+  "slug": "gale-boetticher",
+  "title": "Death of Gale Boetticher",
+  "victimId": "gale-boetticher",
+  "killerId": "walter-white",
+  "episodeId": "bb-full-measure",
+  "method": "Gunshot",
+  "reason": "Eliminate Walt's replacement to save Jesse",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "gale-boetticher",
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-14"
+}

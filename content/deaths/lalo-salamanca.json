@@ -1,0 +1,19 @@
+{
+  "id": "death-lalo-salamanca",
+  "type": "death",
+  "slug": "lalo-salamanca",
+  "title": "Death of Lalo Salamanca",
+  "victimId": "lalo-salamanca",
+  "killerId": "gustavo-fring",
+  "episodeId": "bcs-fun-and-games",
+  "method": "Gunshot",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "lalo-salamanca",
+    "gustavo-fring",
+    "howard-hamlin"
+  ],
+  "addedAt": "2026-07-14"
+}

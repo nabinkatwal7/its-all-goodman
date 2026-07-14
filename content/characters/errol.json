@@ -1,0 +1,28 @@
+{
+  "id": "errol",
+  "type": "character",
+  "slug": "errol",
+  "title": "Errol",
+  "name": "Errol",
+  "summary": "Gus Fring's henchman at the laundry.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#1a365d",
+  "relatedIds": [
+    "gustavo-fring",
+    "superlab",
+    "mike-ehrmantraut"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

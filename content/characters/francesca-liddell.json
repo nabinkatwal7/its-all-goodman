@@ -1,0 +1,36 @@
+{
+  "id": "francesca-liddell",
+  "type": "character",
+  "slug": "francesca-liddell",
+  "title": "Francesca Liddell",
+  "name": "Francesca Liddell",
+  "summary": "Saul Goodman's long-suffering secretary.",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "Secretary",
+  "appearsIn": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "portraitColor": "#a0aec0",
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "relationships": [
+    {
+      "targetId": "saul-goodman",
+      "kind": "employee",
+      "label": "Boss"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

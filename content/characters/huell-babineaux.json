@@ -1,0 +1,40 @@
+{
+  "id": "huell-babineaux",
+  "type": "character",
+  "slug": "huell-babineaux",
+  "title": "Huell Babineaux",
+  "name": "Huell Babineaux",
+  "summary": "Saul's bodyguard. 'Reasonably sized' man of few words.",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "Bodyguard / pickpocket",
+  "appearsIn": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "portraitColor": "#744210",
+  "relatedIds": [
+    "saul-goodman",
+    "walter-white",
+    "kim-wexler"
+  ],
+  "relationships": [
+    {
+      "targetId": "saul-goodman",
+      "kind": "employee",
+      "label": "Boss"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [
+    "It's a big room.",
+    "Laid on money."
+  ],
+  "addedAt": "2026-07-14"
+}

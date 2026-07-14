@@ -1,0 +1,19 @@
+{
+  "id": "m60-machine-gun",
+  "type": "object",
+  "slug": "m60-trunk",
+  "title": "M60 in Trunk",
+  "summary": "Walt's machine gun purchased from Lawson.",
+  "series": [
+    "breaking-bad"
+  ],
+  "episodeIds": [
+    "bb-felina"
+  ],
+  "relatedIds": [
+    "weapon-m60",
+    "walter-white",
+    "jack-welker"
+  ],
+  "addedAt": "2026-07-14"
+}

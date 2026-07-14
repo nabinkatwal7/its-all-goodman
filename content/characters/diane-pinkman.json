@@ -1,0 +1,33 @@
+{
+  "id": "diane-pinkman",
+  "type": "character",
+  "slug": "diane-pinkman",
+  "title": "Diane Pinkman",
+  "name": "Diane Pinkman",
+  "summary": "Jesse's mother. Estranged relationship.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#9b2c2c",
+  "relatedIds": [
+    "jesse-pinkman",
+    "jesse-house"
+  ],
+  "relationships": [
+    {
+      "targetId": "jesse-pinkman",
+      "kind": "family",
+      "label": "Son"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

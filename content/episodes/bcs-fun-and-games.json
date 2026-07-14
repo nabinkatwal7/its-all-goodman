@@ -1,0 +1,26 @@
+{
+  "type": "episode",
+  "id": "bcs-fun-and-games",
+  "slug": "bcs-fun-and-games",
+  "title": "Fun and Games",
+  "code": "S06E08",
+  "season": 6,
+  "episodeNumber": 8,
+  "synopsis": "Kim leaves. Gus kills Lalo.",
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "gustavo-fring",
+    "lalo-salamanca"
+  ],
+  "timelineYear": 2004,
+  "relatedIds": [
+    "lalo-salamanca",
+    "gustavo-fring",
+    "kim-wexler"
+  ],
+  "addedAt": "2026-07-14"
+}

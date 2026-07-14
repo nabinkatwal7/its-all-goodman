@@ -1,0 +1,37 @@
+{
+  "id": "jane-margolis",
+  "type": "character",
+  "slug": "jane-margolis",
+  "title": "Jane Margolis",
+  "name": "Jane Margolis",
+  "summary": "Jesse's neighbor and girlfriend. Tattoo artist. Her death breaks Jesse.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [
+    "tragic"
+  ],
+  "nicknames": [],
+  "status": "deceased",
+  "occupation": "Tattoo artist",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#9f7aea",
+  "relatedIds": [
+    "jesse-pinkman",
+    "andrea-cantillo",
+    "walter-white"
+  ],
+  "relationships": [
+    {
+      "targetId": "jesse-pinkman",
+      "kind": "partner",
+      "label": "Boyfriend"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

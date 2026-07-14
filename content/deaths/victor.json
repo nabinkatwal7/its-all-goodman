@@ -1,0 +1,22 @@
+{
+  "id": "death-victor",
+  "type": "death",
+  "slug": "victor",
+  "title": "Death of Victor",
+  "victimId": "victor",
+  "killerId": "gustavo-fring",
+  "weaponId": "box-cutter",
+  "episodeId": "bb-box-cutter",
+  "method": "Box cutter to throat",
+  "reason": "Message to Walt and Jesse",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "victor",
+    "gustavo-fring",
+    "bb-box-cutter",
+    "box-cutter"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "neo-nazi-compound",
+  "type": "location",
+  "slug": "neo-nazi-compound",
+  "title": "Neo-Nazi Compound",
+  "summary": "Jack Welker's compound. Jesse's cage.",
+  "lat": 35.2,
+  "lng": -106.8,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "jack-welker",
+    "todd-alquist",
+    "jesse-pinkman"
+  ],
+  "relatedIds": [
+    "jack-welker",
+    "todd-alquist",
+    "jesse-pinkman",
+    "bb-felina"
+  ],
+  "addedAt": "2026-07-14"
+}

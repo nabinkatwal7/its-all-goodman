@@ -1,0 +1,17 @@
+{
+  "id": "egg-breaking-bad-title",
+  "type": "object",
+  "slug": "breaking-bad-title",
+  "title": "Breaking Bad Title Meaning",
+  "summary": "Southern phrase for raising hell / going rogue.",
+  "tags": [
+    "easter-egg"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

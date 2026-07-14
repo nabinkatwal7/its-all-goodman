@@ -1,0 +1,26 @@
+{
+  "type": "episode",
+  "id": "bb-abq",
+  "slug": "bb-abq",
+  "title": "ABQ",
+  "code": "S02E13",
+  "season": 2,
+  "episodeNumber": 13,
+  "synopsis": "Two planes collide. Pink teddy bear foreshadowing pays off.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "objectIds": [
+    "pink-teddy-bear"
+  ],
+  "timelineYear": 2009,
+  "relatedIds": [
+    "pink-teddy-bear",
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

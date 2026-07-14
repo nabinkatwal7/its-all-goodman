@@ -1,0 +1,35 @@
+{
+  "id": "gretchen-schwartz",
+  "type": "character",
+  "slug": "gretchen-schwartz",
+  "title": "Gretchen Schwartz",
+  "name": "Gretchen Schwartz",
+  "summary": "Walt's ex-girlfriend and Gray Matter co-founder.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "Gray Matter Technologies",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#805ad5",
+  "relatedIds": [
+    "walter-white",
+    "elliott-schwartz",
+    "gray-matter"
+  ],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "rival",
+      "label": "Former partner"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

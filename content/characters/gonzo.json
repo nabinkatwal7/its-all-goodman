@@ -1,0 +1,27 @@
+{
+  "id": "gonzo",
+  "type": "character",
+  "slug": "gonzo",
+  "title": "Gonzo",
+  "name": "Gonzo",
+  "summary": "Tuco's associate. Crushed by falling rock in desert.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#744210",
+  "relatedIds": [
+    "tuco-salamanca",
+    "desert-spot"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "patrick-kuby",
+  "type": "character",
+  "slug": "patrick-kuby",
+  "title": "Patrick Kuby",
+  "name": "Patrick Kuby",
+  "summary": "Saul's muscle and Huell's partner.",
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "Enforcer",
+  "appearsIn": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "portraitColor": "#553c9a",
+  "relatedIds": [
+    "saul-goodman",
+    "huell-babineaux",
+    "walter-white"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

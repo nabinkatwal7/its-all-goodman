@@ -1,0 +1,27 @@
+{
+  "id": "dennis-markowski",
+  "type": "character",
+  "slug": "dennis-markowski",
+  "title": "Dennis Markowski",
+  "name": "Dennis Markowski",
+  "summary": "Aryan Brotherhood associate at ABQ Correctional.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#1a202c",
+  "relatedIds": [
+    "jack-welker",
+    "todd-alquist"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

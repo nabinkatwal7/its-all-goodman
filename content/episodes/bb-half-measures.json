@@ -1,0 +1,27 @@
+{
+  "type": "episode",
+  "id": "bb-half-measures",
+  "slug": "bb-half-measures",
+  "title": "Half Measures",
+  "code": "S03E12",
+  "season": 3,
+  "episodeNumber": 12,
+  "imdbRating": 9.3,
+  "synopsis": "Jesse targets dealers who killed Combo. Walt runs them over.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "gustavo-fring",
+    "combo"
+  ],
+  "timelineYear": 2009,
+  "relatedIds": [
+    "combo",
+    "gustavo-fring",
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

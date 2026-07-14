@@ -1,0 +1,20 @@
+{
+  "id": "kettelman-house",
+  "type": "location",
+  "slug": "kettelman-house",
+  "title": "Kettelman House",
+  "summary": "Where the embezzling couple hid in BCS pilot arc.",
+  "lat": 35.15,
+  "lng": -106.62,
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "bcs-uno"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ken-wins",
+  "type": "character",
+  "slug": "ken-wins",
+  "title": "Ken Wins",
+  "name": "Ken Wins",
+  "summary": "Obnoxious BMW driver Walt destroys in the pilot parking lot.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#1a202c",
+  "relatedIds": [
+    "walter-white",
+    "bb-pilot"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [
+    "Ken Wins vanity plate.",
+    "Walt blows up his car."
+  ],
+  "addedAt": "2026-07-14"
+}

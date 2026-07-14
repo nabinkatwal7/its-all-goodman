@@ -1,0 +1,24 @@
+{
+  "type": "episode",
+  "id": "bb-granite-state",
+  "slug": "bb-granite-state",
+  "title": "Granite State",
+  "code": "S05E15",
+  "season": 5,
+  "episodeNumber": 15,
+  "imdbRating": 9.6,
+  "synopsis": "Ed the disappearer. Walt in New Hampshire cabin.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "saul-goodman"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "walter-white",
+    "saul-goodman"
+  ],
+  "addedAt": "2026-07-14"
+}

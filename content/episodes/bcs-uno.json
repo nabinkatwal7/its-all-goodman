@@ -1,0 +1,24 @@
+{
+  "type": "episode",
+  "id": "bcs-uno",
+  "slug": "bcs-uno",
+  "title": "Uno",
+  "code": "S01E01",
+  "season": 1,
+  "episodeNumber": 1,
+  "synopsis": "Jimmy McGill scams the Kettlemans. The birth of Saul.",
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "mike-ehrmantraut"
+  ],
+  "timelineYear": 2002,
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "addedAt": "2026-07-14"
+}

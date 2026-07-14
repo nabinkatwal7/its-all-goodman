@@ -1,0 +1,21 @@
+{
+  "id": "omaha-mall",
+  "type": "location",
+  "slug": "omaha-mall",
+  "title": "Omaha Cinnabon",
+  "summary": "Gene Takavic's exile. Better Call Saul flash-forwards.",
+  "lat": 41.2565,
+  "lng": -95.9345,
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "jeff",
+    "marion"
+  ],
+  "addedAt": "2026-07-14"
+}

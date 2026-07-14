@@ -1,0 +1,28 @@
+{
+  "id": "mercedes",
+  "type": "character",
+  "slug": "mercedes",
+  "title": "Mercedes",
+  "name": "Mercedes",
+  "summary": "Salamanca caretaker at Casa Tranquila.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#b7791f",
+  "relatedIds": [
+    "hector-salamanca",
+    "casa-tranquila",
+    "tuco-salamanca"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

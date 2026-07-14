@@ -1,0 +1,20 @@
+{
+  "id": "egg-green-wheels",
+  "type": "object",
+  "slug": "green-wheels",
+  "title": "Green Wheels on Cars",
+  "summary": "Vince Gilligan's color code — green objects signal change.",
+  "tags": [
+    "easter-egg",
+    "symbolism"
+  ],
+  "symbolism": "Transformation and corruption",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "symbol-green",
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

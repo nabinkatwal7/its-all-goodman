@@ -1,0 +1,25 @@
+{
+  "type": "episode",
+  "id": "bb-cat-in-the-bag",
+  "slug": "bb-cat-in-the-bag",
+  "title": "Cat's in the Bag...",
+  "code": "S01E02",
+  "season": 1,
+  "episodeNumber": 2,
+  "synopsis": "Walt and Jesse dispose of Emilio and imprison Krazy-8.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "krazy-8"
+  ],
+  "timelineYear": 2008,
+  "relatedIds": [
+    "walter-white",
+    "krazy-8",
+    "rv"
+  ],
+  "addedAt": "2026-07-14"
+}

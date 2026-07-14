@@ -1,0 +1,23 @@
+{
+  "id": "nursing-home",
+  "type": "location",
+  "slug": "nursing-home",
+  "title": "Casa Tranquila",
+  "summary": "Hector Salamanca's nursing home. The bell.",
+  "lat": 35.038,
+  "lng": -106.672,
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "hector-salamanca",
+    "mercedes"
+  ],
+  "relatedIds": [
+    "hector-salamanca",
+    "casa-tranquila",
+    "objects-hector-bell"
+  ],
+  "addedAt": "2026-07-14"
+}

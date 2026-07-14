@@ -1,0 +1,40 @@
+{
+  "id": "andrea-cantillo",
+  "type": "character",
+  "slug": "andrea-cantillo",
+  "title": "Andrea Cantillo",
+  "name": "Andrea Cantillo",
+  "summary": "Single mother, Jesse's later girlfriend. Killed by Todd.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#ed8936",
+  "relatedIds": [
+    "jesse-pinkman",
+    "todd-alquist",
+    "brock-cantillo",
+    "jane-margolis"
+  ],
+  "relationships": [
+    {
+      "targetId": "jesse-pinkman",
+      "kind": "partner",
+      "label": "Boyfriend"
+    },
+    {
+      "targetId": "brock-cantillo",
+      "kind": "family",
+      "label": "Son"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

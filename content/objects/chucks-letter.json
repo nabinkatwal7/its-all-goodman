@@ -1,0 +1,16 @@
+{
+  "id": "chucks-letter",
+  "type": "object",
+  "slug": "chucks-letter",
+  "title": "Chuck's Letter",
+  "summary": "Jimmy keeps Chuck's letter. Kim reads it in prison visit.",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "chuck-mcgill",
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "addedAt": "2026-07-14"
+}

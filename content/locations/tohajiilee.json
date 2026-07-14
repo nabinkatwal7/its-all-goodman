@@ -1,0 +1,32 @@
+{
+  "id": "tohajiilee",
+  "type": "location",
+  "slug": "tohajiilee",
+  "title": "To'hajiilee",
+  "summary": "Navajo reservation. Ozymandias shootout.",
+  "lat": 34.5199,
+  "lng": -105.8701,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "hank-schrader",
+    "jesse-pinkman",
+    "jack-welker"
+  ],
+  "episodeIds": [
+    "ozymandias"
+  ],
+  "relatedIds": [
+    "ozymandias",
+    "death-hank-schrader",
+    "desert-spot"
+  ],
+  "history": [
+    "Buried money barrels",
+    "Hank's death",
+    "Neo-Nazi ambush"
+  ],
+  "addedAt": "2026-07-14"
+}

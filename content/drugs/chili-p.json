@@ -1,0 +1,15 @@
+{
+  "id": "chili-p",
+  "type": "drug",
+  "slug": "chili-p",
+  "title": "Chili P",
+  "summary": "Jesse's signature cutting agent. 'It's the bomb, yo.'",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "jesse-pinkman",
+    "bb-pilot"
+  ],
+  "addedAt": "2026-07-14"
+}

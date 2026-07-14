@@ -1,0 +1,49 @@
+{
+  "id": "todd-alquist",
+  "type": "character",
+  "slug": "todd-alquist",
+  "title": "Todd Alquist",
+  "name": "Todd Alquist",
+  "summary": "Vapid, polite sociopath. Walt's cook after Jesse leaves.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [
+    "antagonist",
+    "neo-nazi"
+  ],
+  "nicknames": [],
+  "status": "deceased",
+  "occupation": "Meth cook / Neo-Nazi associate",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#718096",
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "jack-welker",
+    "lydia-rodarte-quayle",
+    "bb-felina"
+  ],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "employee",
+      "label": "Employer"
+    },
+    {
+      "targetId": "jack-welker",
+      "kind": "ally",
+      "label": "Uncle's gang"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [
+    "'Sorry for your loss.'",
+    "Kept a tarantula.",
+    "95% purity cook."
+  ],
+  "addedAt": "2026-07-14"
+}

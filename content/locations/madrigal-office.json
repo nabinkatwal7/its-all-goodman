@@ -1,0 +1,22 @@
+{
+  "id": "madrigal-office",
+  "type": "location",
+  "slug": "madrigal-office",
+  "title": "Madrigal Electromotive HQ",
+  "summary": "German conglomerate front for Gus's operation.",
+  "lat": 35.089,
+  "lng": -106.653,
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "gustavo-fring",
+    "lydia-rodarte-quayle",
+    "mike-ehrmantraut"
+  ],
+  "relatedIds": [
+    "gus-empire",
+    "lydia-rodarte-quayle"
+  ],
+  "addedAt": "2026-07-14"
+}

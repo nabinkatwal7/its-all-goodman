@@ -1,0 +1,27 @@
+{
+  "id": "marion",
+  "type": "character",
+  "slug": "marion",
+  "title": "Marion",
+  "name": "Marion",
+  "summary": "Ed the disappearer's wife in Nebraska. Gene's neighbor.",
+  "series": [
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "portraitColor": "#975a16",
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "pseudoephedrine",
+  "type": "drug",
+  "slug": "pseudoephedrine",
+  "title": "Pseudoephedrine",
+  "summary": "Cold medicine precursor. Smurfs and pharmacies.",
+  "chemicalNotes": "C10H15NO — precursor to meth via reduction",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "blue-meth"
+  ],
+  "addedAt": "2026-07-14"
+}

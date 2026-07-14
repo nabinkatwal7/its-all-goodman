@@ -1,0 +1,28 @@
+{
+  "id": "wendy",
+  "type": "character",
+  "slug": "wendy",
+  "title": "Wendy",
+  "name": "Wendy",
+  "summary": "Meth-addicted prostitute. Jesse's occasional acquaintance.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#fc8181",
+  "relatedIds": [
+    "jesse-pinkman",
+    "skinny-pete",
+    "badger"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

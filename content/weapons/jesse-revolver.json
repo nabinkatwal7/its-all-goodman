@@ -1,0 +1,17 @@
+{
+  "id": "revolver-jesse",
+  "type": "weapon",
+  "slug": "jesse-revolver",
+  "title": "Jesse's Revolver",
+  "summary": "Used in emotional confrontations.",
+  "series": [
+    "breaking-bad"
+  ],
+  "episodeIds": [
+    "ozymandias"
+  ],
+  "relatedIds": [
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-14"
+}

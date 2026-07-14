@@ -1,0 +1,25 @@
+{
+  "type": "episode",
+  "id": "bb-crazy-handful",
+  "slug": "bb-crazy-handful",
+  "title": "...And the Bag's in the River",
+  "code": "S01E03",
+  "season": 1,
+  "episodeNumber": 3,
+  "synopsis": "Walt kills Krazy-8. The cost of the trade weighs on him.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "krazy-8"
+  ],
+  "deathIds": [],
+  "timelineYear": 2008,
+  "relatedIds": [
+    "walter-white",
+    "krazy-8"
+  ],
+  "addedAt": "2026-07-14"
+}

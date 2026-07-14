@@ -1,0 +1,22 @@
+{
+  "id": "event-plane-crash",
+  "type": "event",
+  "slug": "plane-crash",
+  "title": "Wayfarer 515 Collision",
+  "summary": "Mid-air collision over ABQ. 167 deaths. Jane's father air traffic controller.",
+  "year": 2009,
+  "series": [
+    "breaking-bad"
+  ],
+  "participantIds": [
+    "walter-white",
+    "jane-margolis"
+  ],
+  "episodeId": "bb-abq",
+  "relatedIds": [
+    "bb-abq",
+    "pink-teddy-bear",
+    "jane-margolis"
+  ],
+  "addedAt": "2026-07-14"
+}

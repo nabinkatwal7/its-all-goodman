@@ -1,0 +1,19 @@
+{
+  "id": "event-sandpiper-settlement",
+  "type": "event",
+  "slug": "sandpiper-settlement",
+  "title": "Sandpiper Class Action",
+  "summary": "Elder abuse lawsuit that builds HHM and Davis & Main.",
+  "year": 2002,
+  "participantIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "howard-hamlin"
+  ],
+  "relatedIds": [
+    "sandpiper",
+    "hhmm",
+    "davis-main"
+  ],
+  "addedAt": "2026-07-14"
+}

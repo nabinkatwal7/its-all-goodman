@@ -1,0 +1,20 @@
+{
+  "id": "lily-plant",
+  "type": "object",
+  "slug": "lily-of-the-valley-plant",
+  "title": "Lily of the Valley Plant",
+  "summary": "Walt's poison plant used on Brock.",
+  "meaning": "Hidden threat in suburban backyard",
+  "series": [
+    "breaking-bad"
+  ],
+  "episodeIds": [
+    "bb-gliding-over-all"
+  ],
+  "relatedIds": [
+    "lily-of-the-valley",
+    "walter-white",
+    "brock-cantillo"
+  ],
+  "addedAt": "2026-07-14"
+}

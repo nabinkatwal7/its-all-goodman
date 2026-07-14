@@ -1,0 +1,28 @@
+{
+  "id": "declan",
+  "type": "character",
+  "slug": "declan",
+  "title": "Declan",
+  "name": "Declan",
+  "summary": "Czech Republic distribution partner in Lydia's network.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#2c5282",
+  "relatedIds": [
+    "lydia-rodarte-quayle",
+    "walter-white",
+    "jack-welker"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

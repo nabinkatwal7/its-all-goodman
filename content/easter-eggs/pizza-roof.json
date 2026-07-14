@@ -1,0 +1,19 @@
+{
+  "id": "egg-pizza-roof",
+  "type": "object",
+  "slug": "pizza-roof",
+  "title": "Pizza on the Roof",
+  "summary": "Walt throws pizza on the roof — became real tourist tradition.",
+  "tags": [
+    "easter-egg",
+    "meme"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "walt-house"
+  ],
+  "addedAt": "2026-07-14"
+}

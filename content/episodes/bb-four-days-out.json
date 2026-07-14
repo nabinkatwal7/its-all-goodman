@@ -1,0 +1,29 @@
+{
+  "type": "episode",
+  "id": "bb-four-days-out",
+  "slug": "bb-four-days-out",
+  "title": "Four Days Out",
+  "code": "S02E09",
+  "season": 2,
+  "episodeNumber": 9,
+  "imdbRating": 9.2,
+  "synopsis": "RV breakdown in desert. Walt's hair falls out. Jesse learns chemistry.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "locationIds": [
+    "desert-spot"
+  ],
+  "timelineYear": 2009,
+  "relatedIds": [
+    "rv",
+    "desert-spot",
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-14"
+}

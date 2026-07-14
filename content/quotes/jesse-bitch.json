@@ -1,0 +1,19 @@
+{
+  "id": "quote-jesse-bitch",
+  "type": "quote",
+  "slug": "jesse-bitch",
+  "title": "Bitch!",
+  "text": "Bitch!",
+  "speakerId": "jesse-pinkman",
+  "episodeId": "bb-pilot",
+  "tags": [
+    "meme"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-14"
+}

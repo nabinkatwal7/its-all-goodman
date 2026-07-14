@@ -1,0 +1,20 @@
+{
+  "id": "gps-tracker",
+  "type": "object",
+  "slug": "gps-tracker",
+  "title": "GPS Tracker",
+  "summary": "Hank uses Walt's GPS to find the buried money.",
+  "series": [
+    "breaking-bad"
+  ],
+  "episodeIds": [
+    "bb-buried",
+    "ozymandias"
+  ],
+  "relatedIds": [
+    "hank-schrader",
+    "walter-white",
+    "tohajiilee"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "episode",
+  "id": "bb-phoenix",
+  "slug": "bb-phoenix",
+  "title": "Phoenix",
+  "code": "S02E12",
+  "season": 2,
+  "episodeNumber": 12,
+  "imdbRating": 9.1,
+  "synopsis": "Jane dies. Walt watches and does nothing.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "jane-margolis"
+  ],
+  "timelineYear": 2009,
+  "relatedIds": [
+    "jane-margolis",
+    "walter-white",
+    "jesse-pinkman"
+  ],
+  "consequences": [
+    "Jesse's spiral",
+    "Walt's moral point of no return"
+  ],
+  "addedAt": "2026-07-14"
+}

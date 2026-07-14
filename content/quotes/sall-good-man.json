@@ -1,0 +1,17 @@
+{
+  "id": "quote-sall-good-man",
+  "type": "quote",
+  "slug": "sall-good-man",
+  "title": "S'all good, man",
+  "text": "S'all good, man!",
+  "speakerId": "saul-goodman",
+  "episodeId": "bcs-klick",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "chuck-mcgill"
+  ],
+  "addedAt": "2026-07-14"
+}

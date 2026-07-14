@@ -1,0 +1,32 @@
+{
+  "id": "domingo-molina",
+  "type": "character",
+  "slug": "domingo-molina",
+  "title": "Domingo Molina",
+  "name": "Domingo Molina",
+  "summary": "Krazy-8's partner. Becomes DEA informant Krazy-8.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [
+    "Krazy-8",
+    "Domingo"
+  ],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#2f855a",
+  "relatedIds": [
+    "krazy-8",
+    "emilio-koyama",
+    "walter-white",
+    "dea"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

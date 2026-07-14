@@ -1,0 +1,27 @@
+{
+  "type": "episode",
+  "id": "bcs-plan-and-execution",
+  "slug": "bcs-plan-and-execution",
+  "title": "Plan and Execution",
+  "code": "S06E07",
+  "season": 6,
+  "episodeNumber": 7,
+  "imdbRating": 9.8,
+  "synopsis": "Howard's death. Lalo in the dark.",
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "howard-hamlin",
+    "lalo-salamanca"
+  ],
+  "timelineYear": 2004,
+  "relatedIds": [
+    "howard-hamlin",
+    "lalo-salamanca",
+    "kim-wexler"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "episode",
+  "id": "bcs-klick",
+  "slug": "bcs-klick",
+  "title": "Klick",
+  "code": "S03E10",
+  "season": 3,
+  "episodeNumber": 10,
+  "synopsis": "Chuck's death. Jimmy's 'S'all good, man.'",
+  "series": [
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "chuck-mcgill",
+    "kim-wexler",
+    "howard-hamlin"
+  ],
+  "timelineYear": 2003,
+  "relatedIds": [
+    "chuck-mcgill",
+    "saul-goodman"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "episode",
+  "id": "bb-full-measure",
+  "slug": "bb-full-measure",
+  "title": "Full Measure",
+  "code": "S03E13",
+  "season": 3,
+  "episodeNumber": 13,
+  "imdbRating": 9.4,
+  "synopsis": "Walt kills Gale to save Jesse. 'We are done.'",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "gale-boetticher",
+    "gustavo-fring"
+  ],
+  "timelineYear": 2009,
+  "relatedIds": [
+    "gale-boetticher",
+    "walter-white",
+    "gustavo-fring"
+  ],
+  "addedAt": "2026-07-14"
+}

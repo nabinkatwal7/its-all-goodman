@@ -1,0 +1,28 @@
+{
+  "id": "dr-delcavoli",
+  "type": "character",
+  "slug": "dr-delcavoli",
+  "title": "Dr. Delcavoli",
+  "name": "Dr. Delcavoli",
+  "summary": "Walt's oncologist.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "Oncologist",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#ffffff",
+  "relatedIds": [
+    "walter-white",
+    "skyler-white"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

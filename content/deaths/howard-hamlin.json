@@ -1,0 +1,21 @@
+{
+  "id": "death-howard-hamlin",
+  "type": "death",
+  "slug": "howard-hamlin",
+  "title": "Death of Howard Hamlin",
+  "victimId": "howard-hamlin",
+  "killerId": "lalo-salamanca",
+  "episodeId": "bcs-plan-and-execution",
+  "method": "Gunshot",
+  "accidental": true,
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "howard-hamlin",
+    "lalo-salamanca",
+    "kim-wexler",
+    "saul-goodman"
+  ],
+  "addedAt": "2026-07-14"
+}

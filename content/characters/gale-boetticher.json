@@ -1,0 +1,45 @@
+{
+  "id": "gale-boetticher",
+  "type": "character",
+  "slug": "gale-boetticher",
+  "title": "Gale Boetticher",
+  "name": "Gale Boetticher",
+  "summary": "Brilliant chemist, coffee enthusiast, Walt's intended replacement.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [
+    "chemist"
+  ],
+  "nicknames": [],
+  "status": "deceased",
+  "occupation": "Chemist",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#68d391",
+  "relatedIds": [
+    "walter-white",
+    "gustavo-fring",
+    "jesse-pinkman"
+  ],
+  "relationships": [
+    {
+      "targetId": "walter-white",
+      "kind": "rival",
+      "label": "Replacement threat"
+    },
+    {
+      "targetId": "gustavo-fring",
+      "kind": "employer",
+      "label": "Employer"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [
+    "Major Tom karaoke.",
+    "96% purity without Walt."
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "quote-yeah-science",
+  "type": "quote",
+  "slug": "yeah-science",
+  "title": "Yeah, science!",
+  "text": "Yeah, Mr. White! Yeah, science!",
+  "speakerId": "jesse-pinkman",
+  "episodeId": "bb-four-days-out",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "jesse-pinkman",
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

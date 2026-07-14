@@ -1,0 +1,30 @@
+{
+  "type": "episode",
+  "id": "bb-say-my-name",
+  "slug": "bb-say-my-name",
+  "title": "Say My Name",
+  "code": "S05E07",
+  "season": 5,
+  "episodeNumber": 7,
+  "imdbRating": 9.5,
+  "synopsis": "Walt declares he is Heisenberg. Declan eliminated.",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "jesse-pinkman",
+    "mike-ehrmantraut",
+    "declan"
+  ],
+  "quoteIds": [
+    "quote-say-my-name"
+  ],
+  "timelineYear": 2010,
+  "relatedIds": [
+    "quote-say-my-name",
+    "declan",
+    "walter-white"
+  ],
+  "addedAt": "2026-07-14"
+}

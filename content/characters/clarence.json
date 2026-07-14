@@ -1,0 +1,28 @@
+{
+  "id": "clarence",
+  "type": "character",
+  "slug": "clarence",
+  "title": "Clarence",
+  "name": "Clarence",
+  "summary": "Sandpiper Crossing resident in the class action.",
+  "series": [
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "portraitColor": "#cbd5e0",
+  "relatedIds": [
+    "saul-goodman",
+    "sandpiper",
+    "kim-wexler"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

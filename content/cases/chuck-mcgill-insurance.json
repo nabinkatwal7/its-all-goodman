@@ -1,0 +1,24 @@
+{
+  "id": "case-hhmm-chuck",
+  "type": "case",
+  "slug": "chuck-mcgill-insurance",
+  "title": "Chuck McGill Insurance Fraud",
+  "summary": "Jimmy's malpractice hearing against Chuck.",
+  "clientIds": [
+    "saul-goodman"
+  ],
+  "lawyerIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "outcome": "Chuck humiliated",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "chuck-mcgill",
+    "bcs-chicanery",
+    "quote-chicanery"
+  ],
+  "addedAt": "2026-07-14"
+}

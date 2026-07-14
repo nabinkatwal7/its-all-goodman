@@ -1,0 +1,15 @@
+{
+  "id": "hammer-tuco",
+  "type": "weapon",
+  "slug": "tuco-hammer",
+  "title": "Tuco's Hammer",
+  "summary": "Brutal tool of the Salamanca trade.",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "tuco-salamanca",
+    "no-doze"
+  ],
+  "addedAt": "2026-07-14"
+}

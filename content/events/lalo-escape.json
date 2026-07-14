@@ -1,0 +1,20 @@
+{
+  "id": "event-lalo-escape",
+  "type": "event",
+  "slug": "lalo-escape",
+  "title": "Lalo Escapes Custody",
+  "summary": "Lalo fakes death and returns to Albuquerque.",
+  "year": 2004,
+  "series": [
+    "better-call-saul"
+  ],
+  "participantIds": [
+    "lalo-salamanca",
+    "gustavo-fring"
+  ],
+  "relatedIds": [
+    "lalo-salamanca",
+    "gustavo-fring"
+  ],
+  "addedAt": "2026-07-14"
+}

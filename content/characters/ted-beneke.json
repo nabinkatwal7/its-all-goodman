@@ -1,0 +1,29 @@
+{
+  "id": "ted-beneke",
+  "type": "character",
+  "slug": "ted-beneke",
+  "title": "Ted Beneke",
+  "name": "Ted Beneke",
+  "summary": "Skyler's boss. IRS fraud. Nearly paralyzed by Huell.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "occupation": "Business owner",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#ecc94b",
+  "relatedIds": [
+    "skyler-white",
+    "walter-white",
+    "huell-babineaux"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

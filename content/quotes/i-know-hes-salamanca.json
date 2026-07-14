@@ -1,0 +1,17 @@
+{
+  "id": "quote-i-know-hes-salamanca",
+  "type": "quote",
+  "slug": "i-know-hes-salamanca",
+  "title": "I know he's Salamanca",
+  "text": "He'll never see it coming.",
+  "speakerId": "gustavo-fring",
+  "episodeId": "bcs-fun-and-games",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "gustavo-fring",
+    "lalo-salamanca"
+  ],
+  "addedAt": "2026-07-14"
+}

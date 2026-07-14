@@ -1,0 +1,20 @@
+{
+  "id": "death-andrea-cantillo",
+  "type": "death",
+  "slug": "andrea-cantillo",
+  "title": "Death of Andrea Cantillo",
+  "victimId": "andrea-cantillo",
+  "killerId": "todd-alquist",
+  "episodeId": "bb-felina",
+  "method": "Gunshot",
+  "reason": "Leverage over Jesse",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "andrea-cantillo",
+    "todd-alquist",
+    "jesse-pinkman"
+  ],
+  "addedAt": "2026-07-14"
+}

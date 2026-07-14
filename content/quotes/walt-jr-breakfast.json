@@ -1,0 +1,17 @@
+{
+  "id": "quote-walt-jr-breakfast",
+  "type": "quote",
+  "slug": "walt-jr-breakfast",
+  "title": "Have an A1 day",
+  "text": "Have an A1 day!",
+  "speakerId": "skyler-white",
+  "episodeId": "bb-gliding-over-all",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "skyler-white",
+    "a1a-car-wash"
+  ],
+  "addedAt": "2026-07-14"
+}

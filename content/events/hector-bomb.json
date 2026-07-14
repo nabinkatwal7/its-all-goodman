@@ -1,0 +1,21 @@
+{
+  "id": "event-hector-bomb",
+  "type": "event",
+  "slug": "hector-bomb",
+  "title": "Casa Tranquila Bombing",
+  "summary": "Hector's wheelchair bomb kills Gus and himself.",
+  "year": 2010,
+  "locationId": "nursing-home",
+  "participantIds": [
+    "hector-salamanca",
+    "gustavo-fring",
+    "walter-white"
+  ],
+  "episodeId": "bb-face-off",
+  "relatedIds": [
+    "hector-salamanca",
+    "gustavo-fring",
+    "death-gus-fring"
+  ],
+  "addedAt": "2026-07-14"
+}

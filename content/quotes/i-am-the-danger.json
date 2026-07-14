@@ -1,0 +1,22 @@
+{
+  "id": "quote-i-am-the-danger",
+  "type": "quote",
+  "slug": "i-am-the-danger",
+  "title": "I am the danger",
+  "text": "I am not in danger, Skyler. I am the danger.",
+  "speakerId": "walter-white",
+  "episodeId": "bb-cornered",
+  "context": "Walt reveals his Heisenberg identity to Skyler.",
+  "tags": [
+    "iconic",
+    "heisenberg"
+  ],
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "skyler-white"
+  ],
+  "addedAt": "2026-07-14"
+}

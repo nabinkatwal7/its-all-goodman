@@ -1,0 +1,28 @@
+{
+  "id": "lalo-lawyer",
+  "type": "character",
+  "slug": "lalo-lawyer",
+  "title": "David Rymond",
+  "name": "David Rymond",
+  "summary": "Cartel attorney who visits Jimmy in jail.",
+  "series": [
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "portraitColor": "#2d3748",
+  "relatedIds": [
+    "lalo-salamanca",
+    "saul-goodman",
+    "cartel"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

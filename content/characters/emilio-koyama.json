@@ -1,0 +1,29 @@
+{
+  "id": "emilio-koyama",
+  "type": "character",
+  "slug": "emilio-koyama",
+  "title": "Emilio Koyama",
+  "name": "Emilio Koyama",
+  "summary": "Domingo's cousin. First cook partner attempt. Killed by phosphine gas.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#4a5568",
+  "relatedIds": [
+    "krazy-8",
+    "jesse-pinkman",
+    "walter-white",
+    "bb-pilot"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "death-nacho-varga",
+  "type": "death",
+  "slug": "nacho-varga",
+  "title": "Death of Nacho Varga",
+  "victimId": "nacho-varga",
+  "episodeId": "bcs-rock-and-hard-place",
+  "method": "Suicide by cop",
+  "suicide": true,
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "nacho-varga",
+    "lalo-salamanca",
+    "cartel"
+  ],
+  "addedAt": "2026-07-14"
+}

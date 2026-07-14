@@ -1,0 +1,23 @@
+{
+  "id": "vacuum-shop",
+  "type": "location",
+  "slug": "vacuum-shop",
+  "title": "Ed's Vacuum Shop",
+  "summary": "Disappearer service. Best vacuum repairs in town.",
+  "lat": 35.12,
+  "lng": -106.58,
+  "series": [
+    "breaking-bad",
+    "better-call-saul"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "walter-white"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "walter-white",
+    "bb-granite-state"
+  ],
+  "addedAt": "2026-07-14"
+}

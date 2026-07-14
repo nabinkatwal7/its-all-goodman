@@ -1,0 +1,16 @@
+{
+  "id": "van-vamonos",
+  "type": "vehicle",
+  "slug": "vamonos-van",
+  "title": "Vamonos Pest Van",
+  "summary": "Tented houses hide meth cooks.",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "vamonos-pest",
+    "walter-white",
+    "todd-alquist"
+  ],
+  "addedAt": "2026-07-14"
+}

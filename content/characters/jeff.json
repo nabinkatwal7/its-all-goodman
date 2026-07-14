@@ -1,0 +1,27 @@
+{
+  "id": "jeff",
+  "type": "character",
+  "slug": "jeff",
+  "title": "Jeff",
+  "name": "Jeff",
+  "summary": "Cab driver who recognizes Gene Takavic in Omaha.",
+  "series": [
+    "better-call-saul"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "alive",
+  "appearsIn": [
+    "better-call-saul"
+  ],
+  "portraitColor": "#2b6cb0",
+  "relatedIds": [
+    "saul-goodman",
+    "marion"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

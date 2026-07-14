@@ -1,0 +1,34 @@
+{
+  "id": "walt-house",
+  "type": "location",
+  "slug": "walt-house",
+  "title": "White Residence",
+  "summary": "7421 Negra Arroyo Lane. Where it all began.",
+  "lat": 35.1107,
+  "lng": -106.6099,
+  "address": "3828 Piermont Dr NE, Albuquerque (filming)",
+  "series": [
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "walter-white",
+    "skyler-white",
+    "walter-jr",
+    "holly-white"
+  ],
+  "episodeIds": [
+    "bb-pilot",
+    "ozymandias"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "skyler-white",
+    "pontiac-aztek"
+  ],
+  "history": [
+    "Pool excavation for money burial",
+    "Flynn's birthday",
+    "Hank's garage investigation"
+  ],
+  "addedAt": "2026-07-14"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "saul-condo",
+  "type": "location",
+  "slug": "saul-condo",
+  "title": "Saul's Condo",
+  "summary": "Jimmy/Saul's apartment. Kim moves in.",
+  "lat": 35.0844,
+  "lng": -106.6504,
+  "series": [
+    "better-call-saul",
+    "breaking-bad"
+  ],
+  "characterIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler"
+  ],
+  "addedAt": "2026-07-14"
+}

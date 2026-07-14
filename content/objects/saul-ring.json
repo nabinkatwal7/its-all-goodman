@@ -1,0 +1,17 @@
+{
+  "id": "saul-ring",
+  "type": "object",
+  "slug": "saul-ring",
+  "title": "Saul's Pinky Ring",
+  "summary": "Kim's gift. Saul wears it in exile.",
+  "symbolism": "Connection to Kim across time",
+  "series": [
+    "better-call-saul"
+  ],
+  "relatedIds": [
+    "saul-goodman",
+    "kim-wexler",
+    "bcs-saul-gone"
+  ],
+  "addedAt": "2026-07-14"
+}

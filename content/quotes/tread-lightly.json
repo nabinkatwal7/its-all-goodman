@@ -1,0 +1,17 @@
+{
+  "id": "quote-tread-lightly",
+  "type": "quote",
+  "slug": "tread-lightly",
+  "title": "Tread lightly",
+  "text": "If that's true, if you don't know who I am, then maybe your best course would be to tread lightly.",
+  "speakerId": "walter-white",
+  "episodeId": "bb-blood-money",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "walter-white",
+    "hank-schrader"
+  ],
+  "addedAt": "2026-07-14"
+}

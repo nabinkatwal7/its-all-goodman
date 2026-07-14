@@ -1,0 +1,40 @@
+{
+  "id": "victor",
+  "type": "character",
+  "slug": "victor",
+  "title": "Victor",
+  "name": "Victor",
+  "summary": "Gus Fring's loyal enforcer with a box cutter.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [
+    "cartel",
+    "gus-empire"
+  ],
+  "nicknames": [],
+  "status": "deceased",
+  "occupation": "Enforcer / Los Pollos manager",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#2d3748",
+  "relatedIds": [
+    "gustavo-fring",
+    "walter-white",
+    "jesse-pinkman",
+    "bb-box-cutter",
+    "superlab"
+  ],
+  "relationships": [
+    {
+      "targetId": "gustavo-fring",
+      "kind": "employee",
+      "label": "Boss"
+    }
+  ],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

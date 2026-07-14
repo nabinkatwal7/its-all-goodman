@@ -1,0 +1,27 @@
+{
+  "id": "spooge",
+  "type": "character",
+  "slug": "spooge",
+  "title": "Spooge",
+  "name": "Spooge",
+  "summary": "ATM thief Jesse tracks down.",
+  "series": [
+    "breaking-bad"
+  ],
+  "tags": [],
+  "nicknames": [],
+  "status": "deceased",
+  "appearsIn": [
+    "breaking-bad"
+  ],
+  "portraitColor": "#1a202c",
+  "relatedIds": [
+    "jesse-pinkman",
+    "wendy"
+  ],
+  "relationships": [],
+  "episodeIds": [],
+  "quoteIds": [],
+  "trivia": [],
+  "addedAt": "2026-07-14"
+}

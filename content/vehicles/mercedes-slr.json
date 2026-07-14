@@ -1,0 +1,15 @@
+{
+  "id": "mercedes-slr",
+  "type": "vehicle",
+  "slug": "mercedes-slr",
+  "title": "Mercedes SLR McLaren",
+  "summary": "Saul's dream car briefly.",
+  "ownerId": "saul-goodman",
+  "series": [
+    "breaking-bad"
+  ],
+  "relatedIds": [
+    "saul-goodman"
+  ],
+  "addedAt": "2026-07-14"
+}
