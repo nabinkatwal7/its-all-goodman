@@ -83,7 +83,7 @@ export function buildEdgesFromRelated(
       edges.push({ id: key, source: entity.id, target: rid });
     }
     if (entity.type === "character") {
-      for (const rel of entity.relationships ?? []) {
+      for (const rel of entity.relationships) {
         if (!ids.has(rel.targetId)) continue;
         const key = `rel-${entity.id}-${rel.targetId}`;
         if (seen.has(key)) continue;

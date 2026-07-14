@@ -1,5 +1,6 @@
 import { HomePageClient } from "@/components/immersive/HomePageClient";
 import { buildUniverseGraph } from "@/lib/graph/buildGraph";
+import { buildHomeGraph3D, buildOrbitNodes3D } from "@/lib/graph/buildGraph3d";
 import {
   getRecentEntities,
   getPopularCharacters,
@@ -10,15 +11,11 @@ import { getAllSearchItems } from "@/lib/search/index";
 export default function HomePage() {
   const searchItems = getAllSearchItems();
   const recent = getRecentEntities(6);
-  const popular = getPopularCharacters(6);
+  const popular = getPopularCharacters(8);
   const featured = getFeaturedEpisode() ?? null;
   const { nodes, edges } = buildUniverseGraph();
-
-  const orbitChars = popular.slice(0, 6).map((c) => ({
-    slug: c.slug,
-    name: c.name,
-    color: c.portraitColor,
-  }));
+  const orbitNodes = buildOrbitNodes3D(8);
+  const graph3d = buildHomeGraph3D(50);
 
   return (
     <HomePageClient
@@ -36,7 +33,8 @@ export default function HomePage() {
             }
           : null
       }
-      orbitChars={orbitChars}
+      orbitNodes={orbitNodes}
+      graph3d={graph3d}
       nodes={nodes}
       edges={edges}
     />

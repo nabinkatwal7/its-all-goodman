@@ -2,7 +2,9 @@
 
 import { UniverseGraph } from "@/components/graph/UniverseGraph";
 import { DesertPanel, DesertSection } from "@/components/desert/DesertHud";
+import { SceneConfigBridge } from "@/components/universe3d/SceneConfigBridge";
 import { entityHref } from "@/lib/schemas/entity";
+import type { Edge3D, Node3D } from "@/lib/graph/layout3d";
 import type { SearchResult } from "@/lib/search/index";
 import type { Edge, Node } from "@xyflow/react";
 import dynamic from "next/dynamic";
@@ -19,56 +21,26 @@ const ExploreGrid = dynamic(
   { ssr: false },
 );
 
-const FloatingCharacterOrbit = dynamic(
-  () =>
-    import("@/components/immersive/ExploreGrid").then(
-      (m) => m.FloatingCharacterOrbit,
-    ),
-  { ssr: false },
-);
-
 const EXPLORE = [
-  {
-    href: "/characters/walter-white",
-    label: "Characters",
-    tag: "He",
-    color: "#7cfc00",
-  },
+  { href: "/world", label: "3D Universe", tag: "3D", color: "#9dff4d" },
+  { href: "/characters/walter-white", label: "Characters", tag: "He", color: "#7cfc00" },
   { href: "/timeline", label: "Timeline", tag: "Ti", color: "#f5c518" },
-  {
-    href: "/episodes/breaking-bad/ozymandias",
-    label: "Episodes",
-    tag: "Ep",
-    color: "#4fc3f7",
-  },
+  { href: "/episodes/breaking-bad/ozymandias", label: "Episodes", tag: "Ep", color: "#4fc3f7" },
   { href: "/graph", label: "Universe Graph", tag: "Gr", color: "#7cfc00" },
   { href: "/locations", label: "Albuquerque", tag: "Ab", color: "#c4854c" },
-  {
-    href: "/organizations/cartel",
-    label: "Cartel",
-    tag: "Ca",
-    color: "#ef4444",
-  },
+  { href: "/organizations/cartel", label: "Cartel", tag: "Ca", color: "#ef4444" },
   { href: "/drug-empire", label: "Drug Empire", tag: "Dm", color: "#4fc3f7" },
   { href: "/legal", label: "Legal World", tag: "Lw", color: "#f5c518" },
   { href: "/deaths", label: "Deaths", tag: "Dx", color: "#991b1b" },
   { href: "/quotes", label: "Quotes", tag: "Qu", color: "#e5e5e5" },
-  {
-    href: "/relationships/walter-white",
-    label: "Connections",
-    tag: "Cn",
-    color: "#7cfc00",
-  },
-  {
-    href: "/compare?a=walter-white&b=gustavo-fring",
-    label: "Compare",
-    tag: "Vs",
-    color: "#f5c518",
-  },
+  { href: "/relationships/walter-white", label: "Connections", tag: "Cn", color: "#7cfc00" },
+  { href: "/compare?a=walter-white&b=gustavo-fring", label: "Compare", tag: "Vs", color: "#f5c518" },
 ];
 
 type HomeClientProps = {
   searchItems: SearchResult[];
+  orbitNodes: Node3D[];
+  graph3d: { nodes: Node3D[]; edges: Edge3D[] };
   recent: {
     id: string;
     title: string;
@@ -84,27 +56,42 @@ type HomeClientProps = {
     slug: string;
     series: string[];
   } | null;
-  orbitChars: { slug: string; name: string; color: string }[];
   nodes: Node[];
   edges: Edge[];
 };
 
 export function HomePageClient({
   searchItems,
+  orbitNodes,
+  graph3d,
   recent,
   featured,
-  orbitChars,
   nodes,
   edges,
 }: HomeClientProps) {
   return (
     <div className="w-full">
+      <SceneConfigBridge
+        config={{
+          mode: "home",
+          orbitNodes,
+          graphNodes: graph3d.nodes,
+          graphEdges: graph3d.edges,
+        }}
+      />
+
       <ImmersiveHero searchItems={searchItems} />
 
       <div className="relative z-10 mx-auto max-w-7xl space-y-12 px-4 pb-24">
         <DesertPanel className="mx-auto max-w-2xl">
-          <DesertSection title="WHO'S IN THE GAME" subtitle="Hover · click to enter">
-            <FloatingCharacterOrbit characters={orbitChars} />
+          <DesertSection title="WHO'S IN THE GAME" subtitle="3D orbit · click a node in the desert">
+            <p className="text-readable text-sm">
+              Characters orbit in the sky above Tohajiilee. Drag the scene with your mouse on the{" "}
+              <Link href="/world" className="text-accent hover:underline">
+                3D World
+              </Link>{" "}
+              page — or click any glowing sphere to enter their dossier.
+            </p>
           </DesertSection>
         </DesertPanel>
 
@@ -128,18 +115,14 @@ export function HomePageClient({
                 <p className="mt-1 text-sm text-muted">{featured.code}</p>
                 <p className="text-readable mt-3 line-clamp-3 text-sm">{featured.synopsis}</p>
                 {featured.imdbRating && (
-                  <p className="mt-3 font-display text-xl text-pollos">
-                    {featured.imdbRating}/10
-                  </p>
+                  <p className="mt-3 font-display text-xl text-pollos">{featured.imdbRating}/10</p>
                 )}
               </Link>
             )}
           </div>
 
           <div className="universe-card rounded-sm p-6">
-            <h2 className="font-display text-2xl tracking-wider text-foreground">
-              RECENT DISCOVERIES
-            </h2>
+            <h2 className="font-display text-2xl tracking-wider text-foreground">RECENT DISCOVERIES</h2>
             <ul className="mt-4 space-y-1">
               {recent.map((e) => (
                 <li key={e.id}>
@@ -157,19 +140,21 @@ export function HomePageClient({
         </div>
 
         <DesertPanel>
-          <DesertSection title="THE GRAPH" subtitle="Drag · zoom · click">
+          <DesertSection title="THE GRAPH" subtitle="Live in 3D · also 2D map below">
+            <Link
+              href="/world"
+              className="mb-4 inline-block font-display text-lg tracking-wider text-heisenberg hover:underline"
+            >
+              ENTER FULL 3D UNIVERSE →
+            </Link>
             <div className="universe-card overflow-hidden rounded-sm">
-              <UniverseGraph
-                nodes={nodes.slice(0, 35)}
-                edges={edges.slice(0, 45)}
-                height={450}
-              />
+              <UniverseGraph nodes={nodes.slice(0, 35)} edges={edges.slice(0, 45)} height={450} />
             </div>
             <Link
               href="/graph"
               className="mt-4 inline-block font-display text-lg tracking-wider text-accent hover:underline"
             >
-              ENTER FULL UNIVERSE →
+              2D GRAPH VIEW →
             </Link>
           </DesertSection>
         </DesertPanel>

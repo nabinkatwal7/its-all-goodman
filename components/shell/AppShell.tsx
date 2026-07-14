@@ -12,8 +12,8 @@ import { SPOILER_LEVELS } from "@/lib/spoiler";
 import type { SearchResult } from "@/lib/search/index";
 import { cn } from "@/lib/utils";
 
-const DesertWorld = dynamic(
-  () => import("@/components/desert/DesertWorld").then((m) => m.DesertWorld),
+const UniverseWorld = dynamic(
+  () => import("@/components/universe3d/UniverseWorld").then((m) => m.UniverseWorld),
   { ssr: false },
 );
 
@@ -23,6 +23,7 @@ const DesertOverlays = dynamic(
 );
 
 const NAV_LINKS = [
+  { href: "/world", label: "3D World" },
   { href: "/graph", label: "Graph" },
   { href: "/timeline", label: "Timeline" },
   { href: "/locations", label: "Map" },
@@ -42,6 +43,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const isHome = pathname === "/";
+  const isImmersive = pathname === "/" || pathname === "/graph" || pathname === "/world";
   const {
     universe,
     setUniverse,
@@ -62,7 +64,7 @@ export function AppShell({ children, searchItems }: AppShellProps) {
 
   return (
     <div className="relative flex min-h-screen flex-col">
-      <DesertWorld />
+      <UniverseWorld />
       <DesertOverlays />
 
       <header className="shell-header sticky top-0 z-40">
@@ -187,8 +189,13 @@ export function AppShell({ children, searchItems }: AppShellProps) {
         </div>
       )}
 
-      <main className={cn("relative z-10 flex-1", isHome ? "px-0" : "mx-auto w-full max-w-7xl px-4 py-8")}>
-        {isHome ? <div className="relative">{children}</div> : <DesertHud>{children}</DesertHud>}
+      <main
+        className={cn(
+          "relative z-10 flex-1",
+          isImmersive ? "px-0" : "mx-auto w-full max-w-7xl px-4 py-8",
+        )}
+      >
+        {isImmersive ? <div className="relative">{children}</div> : <DesertHud>{children}</DesertHud>}
       </main>
 
       <footer className="relative z-10 border-t border-border bg-surface-solid/95 py-5 text-center">

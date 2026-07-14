@@ -1,4 +1,5 @@
 import { UniverseProvider } from "@/components/providers/UniverseProvider";
+import { SceneConfigProvider } from "@/components/universe3d/SceneConfigProvider";
 import { AppShell } from "@/components/shell/AppShell";
 import { FilmGrain } from "@/components/immersive/FilmGrain";
 import { getAllSearchItems } from "@/lib/search/index";
@@ -43,7 +44,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <FilmGrain />
         <UniverseProvider>
-          <AppShell searchItems={searchItems}>{children}</AppShell>
+          <SceneConfigProvider>
+            <AppShell searchItems={searchItems}>{children}</AppShell>
+          </SceneConfigProvider>
         </UniverseProvider>
       </body>
     </html>

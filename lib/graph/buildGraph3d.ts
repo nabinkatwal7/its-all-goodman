@@ -15,36 +15,8 @@ export function buildOrbitNodes3D(limit = 10): Node3D[] {
   );
 }
 
-export function buildGraphNodes3D(limit = 80, centerId?: string): { nodes: Node3D[]; edges: Edge3D[] } {
-  const all = getAllEntities();
-  const entities = centerId
-    ? all.filter((e) => {
-        const connected = new Set<string>([centerId]);
-        for (const e of all) {
-          if (e.relatedIds.includes(centerId) || (e.type === "character" && e.relationships.some((r) => r.targetId === centerId))) {
-            connected.add(e.id);
-          }
-        }
-        return connected.has(e.id);
-      })
-    : all.slice(0, limit);
-
-  const slice = centerId ? entities : all.slice(0, limit);
-  const items = slice.map((e) => ({
-    id: e.id,
-    title: e.title,
-    type: e.type,
-    color: getTypeColor(e.type),
-    href: entityHref(e),
-  }));
-
-  const nodes = layoutSphere(items, centerId ? 6 : 9, centerId);
-  const edges = buildEdgesFromRelated(slice);
-  return { nodes, edges };
-}
-
-export function buildFullGraph3D(): { nodes: Node3D[]; edges: Edge3D[] } {
-  const all = getAllEntities();
+export function buildFullGraph3D(limit?: number): { nodes: Node3D[]; edges: Edge3D[] } {
+  const all = limit ? getAllEntities().slice(0, limit) : getAllEntities();
   const items = all.map((e) => ({
     id: e.id,
     title: e.title,
@@ -52,7 +24,13 @@ export function buildFullGraph3D(): { nodes: Node3D[]; edges: Edge3D[] } {
     color: getTypeColor(e.type),
     href: entityHref(e),
   }));
-  const nodes = layoutSphere(items, 12);
-  const edges = buildEdgesFromRelated(all);
-  return { nodes, edges };
+  const radius = all.length > 100 ? 14 : all.length > 50 ? 11 : 9;
+  return {
+    nodes: layoutSphere(items, radius),
+    edges: buildEdgesFromRelated(all),
+  };
+}
+
+export function buildHomeGraph3D(limit = 45): { nodes: Node3D[]; edges: Edge3D[] } {
+  return buildFullGraph3D(limit);
 }
