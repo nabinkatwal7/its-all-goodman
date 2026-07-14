@@ -21,9 +21,9 @@ export function EntityPage({ entity, children, sections = [] }: EntityPageProps)
         <p className="text-sm font-medium uppercase tracking-wider text-muted">
           {TYPE_LABELS[entity.type]}
         </p>
-        <h1 className="mt-1 text-4xl font-bold tracking-tight">{entity.title}</h1>
+        <h1 className="font-display mt-1 text-4xl tracking-wide text-foreground">{entity.title}</h1>
         {entity.summary && (
-          <p className="mt-3 max-w-2xl text-lg text-muted">{entity.summary}</p>
+          <p className="text-readable mt-3 max-w-2xl text-lg">{entity.summary}</p>
         )}
         {entity.tags.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
@@ -45,15 +45,15 @@ export function EntityPage({ entity, children, sections = [] }: EntityPageProps)
         (section) =>
           section.content && (
             <section key={section.title} className="mb-8">
-              <h2 className="mb-4 text-xl font-semibold">{section.title}</h2>
+              <h2 className="font-display mb-4 text-2xl tracking-wide text-accent">{section.title}</h2>
               {section.content}
             </section>
           ),
       )}
 
       {neighbors.length > 0 && (
-        <section className="mt-10 rounded-xl border border-border bg-card p-6">
-          <h2 className="mb-4 text-xl font-semibold">Connected to</h2>
+        <section className="universe-card mt-10 rounded-sm p-6">
+          <h2 className="font-display mb-4 text-2xl tracking-wide text-accent">Connected to</h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {neighbors.map((n) => (
               <Link
@@ -78,7 +78,7 @@ export function Section({ title, children }: { title: string; children: React.Re
   if (!children) return null;
   return (
     <section className="mb-8">
-      <h2 className="mb-4 border-l-4 border-heisenberg pl-3 text-xl font-semibold">{title}</h2>
+      <h2 className="font-display mb-4 border-l-4 border-heisenberg pl-3 text-2xl tracking-wide text-foreground">{title}</h2>
       {children}
     </section>
   );
@@ -89,9 +89,9 @@ export function DataGrid({ items }: { items: { label: string; value: React.React
     <dl className="grid gap-3 sm:grid-cols-2">
       {items.map(({ label, value }) =>
         value ? (
-          <div key={label} className="rounded-lg bg-card p-3">
-            <dt className="text-xs font-medium uppercase text-muted">{label}</dt>
-            <dd className="mt-1">{value}</dd>
+          <div key={label} className="rounded-sm bg-surface-solid p-3">
+            <dt className="label-caps text-[0.65rem]">{label}</dt>
+            <dd className="mt-1 text-foreground-soft">{value}</dd>
           </div>
         ) : null,
       )}
