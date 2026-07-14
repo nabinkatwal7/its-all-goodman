@@ -25,11 +25,11 @@ type UniverseGraphProps = {
 function EntityNode({ data }: { data: { label: string; entityType: string; slug: string; color: string } }) {
   return (
     <div
-      className="rounded-lg border-2 px-3 py-2 text-xs font-medium shadow-md"
-      style={{ borderColor: data.color, background: `${data.color}22` }}
+      className="rounded-sm border px-3 py-2 text-xs font-medium shadow-[0_0_12px_var(--glow)] backdrop-blur-sm cursor-pointer"
+      style={{ borderColor: data.color, background: `${data.color}33`, color: "#f5e6c8" }}
     >
-      <div className="text-[10px] uppercase opacity-60">{data.entityType}</div>
-      <div>{data.label}</div>
+      <div className="font-display text-[10px] uppercase tracking-wider opacity-70">{data.entityType}</div>
+      <div className="font-medium">{data.label}</div>
     </div>
   );
 }
@@ -79,7 +79,7 @@ export function UniverseGraph({
   );
 
   return (
-    <div style={{ height }} className="rounded-xl border border-border overflow-hidden">
+    <div style={{ height }} className="overflow-hidden bg-black/40">
       <ReactFlow
         nodes={nodes}
         edges={edges}

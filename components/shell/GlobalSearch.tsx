@@ -51,12 +51,12 @@ export function GlobalSearch({ items, placeholder = "Search the universe...", co
         placeholder={placeholder}
         className={
           compact
-            ? "w-full rounded-md border border-border bg-card px-3 py-1.5 text-sm outline-none focus:border-accent"
-            : "w-full rounded-lg border border-border bg-card px-4 py-2.5 outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+            ? "w-full rounded-sm border border-border bg-background/60 px-3 py-1.5 text-sm outline-none placeholder:text-muted focus:border-accent focus:shadow-[0_0_12px_var(--glow)]"
+            : "w-full rounded-sm border border-border bg-background/60 px-4 py-3 outline-none placeholder:text-muted focus:border-accent focus:shadow-[0_0_16px_var(--glow)]"
         }
       />
       {open && results.length > 0 && (
-        <ul className="absolute left-0 right-0 top-full z-50 mt-1 max-h-80 overflow-auto rounded-lg border border-border bg-card shadow-xl">
+        <ul className="absolute left-0 right-0 top-full z-50 mt-1 max-h-80 overflow-auto rounded-sm border border-border bg-card/95 shadow-[0_8px_32px_rgba(0,0,0,0.5)] backdrop-blur-md">
           {results.map((r) => (
             <li key={r.id}>
               <Link

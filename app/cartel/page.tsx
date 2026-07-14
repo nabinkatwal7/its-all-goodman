@@ -14,7 +14,9 @@ const HIERARCHY = [
 
 export default function CartelPage() {
   const chars = getEntitiesByType("character");
-  const cartel = getEntitiesByType("organization").find((o) => o.slug === "cartel");
+  const cartel = getEntitiesByType("organization").find(
+    (o) => o.slug === "cartel",
+  );
 
   return (
     <div>
@@ -33,13 +35,18 @@ export default function CartelPage() {
               >
                 {c.title}
               </Link>
-              {i < HIERARCHY.length - 1 && <span className="my-1 text-muted">↓</span>}
+              {i < HIERARCHY.length - 1 && (
+                <span className="my-1 text-muted">↓</span>
+              )}
             </div>
           );
         })}
       </div>
 
-      <Link href="/organizations/cartel" className="mt-8 inline-block text-accent hover:underline">
+      <Link
+        href="/organizations/cartel"
+        className="mt-8 inline-block text-accent hover:underline"
+      >
         View Cartel organization →
       </Link>
     </div>
